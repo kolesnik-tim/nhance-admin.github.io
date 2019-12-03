@@ -1,0 +1,53 @@
+html
+body
+  // font-family: 'Open Sans', sans-serif
+  box-sizing: border-box
+  position: relative
+.container
+  box-sizing: border-box
+  +rmin(1200)
+    max-width: 1165px !important
+a
+  text-decoration: none
+  transition: all 0.3s
+input[type="submit"]
+  appearance: none
+  -webkit-appearance: none
+textarea
+  resize: none
+
+
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+	.hidden-sm
+		display: none !important
++rmin(1024)
+	.hidden-md
+		display: none !important
+
+
+
+
+
+
+
+
+
+.pages
+  padding: 150px 0 50px
+  h1
+    font-size: 40px
+    color: $black
+    margin-bottom: 30px
+    display: block
+    text-align: center
+  li
+    +center
+    a
+      font-size: 18px
+      color: $black
+      line-height: 2
+      &:hover
+        text-decoration: underline
