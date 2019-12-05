@@ -1,0 +1,159 @@
+---
+title: Typography
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-50
+          h1.h1.m-b-30 Button
+          p.m-b-25 A button consists of text and/or an image that clearly communicates what action will occur when it is pressed upon.
+        .row
+          .col-xl
+            a(href="#").btn.btn-default.btn-primary.m-b-15 Primary
+            .flex.p-b-15
+              .btn.btn-small.btn-primary.normal.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 NORMAL
+                | #131725
+            .flex.p-b-15
+              .btn.btn-small.btn-primary.hover.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 HOVER
+                | #292e3d
+            .flex.p-b-15
+              .btn.btn-small.btn-primary.active.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 ACTIVE
+                | #131725
+
+
+
+          .col-xl
+            a(href="#").btn.btn-default.btn-secondary.m-b-15 Secondary
+            .flex.p-b-15
+              .btn.btn-small.btn-secondary.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 NORMAL
+                | #131725
+            .flex.p-b-15
+              .btn.btn-small.btn-secondary.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 HOVER
+                | #292e3d
+            .flex.p-b-15
+              .btn.btn-small.btn-secondary.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 ACTIVE
+                | #131725
+
+
+
+          .col-xl
+            a(href="#").btn.btn-default.btn-complete.m-b-15 Complete
+            .flex.p-b-15
+              .btn.btn-small.btn-complete.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 NORMAL
+                | #131725
+            .flex.p-b-15
+              .btn.btn-small.btn-complete.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 HOVER
+                | #292e3d
+            .flex.p-b-15
+              .btn.btn-small.btn-complete.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 ACTIVE
+                | #131725
+
+
+
+          .col-xl
+            a(href="#").btn.btn-default.btn-success.m-b-15 Success
+            .flex.p-b-15
+              .btn.btn-small.btn-success.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 NORMAL
+                | #131725
+            .flex.p-b-15
+              .btn.btn-small.btn-success.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 HOVER
+                | #292e3d
+            .flex.p-b-15
+              .btn.btn-small.btn-success.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 ACTIVE
+                | #131725
+
+
+
+          .col-xl
+            a(href="#").btn.btn-default.btn-danger.m-b-15 Danger
+            .flex.p-b-15
+              .btn.btn-small.btn-danger.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 NORMAL
+                | #131725
+            .flex.p-b-15
+              .btn.btn-small.btn-danger.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 HOVER
+                | #292e3d
+            .flex.p-b-15
+              .btn.btn-small.btn-danger.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 ACTIVE
+                | #131725
+
+
+                
+          .col-xl
+            a(href="#").btn.btn-default.btn-warning.m-b-15 Warning
+            .flex.p-b-15
+              .btn.btn-small.btn-warning.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 NORMAL
+                | #131725
+            .flex.p-b-15
+              .btn.btn-small.btn-warning.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 HOVER
+                | #292e3d
+            .flex.p-b-15
+              .btn.btn-small.btn-warning.p-b-20.p-t-20.m-r-15
+              p.default
+                strong.bold.text-black.flex.all-caps.fz-12 ACTIVE
+                | #131725
+
+
+
+        .row.m-t-50
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-30
+              strong.h5.bold.m-b-15 Bold Text
+              p.m-b-15.m-t-10 For emphasizing a snippet of text with a heavier font-weight.
+              code &lt;strong> .bold
+              p.m-t-15 it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-30
+              strong.h5.bold.m-b-15 Ordered List
+              p.m-b-15.m-t-10 For highlighting a run of text due to its relevance in another context
+              code &lt;ol>&lt;/ol>
+              ol.ol.m-t-20.m-b-0
+                li.default Lorem ipsum dolor sit amet
+                li.default Consectetur adipiscing elit
+                li.default Integer molestie lorem at massa
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-30
+              strong.h5.bold.m-b-15 Ordered List
+              p.m-b-15.m-t-10 For highlighting a run of text due to its relevance in another context
+              code &lt;ul>&lt;/ul>
+              ul.ul.m-t-15.m-b-0
+                li.default Lorem ipsum dolor sit amet
+                li.default Consectetur adipiscing elit
+                li.default Integer molestie lorem at massa

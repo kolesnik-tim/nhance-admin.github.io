@@ -1,0 +1,74 @@
+.btn
+  padding: 0
+  border: none
+  font-size: 0
+  line-height: 1
+  border-radius: 0
+  font-weight: bold
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+  box-shadow: none !important
+  &-primary
+    color: $white
+    background: $dark
+    &:hover, &.hover
+      background: #292e3d !important
+    &:not(:disabled):not(.disabled):active, &.active
+      background: $dark !important
+    &.normal
+      background: $dark !important
+  &-secondary
+    border: solid 1px #181c29
+    background-color: $white-two
+    color: #181c29
+    &:hover
+      background-color: $dark
+    &:not(:disabled):not(.disabled):active
+      background: $dark
+  &-complete
+    background-color: $bright-light-blue
+    color: #181c29
+    &:hover
+      background: #292e3d
+    &:not(:disabled):not(.disabled):active
+      background: #131725
+  &-success
+    background-color: $greenish-turquoise
+    color: $white
+    &:hover
+      background: #292e3d
+    &:not(:disabled):not(.disabled):active
+      background: #131725
+  &-danger
+    background-color: $orangey-red
+    color: $white
+    &:hover
+      background: #292e3d
+    &:not(:disabled):not(.disabled):active
+      background: #131725
+  &-warning
+    background-color: $butterscotch
+    color: $white
+    &:hover
+      background: #292e3d
+    &:not(:disabled):not(.disabled):active
+      background: #131725
+
+
+
+
+  &-large
+    padding: 18px 40px
+    border-radius: 25px
+    font-size: 14px
+  &-default
+    padding: 13px 30px
+    border-radius: 20px
+    font-size: 14px
+  &-small
+    padding: 8px 16px
+    border-radius: 12px
+    font-size: 12px
+  &-tiny
+    padding: 5px 15px
+    border-radius: 10px
+    font-size: 10px

@@ -48,3 +48,14 @@ $('.menu-open').on('click', function() {
   $('.aside-admin').toggleClass('active');
   $('.admin').toggleClass('active');
 });
+
+//aside-hover
+if($(window).width() > 1040) {
+  $('.aside-admin').hover(function() {
+    $(this).addClass('hover');
+    $('.admin').addClass('hover');
+  },function() {
+    $(this).removeClass('hover');
+    $('.admin').removeClass('hover');
+  });
+}
