@@ -31,7 +31,13 @@ $(document).mouseup(function(e) {
 
 //aside-admin
 $('.aside-admin b').click(function() {
-  $(this).toggleClass('active').next().slideToggle();
+  if($(this).hasClass('active')) {
+    $(this).toggleClass('active').next().slideToggle();
+  } else{
+    $(this).siblings('b').removeClass('active');
+    $(this).siblings('ul').slideUp();
+    $(this).toggleClass('active').next().slideToggle();
+  }
 });
 
 
