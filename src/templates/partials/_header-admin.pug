@@ -1,0 +1,26 @@
+.admin-header
+  .menu-open
+    span
+  .container
+    .admin-header__content
+      .admin-header__notifications.drop-down--open
+        span
+          +icon('bell')
+        ul
+          li
+            a(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          li
+            a(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      a(href="#").admin-header__question
+        +icon('question')
+      .admin-header__user.drop-down--open
+        span Vaishakh
+          +icon('arrow-down')
+        ul
+          li
+            a(href="#") 
+              +icon('settings')
+              | Settings
+          li
+            a(href="#") Logout
+              +icon('logout')

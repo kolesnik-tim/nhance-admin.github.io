@@ -1,0 +1,14 @@
+---
+title: 404
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content.admin__content-404
+      strong.text-black
+        img(src="https://via.placeholder.com/50x83.png", alt="").m-r-25
+        | 404
+      h2.h2.text-black.text-center Sorry but we couldnt find this page
+      p.text-black.text-center This page you are looking for does not exsist Report this?

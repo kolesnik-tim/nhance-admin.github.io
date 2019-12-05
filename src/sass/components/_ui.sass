@@ -1,14 +1,16 @@
 html
 body
-  // font-family: 'Open Sans', sans-serif
+  font-family: 'Eina03', sans-serif
   box-sizing: border-box
   position: relative
+  font-size: 14px
+  color: $brownish-grey
 .container
   box-sizing: border-box
   +rmin(1200)
-    max-width: 1165px !important
+    max-width: 1100px !important
 a
-  text-decoration: none
+  text-decoration: none !important
   transition: all 0.3s
 input[type="submit"]
   appearance: none
@@ -16,18 +18,27 @@ input[type="submit"]
 textarea
   resize: none
 
+.out
+  overflow: hidden
+h1, h2, h3, h4, h5, p, strong, b
+  margin: 0
+
 
 +r(767)
 	.hidden-xs
 		display: none !important
-@media only screen and (min-width: 768px) and (max-width: 1024px)
+@media only screen and (min-width: 575px) and (max-width: 767px)
 	.hidden-sm
 		display: none !important
-+rmin(1024)
+@media only screen and (min-width: 767px) and (max-width: 991px)
 	.hidden-md
 		display: none !important
-
-
+@media only screen and (min-width: 991px) and (max-width: 1200px)
+	.hidden-lg
+		display: none !important
++rmin(1200)
+	.hidden-xl
+		display: none !important
 
 
 

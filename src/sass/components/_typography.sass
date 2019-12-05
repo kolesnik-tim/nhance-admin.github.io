@@ -1,0 +1,80 @@
+
+//heading  
+.h1, .h2, .h3, .h4, .h5
+  color: #1f2532
+  font-weight: normal
+  line-height: 1
+  display: block
+.h1
+  font-size: 44px
+.h2
+  font-size: 31px
+.h3
+  font-size: 27px
+.h4
+  font-size: 22px
+.h5
+  font-size: 18px
+
+
+//position text
+.text-center
+  text-align: center
+.space-between
+  display: flex
+  justify-content: space-between
+.flex
+  display: flex
+  align-items: center
+
+
+//font-width
+.fw-bold, .bold, strong
+  font-weight: bold
+.fw-normal
+  font-weight: normal
+.fw-semi-bold
+  font-weight: 600
+
+
+//text-transform
+.all-caps
+  text-transform: uppercase
+
+
+//border
+.border-grey
+  border: 1px solid $light-peach
+.border-l-pink
+  border: 1px solid $very-light-pink
+
+
+ol.ol
+  list-style-type: decimal
+  counter-reset: item
+  padding-left: 20px
+  & > li
+    text-indent: -12px
+    list-style-type: none
+    counter-increment: item
+    &:before
+      display: inline-block
+      padding-right: 8px
+      font-weight: bold
+      text-align: right
+      content: counter(item) "."
+ul.ul
+  padding-left: 20px
+  li
+    position: relative
+    &:before
+      display: inline-block
+      margin-right: 8px
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: #000
+      content: ""
+      position: absolute
+      left: -20px
+      top: 5px

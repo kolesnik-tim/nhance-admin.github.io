@@ -1,0 +1,84 @@
+---
+title: Typography
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-50
+          h1.h1.m-b-30 Font Guidelines
+          h3.h3.m-b-25 Styles
+          p.m-b-25 We use our custom font, Eina 03, for almost everything brand and marketing—from banner ads to billboards. It was designed to be incredibly versatile with lots of range in terms of tone and playfulness. It can be quirky and expressive when it needs be, or neutral when the situation calls for something a bit more serious. On rare occasions, we also use native typography for select elements.
+        .row.m-b-50
+          .col-xl-5.col-12.m-b-15
+            .block-white.padding-30
+              h5.h5.bold.m-b-15 Font Guidelines
+              p.m-b-25 Tested almost every web font to see which font gets render best in comparisan to the operating system. Better visibility, clarity and compatibility is fully ensured as we have paid detailed attention in making for perfect reading.
+              h2.h2.fw-normal.m-b-15 Eina 03 - Regular
+              h2.h2.fw-semi-bold.m-b-15 Eina 03 - Semi Bold
+              h2.h2.fw-bold.m-b-15 Eina 03 - Bold
+          .col-xl-7.col-12.m-b-15
+            .block-white.padding-30
+              p.m-b-25 Headings are the first thing you ll see or read in a document. <br>We wanted to make them perfect in both size and colour.
+              h1.h1.p-b-20 H1. Bootstrap heading
+              h2.h2.p-b-15 H2. Bootstrap heading
+              h3.h3.p-b-20 H3. Bootstrap heading
+              h4.h4.p-b-20 H4. Bootstrap heading
+              h5.h5 H5. Bootstrap heading
+        h3.h3.p-t-20.m-b-40 Colors
+        .row
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-dark.padding-45
+            p.padding-15.bg-white .text-black   #2c2c2c
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-default.padding-45
+            p.padding-15.bg-white .default   #616161
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-hint.padding-45
+            p.padding-15.bg-white .hint-text   #9e9e9e
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-dark.padding-45
+            p.padding-15.bg-white .text-primary   #62549a
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-success.padding-45
+            p.padding-15.bg-white .text-success   #0ef7b5
+          .col-xl-12.hidden-lg.hidden-md.hidden-sm
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-complete.padding-45
+            p.padding-15.bg-white .text-complete   #2cfffe
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-danger.padding-45
+            p.padding-15.bg-white .text-danger   #fd3e39
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+            .bg-warning.padding-45
+            p.padding-15.bg-white .text-warning   #fbbc48
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+          .col-xl.col-lg-4.col-sm-6.m-b-20
+        .row.m-t-50
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-30
+              strong.h5.bold.m-b-15 Bold Text
+              p.m-b-15.m-t-10 For emphasizing a snippet of text with a heavier font-weight.
+              code &lt;strong> .bold
+              p.m-t-15 it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-30
+              strong.h5.bold.m-b-15 Ordered List
+              p.m-b-15.m-t-10 For highlighting a run of text due to its relevance in another context
+              code &lt;ol>&lt;/ol>
+              ol.ol.m-t-20.m-b-0
+                li.default Lorem ipsum dolor sit amet
+                li.default Consectetur adipiscing elit
+                li.default Integer molestie lorem at massa
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-30
+              strong.h5.bold.m-b-15 Ordered List
+              p.m-b-15.m-t-10 For highlighting a run of text due to its relevance in another context
+              code &lt;ul>&lt;/ul>
+              ul.ul.m-t-15.m-b-0
+                li.default Lorem ipsum dolor sit amet
+                li.default Consectetur adipiscing elit
+                li.default Integer molestie lorem at massa
