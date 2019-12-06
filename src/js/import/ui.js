@@ -1,9 +1,6 @@
 // import '../lib/maskedinput.js';
 // import modal from 'jquery-modal';
-// import selectric from 'selectric';
-
-//select
-// $('select').selectric();
+import selectize from '../lib/selectize';
 
 
 // //pop-up
@@ -59,3 +56,17 @@ if($(window).width() > 1040) {
     $('.admin').removeClass('hover');
   });
 }
+
+
+
+
+
+//select
+$('.select-button').selectize({
+  plugins: ['remove_button'],
+  persist: false,
+  valueField: 'value',
+  maxItems: null,
+});
+$('.select').selectize();
+

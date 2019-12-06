@@ -7,6 +7,15 @@
   font-weight: bold
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
   box-shadow: none !important
+  padding: 13px 30px
+  border-radius: 20px
+  font-size: 14px
+  svg
+    fill: #dd312c
+    margin-right: 7px
+    margin-left: -10px
+    width: 15px
+    height: 15px
   &-primary
     color: $white
     background: $dark
@@ -16,59 +25,76 @@
       background: $dark !important
     &.normal
       background: $dark !important
+
+
   &-secondary
     border: solid 1px #181c29
-    background-color: $white-two
+    background-color: none
     color: #181c29
-    &:hover
-      background-color: $dark
-    &:not(:disabled):not(.disabled):active
-      background: $dark
+    &:hover, &.hover
+      background-color: $dark !important
+    &:not(:disabled):not(.disabled):active, &.active
+      background: $dark !important
+    &.normal
+      background: none !important
+
+
   &-complete
     background-color: $bright-light-blue
     color: #181c29
-    &:hover
-      background: #292e3d
-    &:not(:disabled):not(.disabled):active
-      background: #131725
+    &:hover, &.hover
+      background-color: #26dbda !important
+    &:not(:disabled):not(.disabled):active, &.active
+      background-color: $bright-light-blue !important
+    &.normal
+      background-color: $bright-light-blue !important
+
+
   &-success
     background-color: $greenish-turquoise
     color: $white
-    &:hover
-      background: #292e3d
-    &:not(:disabled):not(.disabled):active
-      background: #131725
+    &:hover, &.hover
+      background: #0bdba0 !important
+    &:not(:disabled):not(.disabled):active, &.active
+      background: $greenish-turquoise !important
+    &.normal
+      background: $greenish-turquoise !important
+
+
   &-danger
     background-color: $orangey-red
     color: $white
-    &:hover
-      background: #292e3d
-    &:not(:disabled):not(.disabled):active
-      background: #131725
+    &:hover, &.hover
+      background: #dd312c !important
+    &:not(:disabled):not(.disabled):active, &.active
+      background: $orangey-red !important
+    &.normal
+      background: $orangey-red !important
+
+
   &-warning
     background-color: $butterscotch
     color: $white
-    &:hover
-      background: #292e3d
-    &:not(:disabled):not(.disabled):active
-      background: #131725
+    &:hover, &.hover
+      background: #e2a73b !important
+      color: $white !important
+    &:not(:disabled):not(.disabled):active, &.active
+      background: $butterscotch !important
+    &.normal
+      background: $butterscotch !important
 
 
 
 
-  &-large
+  &-lg
     padding: 18px 40px
     border-radius: 25px
     font-size: 14px
-  &-default
-    padding: 13px 30px
-    border-radius: 20px
-    font-size: 14px
-  &-small
-    padding: 8px 16px
-    border-radius: 12px
+  &-sm
+    padding: 8px 16px 6px
+    border-radius: 13px
     font-size: 12px
-  &-tiny
+  &-xs
     padding: 5px 15px
     border-radius: 10px
     font-size: 10px
