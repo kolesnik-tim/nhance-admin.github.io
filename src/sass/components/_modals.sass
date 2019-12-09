@@ -7,9 +7,39 @@
     width: 170px
   &-center
     +center
-  &-fixed
+  &-right
     img
       position: absolute
       right: 16px
       bottom: 1px
       width: 95px
+
+
+.modal.fade
+  &.slide-up
+    .modal-dialog
+      transform: translate3d(0, 75%, 0)
+      .modal-content-wrapper
+        display: table-cell
+        vertical-align: middle
+  &.slide-right
+    .modal-dialog
+      transform: translate3d(0, 0, 0)
+      left: 100%
+      margin: 0
+      max-width: 300px
+      .modal-content-wrapper
+        display: table-cell
+        vertical-align: bottom
+      .modal-content
+        min-height: 60vh
+    &.show .modal-dialog
+      transform: translate3d(-100%, 0, 0)
+  .modal-dialog
+    display: table
+    height: 100%
+    margin: 0 auto
+    max-width: 500px
+    width: 100%
+  &.show .modal-dialog
+    transform: translate3d(0, 0, 0)
