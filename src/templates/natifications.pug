@@ -1,0 +1,55 @@
+---
+title: Natifications
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-50
+          h1.h1.m-b-30 Notifications
+          p Alerts help to gain user attention and give feedback for proccessed task. These alerts are built with different background and borders to show.
+        p.natifications.natifications-danger.m-b-10
+          strong.bold Danger: 
+          | The daily report has failed
+          a(href="#")
+            +icon('close')
+        p.natifications.natifications-warning.m-b-10
+          strong.bold Warning: 
+          | Bandwidth limit exceeded
+          a(href="#")
+            +icon('close')
+        p.natifications.natifications-success.m-b-10
+          strong.bold Success: 
+          | The page has been added.
+          a(href="#")
+            +icon('close')
+        p.natifications.natifications-info.m-b-10
+          strong.bold Info: 
+          | You have 198 messages
+          a(href="#")
+            +icon('close')
+        .row.m-t-50
+          .col-lg-6.m-b-50
+            h5.h5.m-t-15 Badge Variations
+            p.m-b-30 A Badge, with optional background colors. <br>Use the badgeclass to create a Badge
+            a(href="#").badge.bg-v-light-pink.default.m-r-5 2
+            a(href="#").badge.bg-dark.text-white.m-r-5 20
+            a(href="#").badge.bg-danger.text-white.m-r-5 300
+          .col-lg-6.m-b-50
+            h5.h5.m-t-15 Simple Labels
+            p.m-b-30 A label, with optional background colors. <br>Use the labelclass to create a label
+            label.label.m-r-5.all-caps.bold.bg-v-light-pink.default DEFAULT
+            label.label.m-r-5.all-caps.bold.bg-greenish.text-white view
+            label.label.m-r-5.all-caps.bold.bg-warning.text-white HOLD
+            label.label.m-r-5.all-caps.bold.bg-danger.text-white ALERT
+            label.label.m-r-5.all-caps.bold.bg-complete SUCCESS
+          .col-lg-9.p-b-20
+            h5.h5.m-t-15 Tooltips
+            p.m-b-30 Tooltips can be a helpful way to provide information to visitors without creating clutter in a design. Tooltip plugin let’s you transform native tooltip’s into customizable overlays. You can adjust their content, position and appearance.
+            button.btn-tooltip.m-b-10.m-r-10(type='button', data-toggle="tooltip", data-placement='top', title='Up here!') Top
+            button.btn-tooltip.m-b-10.m-r-10(type='button', data-toggle="tooltip", data-placement='right', title='Over here') Right
+            button.btn-tooltip.m-b-10.m-r-10(type='button', data-toggle="tooltip", data-placement="bottom", title='Look down') Bottom
+            button.btn-tooltip.m-b-10(type='button', data-toggle="tooltip", data-placement='left', title='Over here') Left

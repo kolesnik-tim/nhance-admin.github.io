@@ -1,0 +1,50 @@
+---
+title: Modals
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-40
+          h1.h1.m-b-35 Modals
+          p These modals are customized with new animations and style, now pages modals support up to 3 different versions and each version have small, medium and large modals. This helps you to make your app look even better
+        .row
+          .col-lg-6.col-12.m-b-20
+            .block-white.padding-35
+              h5.h5.bold Slide Up
+              p.m-b-10.m-b-30 This modal slides in from the bottom and rests on the middle of the screen, to add this simply add the class 
+                code slide-up 
+                | to the 
+                code modal 
+                | div
+              .modal-demo.modal-demo-center
+                img(src="img/modal/modal-center.png", alt="")
+              .center-column
+                a(href="#" data-toggle="modal" data-target="#slide-up").btn.btn-primary Demo
+          .col-lg-6.col-12.m-b-20
+            .block-white.padding-35
+              h5.h5.bold Stick Up
+              p.m-b-10.m-b-30 This modal slides in from the bottom and rests on the middle of the screen, to add this simply add the class 
+                code slide-up 
+                | to the 
+                code modal 
+                | div
+              .modal-demo.modal-demo-top
+                img(src="img/modal/modal-top.png", alt="")
+              .center-column
+                a(href="#" data-toggle="modal" data-target="#stick-up").btn.btn-primary Demo
+          .col-lg-6.col-12.m-b-20
+            .block-white.padding-35
+              h5.h5.bold Slide Up
+              p.m-b-10.m-b-30 This modal slides in from the bottom and rests on the middle of the screen, to add this simply add the class 
+                code slide-up 
+                | to the 
+                code modal 
+                | div
+              .modal-demo.modal-demo-fixed
+                img(src="img/modal/modal-right-bottom.png", alt="")
+              .center-column
+                a(href="#").btn.btn-primary Demo

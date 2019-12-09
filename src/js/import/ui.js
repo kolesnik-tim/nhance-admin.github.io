@@ -1,6 +1,8 @@
 // import '../lib/maskedinput.js';
 // import modal from 'jquery-modal';
 import selectize from '../lib/selectize';
+import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
+import botstrap from 'bootstrap/js/dist/modal';
 
 
 // //pop-up
@@ -70,3 +72,13 @@ $('.select-button').selectize({
 });
 $('.select').selectize();
 
+
+
+
+//.natifications
+$('.natifications a').on('click', function() {
+  $(this).closest('.natifications').slideUp();
+});
+
+
+$('[data-toggle="tooltip"]').tooltip();
