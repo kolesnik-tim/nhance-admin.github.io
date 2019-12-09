@@ -1,0 +1,32 @@
+---
+title: Tabs & Accordions
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-50
+          h1.h1.m-b-45 Tabs & Accordians
+          p A progress bar is a visual way of showing how much of a curtain task has being completed. We made it light weighted and simple as possible just for a better user experience.A progress can be indeterminate or determinate according to the length of a task.
+        .row
+          .col-lg-6.col-12.m-b-20
+            .block-white.padding-35
+          .col-lg-6.col-12.m-b-20
+            .block-white
+              ul.nav.nav-tabs
+                li.active
+                  a(data-toggle='tab', href='#item-1') HELLO one
+                li
+                  a(data-toggle='tab', href='#item-2') HELLO two
+                li
+                  a(data-toggle='tab', href='#item-3') HELLO three
+              .tab-content
+                #item-1.tab-pane.fade.show.in.active
+                  p 1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                #item-2.tab-pane.fade
+                  p 2 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                #item-3.tab-pane.fade
+                  p 3 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
