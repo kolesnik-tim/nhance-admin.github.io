@@ -1,0 +1,67 @@
+---
+title: Tree view
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-50
+          h1.h1.m-b-15 Tree view
+        .row
+          .col-lg-6.col-12.m-b-20
+            .block-white.padding-40.h-auto
+              p.m-b-35 A simple tree styled to pages color palette, Please refer the documentation for more details or dynatree documentation
+              .drag-tree
+                ul.hidden
+                  li item with key and tooltip
+                  li item2
+                  li.folder Folder with some children
+                    ul
+                      li Sub-item 3.1
+                        ul
+                          li Sub-item 3.1.1
+                          li Sub-item 3.1.2
+                      li Sub-item 3.2
+                        ul
+                          li Sub-item 3.2.1
+                          li Sub-item 3.2.2
+                  li.expanded Document with some children (expanded on init)
+                    ul
+                      li.active.focused.expanded Sub-item 4.1 (active and focus on init)
+                        ul
+                          li Sub-item 4.1.1
+                          li Sub-item 4.1.2
+                      li.expanded Sub-item 4.2
+                        ul
+                          li Sub-item 4.2.1
+                          li Sub-item 4.2.2
+          .col-lg-6.col-12.m-b-20
+            .block-white.padding-40.h-auto
+              p.m-b-35 A simple tree styled to pages color palette, Please refer the documentation for more details or dynatree documentation
+              .drag-tree-1
+                ul.hidden
+                  li item with key and tooltip
+                  li item2
+                  li.folder Folder
+                    ul
+                      li Sub-item 3.1
+                        ul
+                          li Sub-item 3.1.1
+                          li Sub-item 3.1.2
+                      li Sub-item 3.2
+                        ul
+                          li Sub-item 3.2.1
+                          li Sub-item 3.2.2
+                  li.expanded Document with some children (expanded on init)
+                    ul
+                      li.active.focused.expanded Sub-item 4.1 (active and focus on init)
+                        ul
+                          li Sub-item 4.1.1
+                          li Sub-item 4.1.2
+                      li.expanded Sub-item 4.2
+                        ul
+                          li Sub-item 4.2.1
+                          li Sub-item 4.2.2

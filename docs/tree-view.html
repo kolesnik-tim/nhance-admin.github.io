@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Natifications</title>
+    <title>Tree view</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -87,33 +87,82 @@
         <div class="admin__content">
           <div class="container">
             <div class="admin__title p-b-50">
-              <h1 class="h1 m-b-30">Notifications</h1>
-              <p>Alerts help to gain user attention and give feedback for proccessed task. These alerts are built with different background and borders to show.</p>
+              <h1 class="h1 m-b-15">Tree view</h1>
             </div>
-            <p class="natifications natifications-danger m-b-10"><strong class="bold">Danger: </strong>The daily report has failed<a href="#"><svg class="icon icon-close ">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg></a></p>
-            <p class="natifications natifications-warning m-b-10"><strong class="bold">Warning: </strong>Bandwidth limit exceeded<a href="#"><svg class="icon icon-close ">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg></a></p>
-            <p class="natifications natifications-success m-b-10"><strong class="bold">Success: </strong>The page has been added.<a href="#"><svg class="icon icon-close ">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg></a></p>
-            <p class="natifications natifications-info m-b-10"><strong class="bold">Info: </strong>You have 198 messages<a href="#"><svg class="icon icon-close ">
-                  <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg></a></p>
-            <div class="row m-t-50">
-              <div class="col-lg-6 m-b-50">
-                <h5 class="h5 m-t-15">Badge Variations</h5>
-                <p class="m-b-30">A Badge, with optional background colors. <br>Use the badgeclass to create a Badge</p><a class="badge bg-v-light-pink default m-r-5" href="#">2</a><a class="badge bg-dark text-white m-r-5" href="#">20</a><a class="badge bg-danger text-white m-r-5" href="#">300</a>
+            <div class="row">
+              <div class="col-lg-6 col-12 m-b-20">
+                <div class="block-white padding-40 h-auto">
+                  <p class="m-b-35">A simple tree styled to pages color palette, Please refer the documentation for more details or dynatree documentation</p>
+                  <div class="drag-tree">
+                    <ul class="hidden">
+                      <li>item with key and tooltip</li>
+                      <li>item2</li>
+                      <li class="folder">Folder with some children<ul>
+                          <li>Sub-item 3.1<ul>
+                              <li>Sub-item 3.1.1</li>
+                              <li>Sub-item 3.1.2</li>
+                            </ul>
+                          </li>
+                          <li>Sub-item 3.2<ul>
+                              <li>Sub-item 3.2.1</li>
+                              <li>Sub-item 3.2.2</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="expanded">Document with some children (expanded on init)<ul>
+                          <li class="active focused expanded">Sub-item 4.1 (active and focus on init)<ul>
+                              <li>Sub-item 4.1.1</li>
+                              <li>Sub-item 4.1.2</li>
+                            </ul>
+                          </li>
+                          <li class="expanded">Sub-item 4.2<ul>
+                              <li>Sub-item 4.2.1</li>
+                              <li>Sub-item 4.2.2</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-6 m-b-50">
-                <h5 class="h5 m-t-15">Simple Labels</h5>
-                <p class="m-b-30">A label, with optional background colors. <br>Use the labelclass to create a label</p><label class="label m-r-5 all-caps bold bg-v-light-pink default">DEFAULT</label><label class="label m-r-5 all-caps bold bg-greenish text-white">view</label><label class="label m-r-5 all-caps bold bg-warning text-white">HOLD</label><label class="label m-r-5 all-caps bold bg-danger text-white">ALERT</label><label class="label m-r-5 all-caps bold bg-complete">SUCCESS</label>
-              </div>
-              <div class="col-lg-9 p-b-20">
-                <h5 class="h5 m-t-15">Tooltips</h5>
-                <p class="m-b-30">Tooltips can be a helpful way to provide information to visitors without creating clutter in a design. Tooltip plugin let’s you transform native tooltip’s into customizable overlays. You can adjust their content, position and appearance.</p><button class="btn-tooltip m-b-10 m-r-10" type="button" data-toggle="tooltip" data-placement="top" title="Up here!">Top</button><button class="btn-tooltip m-b-10 m-r-10" type="button" data-toggle="tooltip" data-placement="right" title="Over here">Right</button><button class="btn-tooltip m-b-10 m-r-10" type="button" data-toggle="tooltip" data-placement="bottom" title="Look down">Bottom</button><button class="btn-tooltip m-b-10" type="button" data-toggle="tooltip" data-placement="left" title="Over here">Left</button>
+              <div class="col-lg-6 col-12 m-b-20">
+                <div class="block-white padding-40 h-auto">
+                  <p class="m-b-35">A simple tree styled to pages color palette, Please refer the documentation for more details or dynatree documentation</p>
+                  <div class="drag-tree-1">
+                    <ul class="hidden">
+                      <li>item with key and tooltip</li>
+                      <li>item2</li>
+                      <li class="folder">Folder<ul>
+                          <li>Sub-item 3.1<ul>
+                              <li>Sub-item 3.1.1</li>
+                              <li>Sub-item 3.1.2</li>
+                            </ul>
+                          </li>
+                          <li>Sub-item 3.2<ul>
+                              <li>Sub-item 3.2.1</li>
+                              <li>Sub-item 3.2.2</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="expanded">Document with some children (expanded on init)<ul>
+                          <li class="active focused expanded">Sub-item 4.1 (active and focus on init)<ul>
+                              <li>Sub-item 4.1.1</li>
+                              <li>Sub-item 4.1.2</li>
+                            </ul>
+                          </li>
+                          <li class="expanded">Sub-item 4.2<ul>
+                              <li>Sub-item 4.2.1</li>
+                              <li>Sub-item 4.2.2</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

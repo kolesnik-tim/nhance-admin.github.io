@@ -12,21 +12,64 @@ block content
           h1.h1.m-b-45 Tabs & Accordians
           p A progress bar is a visual way of showing how much of a curtain task has being completed. We made it light weighted and simple as possible just for a better user experience.A progress can be indeterminate or determinate according to the length of a task.
         .row
+          .col-lg-6.col-12.m-b-35
+            .accordion
+              .card.block-white.m-b-5
+                #headingOne
+                  button.all-caps(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                    | COLLAPSIBLE GROUP ITEM
+                #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='.accordion')
+                  .collapse-content
+                    p Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+              .card.block-white.m-b-5
+                #headingTwo
+                  button.collapsed.all-caps(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | COLLAPSIBLE GROUP ITEM
+                #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='.accordion')
+                  .collapse-content
+                    p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              .card.block-white.m-b-5
+                #headingThree
+                  button.collapsed.all-caps(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    | COLLAPSIBLE GROUP ITEM
+                #collapseThree.collapse(aria-labelledby='headingThree', data-parent='.accordion')
+                  .collapse-content
+                    p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+          .col-lg-6.col-12.m-b-35
+            div
+              .block-white
+                ul.nav.nav-tabs
+                  li.active
+                    a(data-toggle='tab', href='#item-1').active HELLO one
+                  li
+                    a(data-toggle='tab', href='#item-2') HELLO two
+                  li
+                    a(data-toggle='tab', href='#item-3') HELLO three
+                .tab-content
+                  #item-1.tab-pane.fade.show.in.active
+                    p 1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                  #item-2.tab-pane.fade
+                    p 2 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                  #item-3.tab-pane.fade
+                    p 3 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news. 
           .col-lg-6.col-12.m-b-20
-            .block-white.padding-35
-          .col-lg-6.col-12.m-b-20
-            .block-white
-              ul.nav.nav-tabs
-                li.active
-                  a(data-toggle='tab', href='#item-1').active HELLO one
-                li
-                  a(data-toggle='tab', href='#item-2') HELLO two
-                li
-                  a(data-toggle='tab', href='#item-3') HELLO three
-              .tab-content
-                #item-1.tab-pane.fade.show.in.active
-                  p 1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
-                #item-2.tab-pane.fade
-                  p 2 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
-                #item-3.tab-pane.fade
-                  p 3 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+            ul.nav.nav-step
+              li.active
+                a(data-toggle='tab', href='#step-1').active 01
+              li
+                a(data-toggle='tab', href='#step-2') 02
+                  span
+              li
+                a(data-toggle='tab', href='#step-3') 03
+                  span
+            .nav-step__decor
+              span
+              span
+            .tab-content.block-white
+              #step-1.tab-pane.fade.show.in.active
+                p 1 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+              #step-2.tab-pane.fade
+                p 2 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+              #step-3.tab-pane.fade
+                p 3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.

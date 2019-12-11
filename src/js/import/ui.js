@@ -1,18 +1,12 @@
 // import '../lib/maskedinput.js';
-// import modal from 'jquery-modal';
 import selectize from '../lib/selectize';
 import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
 import botstrap from 'bootstrap/js/dist/modal';
+import dynatree from '../lib/jquery.dynatree.min';
 
 
-// //pop-up
-// $('[rel="modal:open"]').on('click', function(event) {
-//   $(this).modal({
-//     fadeDuration: 200
-//   });
-//   return false;
-// });
 
+////header
 //drop-down open
 $('.drop-down--open').on('click', function(e) {
   e.preventDefault();
@@ -27,37 +21,6 @@ $(document).mouseup(function(e) {
 });
 
 
-
-//aside-admin
-$('.aside-admin b').click(function() {
-  if($(this).hasClass('active')) {
-    $(this).toggleClass('active').next().slideToggle();
-  } else{
-    $(this).siblings('b').removeClass('active');
-    $(this).siblings('ul').slideUp();
-    $(this).toggleClass('active').next().slideToggle();
-  }
-});
-
-
-
-//aside-mobile
-$('.menu-open').on('click', function() {
-  $(this).toggleClass('active');
-  $('.aside-admin').toggleClass('active');
-  $('.admin').toggleClass('active');
-});
-
-//aside-hover
-if($(window).width() > 1040) {
-  $('.aside-admin').hover(function() {
-    $(this).addClass('hover');
-    $('.admin').addClass('hover');
-  },function() {
-    $(this).removeClass('hover');
-    $('.admin').removeClass('hover');
-  });
-}
 
 
 
@@ -80,5 +43,21 @@ $('.natifications a').on('click', function() {
   $(this).closest('.natifications').slideUp();
 });
 
-
+//tooltip
 $('[data-toggle="tooltip"]').tooltip();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -44,7 +44,7 @@
             <li><a href="modals.html">Modals</a></li>
             <li><a href="linear-progress.html">Progress & Activity</a></li>
             <li><a href="tabs-accordian.html">Tabs & Accordions</a></li>
-            <li><a href="#">Tree View</a></li>
+            <li><a href="tree-view.html">Tree View</a></li>
           </ul><b>Extra<svg class="icon icon-arrow-down ">
               <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
             </svg><img src="https://via.placeholder.com/23x17.png" alt=""></b>
@@ -91,26 +91,72 @@
               <p>A progress bar is a visual way of showing how much of a curtain task has being completed. We made it light weighted and simple as possible just for a better user experience.A progress can be indeterminate or determinate according to the length of a task.</p>
             </div>
             <div class="row">
-              <div class="col-lg-6 col-12 m-b-20">
-                <div class="block-white padding-35"></div>
+              <div class="col-lg-6 col-12 m-b-35">
+                <div class="accordion">
+                  <div class="card block-white m-b-5">
+                    <div id="headingOne"><button class="all-caps" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">COLLAPSIBLE GROUP ITEM</button></div>
+                    <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent=".accordion">
+                      <div class="collapse-content">
+                        <p>Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card block-white m-b-5">
+                    <div id="headingTwo"><button class="collapsed all-caps" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">COLLAPSIBLE GROUP ITEM</button></div>
+                    <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent=".accordion">
+                      <div class="collapse-content">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card block-white m-b-5">
+                    <div id="headingThree"><button class="collapsed all-caps" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">COLLAPSIBLE GROUP ITEM</button></div>
+                    <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent=".accordion">
+                      <div class="collapse-content">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 m-b-35">
+                <div>
+                  <div class="block-white">
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a class="active" data-toggle="tab" href="#item-1">HELLO one</a></li>
+                      <li><a data-toggle="tab" href="#item-2">HELLO two</a></li>
+                      <li><a data-toggle="tab" href="#item-3">HELLO three</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade show in active" id="item-1">
+                        <p>1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                      </div>
+                      <div class="tab-pane fade" id="item-2">
+                        <p>2 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                      </div>
+                      <div class="tab-pane fade" id="item-3">
+                        <p>3 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-lg-6 col-12 m-b-20">
-                <div class="block-white">
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a class="active" data-toggle="tab" href="#item-1">HELLO one</a></li>
-                    <li><a data-toggle="tab" href="#item-2">HELLO two</a></li>
-                    <li><a data-toggle="tab" href="#item-3">HELLO three</a></li>
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane fade show in active" id="item-1">
-                      <p>1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
-                    </div>
-                    <div class="tab-pane fade" id="item-2">
-                      <p>2 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
-                    </div>
-                    <div class="tab-pane fade" id="item-3">
-                      <p>3 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
-                    </div>
+                <ul class="nav nav-step">
+                  <li class="active"><a class="active" data-toggle="tab" href="#step-1">01</a></li>
+                  <li><a data-toggle="tab" href="#step-2">02<span></span></a></li>
+                  <li><a data-toggle="tab" href="#step-3">03<span></span></a></li>
+                </ul>
+                <div class="nav-step__decor"><span></span><span></span></div>
+                <div class="tab-content block-white">
+                  <div class="tab-pane fade show in active" id="step-1">
+                    <p>1 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.</p>
+                  </div>
+                  <div class="tab-pane fade" id="step-2">
+                    <p>2 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.</p>
+                  </div>
+                  <div class="tab-pane fade" id="step-3">
+                    <p>3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.</p>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,10 @@
+
+//tabs  
 .nav-tabs
+  +r(767)
+    flex-direction: column
   li
     +center
-    width: 150px
     position: relative
     a
       display: block
@@ -9,7 +12,7 @@
       font-weight: bold
       color: $brownish-grey
       text-transform: uppercase
-      padding: 18px 5px
+      padding: 18px 25px
       &:before
         position: absolute
         left: 0
@@ -22,3 +25,92 @@
       &.active
         &:before
           height: 3px
+.tab-pane
+  padding: 25px 40px
+
+
+
+//callaps
+.card
+  button
+    padding: 25px 30px
+    padding-right: 50px
+    width: 100%
+    outline: none !important
+    background: none
+    text-align: left
+    position: relative
+    font-size: 14px
+    font-weight: 600
+    color: $brownish-grey
+    &.collapsed:before
+      content: '+'
+    &:before
+      content: '-'
+      position: absolute
+      right: 25px
+      top: 25px
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      background: $brownish-grey
+      +center
+      color: $white
+  .collapse-content
+    padding: 0px 30px 25px
+
+
+//tabs steps
+.tab-content.block-white
+  height: auto !important
+.nav-step
+  padding: 0 55px
+  display: flex
+  justify-content: space-between
+  &__decor
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 0 90px
+    span
+      width: 42%
+      height: 1px
+      background-color: #cecece
+      position: relative
+      top: -37px
+      display: block
+      +r(550)
+        width: 37%
+  li
+    position: relative
+    a
+      padding: 25px 0
+      display: block
+      font-size: 14px
+      font-weight: bold
+      color: #cecece
+      &:before, &:after
+        border: medium solid transparent
+        content: ""
+        height: 0
+        left: 50%
+        pointer-events: none
+        position: absolute
+        width: 0
+        z-index: 120
+        top: calc(100% + 1px)
+        opacity: 0
+        +tr
+      &:after
+        border-top-color: rgb(245, 245, 245)
+        border-width: 10px
+        margin-left: -10px
+      &:before
+        border-top-color: rgba(0, 0, 0, 0.2)
+        border-width: 11px
+        margin-left: -11px
+      &.active
+        color: $pink-red
+        &:before, &:after
+          opacity: 1
