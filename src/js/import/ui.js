@@ -50,16 +50,18 @@ $('.select-search').selectize({
 });
 
 //label
-$('input').keyup(function() {
+$('input').focus(function() {
+  $(this).next('label').addClass('active');
+  $(this).siblings('span').addClass('active');
+});
+$('input').blur(function() {
   if($(this).val() === '') {
     $(this).next('label').removeClass('active');
+    $(this).siblings('span').removeClass('active');
   } else{
     $(this).next('label').addClass('active');
   }
 });
-
-
-
 
 
 

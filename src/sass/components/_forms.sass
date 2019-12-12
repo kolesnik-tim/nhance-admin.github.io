@@ -1,9 +1,17 @@
 .form
+  &__btn
+    display: flex
+    justify-content: flex-end
+    padding: 25px 30px
+    background-color: #fafafa
+    border: solid 1px #d7d5d5
+    border-top: none
   &__row
     display: flex
     align-items: center
     +r(550)
       flex-direction: column
+      align-items: flex-start
       .form__block
         margin-right: 0px
   &__block
@@ -24,6 +32,20 @@
       right: 0
       top: 7px
       z-index: 1
+    &--select
+      label
+        top: -12px !important
+        font-size: 12px !important
+    span
+      font-size: 14px
+      font-weight: normal
+      color: transparent
+      position: absolute
+      top: 7px
+      +tr
+      left: 0
+      &.active
+        color: #131c2e
   input
     width: 100%
     font-size: 14px
@@ -64,16 +86,19 @@
   &__checkbox
     input
       display: none
-      &:checked + label:before
-        background-color: $greenish-turquoise
-        border-color: $greenish-turquoise
-        background-image: url('../img/check.svg')
+      &:checked + label
+        color: #131c2e
+        &:before
+          background-color: $greenish-turquoise
+          border-color: $greenish-turquoise
+          background-image: url('../img/check.svg')
     label
       font-size: 14px
-      font-weight: normal
+      font-weight: bold
       color: $brownish-grey
       position: relative
       display: flex
+      align-items: center
       cursor: pointer
       &:before
         content: ''
@@ -86,6 +111,8 @@
         border-radius: 5px
         margin-right: 8px
         display: block
+        position: relative
+        top: -2px
         +tr
     &.disabled
       label:before
@@ -95,14 +122,17 @@
   &__radio
     input
       display: none
-      &:checked + label:before
-        border: 5px solid $greenish-turquoise
+      &:checked + label
+        color: #131c2e
+        &:before
+          border: 5px solid $greenish-turquoise
     label
       font-size: 14px
-      font-weight: normal
+      font-weight: bold
       color: $brownish-grey
       position: relative
       display: flex
+      align-items: center
       cursor: pointer
       &:before
         content: ''
@@ -114,6 +144,8 @@
         display: block
         +tr
         background: #fff
+        position: relative
+        top: -2px
     &.disabled
       label:before
         border: 5px solid #bcbcbc

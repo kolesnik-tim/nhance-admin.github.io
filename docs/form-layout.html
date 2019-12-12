@@ -86,147 +86,77 @@
         </div>
         <div class="admin__content">
           <div class="container">
-            <div class="admin__title p-b-50">
-              <h1 class="h1 m-b-35">Form Layouts</h1>
+            <div class="admin__title m-b-45">
+              <h1 class="h1 m-b-25">Form Layouts</h1>
               <p>A button consists of text and/or an image that clearly communicates what action will occur when it is pressed upon.</p>
             </div>
-            <div class="row">
-              <div class="col-lg-6 col-12 m-b-30">
-                <div class="block-white padding-40">
-                  <h5 class="h5 bold m-t-5 m-b-40">Option #ONE</h5>
-                  <form class="form">
-                    <div class="form__row">
-                      <div class="form__block m-b-30"><input type="text" namw="portner" id="portner" require><label class="require" for="portner">Partner</label></div>
-                    </div>
-                    <div class="form__row">
-                      <div class="form__block m-b-30 m-r-15"><input type="text" namw="first-name" id="first-name" require><label class="require" for="first-name">First Name</label></div>
-                      <div class="form__block m-b-30"><input type="text" namw="last-name" id="last-name"><label for="last-name">Last Name</label></div>
-                    </div>
-                    <div class="form__row">
-                      <div class="form__block m-b-30"><select class="select">
-                          <option value="1">City</option>
-                          <option value="2">City1</option>
-                          <option value="3">City2</option>
+            <form class="form row" autocomplete="off">
+              <div class="col-12 m-b-30">
+                <div class="block-white padding-50 h-auto">
+                  <h5 class="fz-14 text-black bold all-caps m-b-30">General</h5>
+                  <div class="row">
+                    <div class="col-lg-4 col-12">
+                      <div class="form__block form__block--select m-b-30 m-r-30"><label class="require">Discount Type</label><select class="select">
+                          <option value="1">Percentage Cart Discount</option>
+                          <option value="2">Percentage Cart Discount1</option>
+                          <option value="3">Percentage Cart Discount2</option>
                         </select></div>
                     </div>
-                    <div class="form__row">
-                      <div class="form__block m-b-30 disabled"><input type="text" namw="portner" id="portner" value="You can put anything here" disabled><label for="portner">Disabled</label></div>
+                    <div class="col-lg-4 col-12">
+                      <div class="form__block m-b-30 m-r-30"><input class="p-l-10" type="text" namw="coupon-value-1" id="coupon-value-1" require><label class="require" for="coupon-value-1">Coupon Value</label><span>₹</span></div>
                     </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-6 col-12 m-b-30">
-                <div class="block-white padding-40">
-                  <h5 class="h5 bold m-t-5 m-b-40">Option #TWO</h5>
-                  <form class="form">
-                    <div class="form__row">
-                      <div class="form__block m-b-30"><input type="text" namw="portner" id="portner-2" require><label class="require" for="portner-2">Partner</label></div>
-                    </div>
-                    <div class="form__row">
-                      <div class="form__block m-b-30 m-r-15"><input type="text" namw="first-name" id="first-name-2" require><label class="require" for="first-name-2">First Name</label></div>
-                      <div class="form__block m-b-30 m-r-15"><input type="text" namw="middle" id="middle"><label for="middle">Middle</label></div>
-                      <div class="form__block m-b-30"><input type="text" namw="last-name" id="last-name-2"><label for="last-name-2">Last Name</label></div>
-                    </div>
-                    <div class="form__row">
-                      <div class="form__block m-b-30"><input type="text" namw="city" id="city"><label for="city">City</label></div>
-                    </div>
-                    <div class="form__row">
-                      <div class="form__block m-b-30 disabled"><input type="text" namw="portner" id="portner-2" value="You can put anything here" disabled><label for="portner-2">Disabled</label></div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-12 m-b-30">
-                <div class="block-white p-l-40 p-r-40 p-t-40">
-                  <div class="row">
-                    <div class="col-md-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Checkbox Controls</h5>
-                      <p>Our very own image-less pure CSS and retina compatible check box. These check boxes are customized and aviable in all boostrap color classes </p>
-                    </div>
-                    <div class="col-md-4 col-12 order-md-4 m-b-40">
-                      <div class="form__checkbox"><input type="checkbox" id="checkbox-1" checked><label for="checkbox-1">Checkbox</label></div>
-                      <div class="form__checkbox"><input type="checkbox" id="checkbox-2"><label for="checkbox-2">Checkbox</label></div>
-                      <div class="form__checkbox disabled"><input type="checkbox" id="checkbox-3" disabled checked><label for="checkbox-3">Checkbox Disabled</label></div>
-                    </div>
-                    <div class="col-md-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Radio Controls</h5>
-                      <p>Pure CSS radio button with a cool animation. These are available in all primary colors in bootstrap</p>
-                    </div>
-                    <div class="col-md-4 col-12 order-md-5 m-b-40">
-                      <div class="form__radio"><input type="radio" name="radio" id="radio-1" checked><label for="radio-1">Radio</label></div>
-                      <div class="form__radio"><input type="radio" name="radio" id="radio-2"><label for="radio-2">Radio</label></div>
-                      <div class="form__radio disabled"><input type="radio" name="radio" id="radio-3" disabled><label for="radio-3">Radio Disabled</label></div>
-                    </div>
-                    <div class="col-md-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Slide Toggle</h5>
-                      <p>A cool iOS slide toggle. These are cutomize for all boostrap colors</p>
-                    </div>
-                    <div class="col-md-4 col-12 order-md-6 m-b-40">
-                      <div class="form__checkbox-ios"><input type="checkbox" name="checkbox-ios" id="checkbox-ios-1" checked><label for="checkbox-ios-1"></label></div>
-                      <div class="form__checkbox-ios disabled"><input type="checkbox" name="checkbox-ios" id="checkbox-ios-2" disabled><label for="checkbox-ios-2"></label></div>
+                    <div class="col-lg-4 col-12">
+                      <div class="form__block m-b-30"><input class="p-l-10" type="text" namw="coupon-value-2" id="coupon-value-2" require><label class="require" for="coupon-value-2">Coupon Value</label><span>₹</span></div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 m-b-30">
-                <form class="form block-white p-l-40 p-r-40 p-t-40">
+                  <h5 class="fz-14 text-black bold all-caps m-b-30">Usage Restriction</h5>
                   <div class="row">
-                    <div class="col-lg-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Simple Dropdowns</h5>
-                      <p>These are highly customizable dropdowns that come with search option for use to search</p>
+                    <div class="col-lg-4 col-12">
+                      <div class="form__block m-b-30 m-r-30"><input class="p-l-10" type="text" namw="minimum-spend-1" id="minimum-spend-1" require><label class="require" for="minimum-spend-1">Minimum Spend</label><span>₹</span>
+                        <p class="fz-12 m-t-10">Set the minimum subtotal needed to use the coupon.</p>
+                      </div>
                     </div>
-                    <div class="col-lg-4 col-12 order-lg-4 m-b-40"><select class="select-search">
-                        <option value="">Search Partner</option>
-                        <option value="1">Partner1</option>
-                        <option value="2">Partner2</option>
-                        <option value="3">Partner3</option>
+                    <div class="col-lg-4 col-12">
+                      <div class="form__block m-b-30"><input class="p-l-10" type="text" namw="maximum-discount-2" id="maximum-discount-2" require><label class="require" for="maximum-discount-2">Maximum Discount</label><span>₹</span>
+                        <p class="fz-12 m-t-10">Cannot be more than the maximum discount amount</p>
+                      </div>
+                    </div>
+                    <div class="col-12 m-b-15">
+                      <div class="form__block form__block--select m-b-30"><label class="require">Exclude Sub Category</label><select class="select-button">
+                          <option value="1">Microwave</option>
+                          <option value="2">Television</option>
+                          <option value="3">Search Partner2</option>
+                        </select></div>
+                    </div>
+                  </div>
+                  <h5 class="fz-14 text-black bold all-caps m-b-25">Schedule</h5>
+                  <div class="form__row m-b-50">
+                    <div class="form__radio m-r-20"><input type="radio" name="send" id="send-1" checked><label for="send-1">Send Now</label></div>
+                    <div class="form__radio"><input type="radio" name="send" id="send-2"><label for="send-2">Send On</label></div>
+                  </div>
+                  <h5 class="fz-14 text-black bold all-caps m-b-30">User Segment</h5>
+                  <div class="row">
+                    <div class="col-lg-4 col-12 m-b-25"><select class="select">
+                        <option value="1">Name</option>
+                        <option value="2">Name1</option>
+                        <option value="3">Name2</option>
                       </select></div>
-                    <div class="col-lg-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Multi Select</h5>
-                      <p>Fancy multiselect option box. Customized for the anypreference</p>
-                    </div>
-                    <div class="col-lg-4 col-12 order-lg-5 m-b-40"><select class="select-button">
-                        <option value="">Search Partner</option>
-                        <option value="1">Search Partner0</option>
-                        <option value="2">Search Partner1</option>
-                        <option value="3">Search Partner2</option>
+                    <div class="col-lg-4 col-12 m-b-25"><select class="select">
+                        <option value="1">Contain</option>
+                        <option value="2">Contain1</option>
+                        <option value="3">Contain2</option>
                       </select></div>
-                    <div class="col-lg-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Advance Settings</h5>
-                      <p>Some advance setting that you can do with this calender, like to start from years an disable sections of dates</p>
+                    <div class="col-lg-4 col-12">
+                      <div class="form__block m-b-30 m-r-30"><input type="text" namw="enter-name" id="enter-name" require><label class="require" for="enter-name">Enter Name</label></div>
                     </div>
-                    <div class="col-lg-4 col-12 order-lg-6 m-b-40">
-                      <div class="datepicker-here"></div>
+                    <div class="col-lg-4 col-12 m-b-20">
+                      <div class="form__block"><input class="datepicker-data" type="text" id="data" data-position="top right" require><label class="require" for="data">Expiry Date</label><img src="img/calendar.png" alt=""></div>
                     </div>
                   </div>
-                </form>
+                </div>
+                <div class="form__btn"><a class="btn btn-secondary" href="#">Back</a><button class="btn btn-primary m-l-10" type="submit">Submit</button></div>
               </div>
-              <div class="col-12 m-b-30">
-                <form class="form block-white p-l-40 p-r-40 p-t-40">
-                  <div class="row">
-                    <div class="col-lg-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Simple Date Picker</h5>
-                      <p>Date picker is powered by boostrap date picker, this is customized in way that it suites our theme and design, Have a look!</p>
-                    </div>
-                    <div class="col-lg-4 col-12 order-lg-4 m-b-40">
-                      <div class="form__block"><input class="datepicker-data" type="text" data-position="top right" placeholder="Choose a date"><img src="img/calendar.png" alt=""></div>
-                    </div>
-                    <div class="col-lg-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Date Range</h5>
-                      <p>Date range can be set by the same plugin, this is use full when taking two dates at a time</p>
-                    </div>
-                    <div class="col-lg-4 col-12 order-lg-5 m-b-40">
-                      <div class="form__block"><input class="datepicker-data" type="text" data-position="top right" data-range="true" data-multiple-dates-separator=" - " placeholder="Choose a date"><img src="img/calendar.png" alt=""></div>
-                    </div>
-                    <div class="col-lg-4 col-12 m-b-30">
-                      <h5 class="h5 bold m-b-15 m-t-5">Advance Settings</h5>
-                      <p>Some advance setting that you can do with this calender, like to start from years an disable sections of dates</p>
-                    </div>
-                    <div class="col-lg-4 col-12 order-lg-6 m-b-40"></div>
-                  </div>
-                </form>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
