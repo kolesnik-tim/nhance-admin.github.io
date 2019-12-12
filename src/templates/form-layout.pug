@@ -1,0 +1,187 @@
+---
+title: Form Layouts
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.p-b-50
+          h1.h1.m-b-35 Form Layouts
+          p A button consists of text and/or an image that clearly communicates what action will occur when it is pressed upon.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        .row
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-40
+              h5.h5.bold.m-t-5.m-b-40 Option #ONE
+              form.form
+                .form__row
+                  .form__block.m-b-30
+                    input(type="text" namw="portner" id="portner" require)
+                    label(for="portner").require Partner
+                .form__row
+                  .form__block.m-b-30.m-r-15
+                    input(type="text" namw="first-name" id="first-name" require)
+                    label(for="first-name").require First Name
+                  .form__block.m-b-30
+                    input(type="text" namw="last-name" id="last-name")
+                    label(for="last-name") Last Name
+                .form__row
+                  .form__block.m-b-30
+                    select.select
+                      option(value="1") City
+                      option(value="2") City1
+                      option(value="3") City2
+                .form__row
+                  .form__block.m-b-30.disabled
+                    input(type="text" namw="portner" id="portner" value="You can put anything here" disabled)
+                    label(for="portner") Disabled
+          .col-lg-6.col-12.m-b-30
+            .block-white.padding-40
+              h5.h5.bold.m-t-5.m-b-40 Option #TWO
+              form.form
+                .form__row
+                  .form__block.m-b-30
+                    input(type="text" namw="portner" id="portner-2" require)
+                    label(for="portner-2").require Partner
+                .form__row
+                  .form__block.m-b-30.m-r-15
+                    input(type="text" namw="first-name" id="first-name-2" require)
+                    label(for="first-name-2").require First Name
+                  .form__block.m-b-30.m-r-15
+                    input(type="text" namw="middle" id="middle")
+                    label(for="middle") Middle
+                  .form__block.m-b-30
+                    input(type="text" namw="last-name" id="last-name-2")
+                    label(for="last-name-2") Last Name
+                .form__row
+                  .form__block.m-b-30
+                    input(type="text" namw="city" id="city")
+                    label(for="city") City
+                .form__row
+                  .form__block.m-b-30.disabled
+                    input(type="text" namw="portner" id="portner-2" value="You can put anything here" disabled)
+                    label(for="portner-2") Disabled
+          .col-12.m-b-30
+            .block-white.p-l-40.p-r-40.p-t-40
+              .row
+                .col-md-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Checkbox Controls
+                  p Our very own image-less pure CSS and retina compatible check box. These check boxes are customized and aviable in all boostrap color classes 
+                .col-md-4.col-12.order-md-4.m-b-40
+                  .form__checkbox
+                    input(type="checkbox" id="checkbox-1" checked)
+                    label(for="checkbox-1") Checkbox
+                  .form__checkbox
+                    input(type="checkbox" id="checkbox-2")
+                    label(for="checkbox-2") Checkbox
+                  .form__checkbox.disabled
+                    input(type="checkbox" id="checkbox-3" disabled checked)
+                    label(for="checkbox-3") Checkbox Disabled
+                .col-md-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Radio Controls
+                  p Pure CSS radio button with a cool animation. These are available in all primary colors in bootstrap
+                .col-md-4.col-12.order-md-5.m-b-40
+                  .form__radio
+                    input(type="radio" name="radio" id="radio-1" checked)
+                    label(for="radio-1") Radio
+                  .form__radio
+                    input(type="radio" name="radio" id="radio-2")
+                    label(for="radio-2") Radio
+                  .form__radio.disabled
+                    input(type="radio" name="radio" id="radio-3" disabled)
+                    label(for="radio-3") Radio Disabled
+                .col-md-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Slide Toggle
+                  p A cool iOS slide toggle. These are cutomize for all boostrap colors
+                .col-md-4.col-12.order-md-6.m-b-40
+                  .form__checkbox-ios
+                    input(type="checkbox" name="checkbox-ios" id="checkbox-ios-1" checked)
+                    label(for="checkbox-ios-1")
+                  .form__checkbox-ios.disabled
+                    input(type="checkbox" name="checkbox-ios" id="checkbox-ios-2" disabled)
+                    label(for="checkbox-ios-2")
+          .col-12.m-b-30
+            form.form.block-white.p-l-40.p-r-40.p-t-40
+              .row
+                .col-lg-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Simple Dropdowns
+                  p These are highly customizable dropdowns that come with search option for use to search
+                .col-lg-4.col-12.order-lg-4.m-b-40
+                  select.select-search
+                    option(value="") Search Partner
+                    option(value="1") Partner1
+                    option(value="2") Partner2
+                    option(value="3") Partner3
+                .col-lg-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Multi Select
+                  p Fancy multiselect option box. Customized for the anypreference
+                .col-lg-4.col-12.order-lg-5.m-b-40
+                  select.select-button
+                    option(value="") Search Partner
+                    option(value="1") Search Partner0
+                    option(value="2") Search Partner1
+                    option(value="3") Search Partner2
+                .col-lg-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Advance Settings
+                  p Some advance setting that you can do with this calender, like to start from years an disable sections of dates
+                .col-lg-4.col-12.order-lg-6.m-b-40
+                  .datepicker-here
+          .col-12.m-b-30
+            form.form.block-white.p-l-40.p-r-40.p-t-40
+              .row
+                .col-lg-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Simple Date Picker
+                  p Date picker is powered by boostrap date picker, this is customized in way that it suites our theme and design, Have a look!
+                .col-lg-4.col-12.order-lg-4.m-b-40
+                  .form__block
+                    input(type="text" data-position="top right" placeholder="Choose a date").datepicker-data
+                    img(src="img/calendar.png", alt="")
+                .col-lg-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Date Range
+                  p Date range can be set by the same plugin, this is use full when taking two dates at a time
+                .col-lg-4.col-12.order-lg-5.m-b-40
+                  .form__block
+                    input(type="text" data-position="top right" data-range="true" data-multiple-dates-separator=" - " placeholder="Choose a date").datepicker-data
+                    img(src="img/calendar.png", alt="")
+                .col-lg-4.col-12.m-b-30
+                  h5.h5.bold.m-b-15.m-t-5 Advance Settings
+                  p Some advance setting that you can do with this calender, like to start from years an disable sections of dates
+                .col-lg-4.col-12.order-lg-6.m-b-40
+                  //- .datepicker-here

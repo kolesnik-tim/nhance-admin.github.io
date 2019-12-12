@@ -1,0 +1,171 @@
+.form
+  &__row
+    display: flex
+    align-items: center
+    +r(550)
+      flex-direction: column
+      .form__block
+        margin-right: 0px
+  &__block
+    position: relative
+    width: 100%
+    &.disabled
+      input
+        font-weight: bold
+        color: rgba(97, 97, 97, 0.56)
+        border-bottom-color: rgba($brownish-grey, 0.56)
+      label
+        font-size: 12px
+        top: -8px
+        color: rgba(97, 97, 97, 0.56)
+    img
+      width: 20px
+      position: absolute
+      right: 0
+      top: 7px
+      z-index: 1
+  input
+    width: 100%
+    font-size: 14px
+    font-weight: normal
+    line-height: 1
+    color: #131c2e
+    padding: 7px 0
+    background: none
+    border-bottom: 1px solid $brownish-grey
+    position: relative
+    z-index: 2
+    &:disabled
+      background: none
+  label
+    font-size: 14px
+    font-weight: normal
+    line-height: 1
+    color: $brownish-grey
+    position: absolute
+    left: 0
+    top: 10px
+    display: flex
+    +tr
+    &.require
+      &:after
+        content: ''
+        width: 5px
+        height: 5px
+        background-color: $pink-red
+        display: block
+        border-radius: 50%
+        position: relative
+        top: 4px
+        margin-left: 5px
+    &.active
+      font-size: 12px
+      top: -8px
+  &__checkbox
+    input
+      display: none
+      &:checked + label:before
+        background-color: $greenish-turquoise
+        border-color: $greenish-turquoise
+        background-image: url('../img/check.svg')
+    label
+      font-size: 14px
+      font-weight: normal
+      color: $brownish-grey
+      position: relative
+      display: flex
+      cursor: pointer
+      &:before
+        content: ''
+        background-size: 60%
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        width: 17px
+        height: 17px
+        border: 1px solid #bcbcbc
+        border-radius: 5px
+        margin-right: 8px
+        display: block
+        +tr
+    &.disabled
+      label:before
+        background-color: #bcbcbc !important
+        border-color: #bcbcbc !important
+        background-image: url('../img/check.svg')
+  &__radio
+    input
+      display: none
+      &:checked + label:before
+        border: 5px solid $greenish-turquoise
+    label
+      font-size: 14px
+      font-weight: normal
+      color: $brownish-grey
+      position: relative
+      display: flex
+      cursor: pointer
+      &:before
+        content: ''
+        width: 17px
+        height: 17px
+        border: 1px solid #bcbcbc
+        border-radius: 50%
+        margin-right: 8px
+        display: block
+        +tr
+        background: #fff
+    &.disabled
+      label:before
+        border: 5px solid #bcbcbc
+  &__checkbox-ios
+    input
+      display: none
+      &:checked + label
+        background-color: $greenish-turquoise
+        &:before
+          left: 15px
+    label
+      width: 35px
+      height: 21px
+      border-radius: 10px
+      background-color: #bcbcbc
+      position: relative
+      +tr
+      cursor: pointer
+      &:before
+        content: ''
+        width: 19px
+        height: 19px
+        background-color: $white
+        position: absolute
+        left: 1px
+        top: 1px
+        border-radius: 50%
+        display: block
+        +tr
+    &.disabled
+      label:before
+        left: 15px
+
+
+
+
+
+
+.datepicker
+  font-family: 'Eina03', sans-serif
+  font-size: 14px
+  color: #000
+.datepicker-here
+  .datepicker
+    border: none
+.datepicker--nav
+  border: none
+.datepicker--nav-title
+  font-weight: bold
+.datepicker--nav-action path
+  stroke: #000
+.datepicker--day-name
+  color: #000
+  font-weight: bold
+  font-size: 12px

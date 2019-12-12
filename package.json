@@ -72,6 +72,7 @@
     "lodash": "^4.17.11"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "bootstrap": "^4.4.1",
     "microplugin": "0.0.3"
   }

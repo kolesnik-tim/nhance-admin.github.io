@@ -22,22 +22,6 @@ $(document).mouseup(function(e) {
 
 
 
-
-
-
-
-//select
-$('.select-button').selectize({
-  plugins: ['remove_button'],
-  persist: false,
-  valueField: 'value',
-  maxItems: null,
-});
-$('.select').selectize();
-
-
-
-
 //.natifications
 $('.natifications a').on('click', function() {
   $(this).closest('.natifications').slideUp();
@@ -49,12 +33,30 @@ $('[data-toggle="tooltip"]').tooltip();
 
 
 
+////forms
+//select
+$('.select-button').selectize({
+  plugins: ['remove_button'],
+  persist: false,
+  valueField: 'value',
+  maxItems: null,
+  sortField: 'text'
+});
+$('.select').selectize({
+  sortField: 'text'
+});
+$('.select-search').selectize({
+  sortField: 'text'
+});
 
-
-
-
-
-
+//label
+$('input').keyup(function() {
+  if($(this).val() === '') {
+    $(this).next('label').removeClass('active');
+  } else{
+    $(this).next('label').addClass('active');
+  }
+});
 
 
 
