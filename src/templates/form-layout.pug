@@ -78,6 +78,20 @@ block content
 
               h5.fz-14.text-black.bold.all-caps.m-b-30 User Segment
               .row
+                .col-12.m-b-15
+                  .form__filters
+                    div.m-r-40.m-b-20
+                      input(type="radio" name="filters" id="filters-1")
+                      label(for="filters-1").m-r-5 All
+                      input(type="radio" name="filters" id="filters-2" checked)
+                      label(for="filters-2") Consumers
+                    div.m-b-20
+                      p.m-r-10 From
+                      input(type="radio" name="filters-2" id="filters-3")
+                      label(for="filters-3").m-r-5 All
+                      input(type="radio" name="filters-2" id="filters-4" checked)
+                      label(for="filters-4").m-r-10 ANY
+                      p.m-t-5.m-b-5 of the following filters
                 .col-lg-4.col-12.m-b-25
                   select.select
                     option(value="1") Name
@@ -89,7 +103,7 @@ block content
                     option(value="2") Contain1
                     option(value="3") Contain2
                 .col-lg-4.col-12
-                  .form__row.m-b-30
+                  .form__row.m-b-30.flex-row.align-items-center
                     .form__block
                       input(type="text" namw="enter-name" id="enter-name" require)
                       label(for="enter-name").require Enter Name

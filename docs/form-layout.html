@@ -29,7 +29,7 @@
               <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
             </svg><img src="https://via.placeholder.com/23x17.png" alt=""></b>
           <ul style="display:none">
-            <li><a href="form_elements.html">Form Elements</a></li>
+            <li><a href="form-elements.html">Form Elements</a></li>
             <li><a href="form-layout.html">Form Layouts</a></li>
             <li><a href="#">Form Wizard</a></li>
           </ul><b class="active">UI Elements<svg class="icon icon-arrow-down ">
@@ -136,6 +136,15 @@
                   </div>
                   <h5 class="fz-14 text-black bold all-caps m-b-30">User Segment</h5>
                   <div class="row">
+                    <div class="col-12 m-b-15">
+                      <div class="form__filters">
+                        <div class="m-r-40 m-b-20"><input type="radio" name="filters" id="filters-1"><label class="m-r-5" for="filters-1">All</label><input type="radio" name="filters" id="filters-2" checked><label for="filters-2">Consumers</label></div>
+                        <div class="m-b-20">
+                          <p class="m-r-10">From</p><input type="radio" name="filters-2" id="filters-3"><label class="m-r-5" for="filters-3">All</label><input type="radio" name="filters-2" id="filters-4" checked><label class="m-r-10" for="filters-4">ANY</label>
+                          <p class="m-t-5 m-b-5">of the following filters</p>
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-lg-4 col-12 m-b-25"><select class="select">
                         <option value="1">Name</option>
                         <option value="2">Name1</option>
@@ -147,7 +156,7 @@
                         <option value="3">Contain2</option>
                       </select></div>
                     <div class="col-lg-4 col-12">
-                      <div class="form__row m-b-30">
+                      <div class="form__row m-b-30 flex-row align-items-center">
                         <div class="form__block"><input type="text" namw="enter-name" id="enter-name" require><label class="require" for="enter-name">Enter Name</label></div><a class="btn btn-primary btn-plus m-l-20" href="#">+</a><a class="btn btn-secondary m-l-5 btn-minus" href="#">-</a>
                       </div>
                     </div>
