@@ -89,9 +89,12 @@ block content
                     option(value="2") Contain1
                     option(value="3") Contain2
                 .col-lg-4.col-12
-                  .form__block.m-b-30.m-r-30
-                    input(type="text" namw="enter-name" id="enter-name" require)
-                    label(for="enter-name").require Enter Name
+                  .form__row.m-b-30
+                    .form__block
+                      input(type="text" namw="enter-name" id="enter-name" require)
+                      label(for="enter-name").require Enter Name
+                    a(href="#").btn.btn-primary.btn-plus.m-l-20 +
+                    a(href="#").btn.btn-secondary.m-l-5.btn-minus -
                 .col-lg-4.col-12.m-b-20
                   .form__block
                     input(type="text" id="data" data-position="top right" require).datepicker-data
