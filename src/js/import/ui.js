@@ -5,7 +5,6 @@ import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
 import botstrap from 'bootstrap/js/dist/modal';
 
 
-
 ////header
 //drop-down open
 $('.drop-down--open').on('click', function(e) {
@@ -62,6 +61,3 @@ $('input').blur(function() {
     $(this).next('label').addClass('active');
   }
 });
-
-
-

@@ -1,0 +1,155 @@
+---
+title: Form Layouts
+---
+extends layouts/_layout
+block content
+  .admin
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content
+      .container
+        .admin__title.m-b-45
+          h1.h1.m-b-25 Form Wizard
+          p A button consists of text and/or an image that clearly communicates what action will occur when it is pressed upon.
+        ul.nav.nav-step
+          li.active
+            a(data-toggle='tab', href='#step-1').active 01
+          li
+            a(data-toggle='tab', href='#step-2') 02
+          li
+            a(data-toggle='tab', href='#step-3') 03
+          li
+            a(data-toggle='tab', href='#step-4') 04
+          li
+            a(data-toggle='tab', href='#step-5') 05
+        .nav-step__decor.step-05
+          span
+          span
+          span
+          span
+        .tab-content(autocomplete="off").form
+          #step-1.tab-pane.fade.show.in.active
+            .row
+              .col-12.m-b-30
+                .block-white.padding-50.h-auto
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 General
+                  .row
+                    .col-lg-4.col-12
+                      .form__block.form__block--select.m-b-30.m-r-30
+                        label.require Discount Type
+                        select.select
+                          option(value="1") Percentage Cart Discount
+                          option(value="2") Percentage Cart Discount1
+                          option(value="3") Percentage Cart Discount2
+                    .col-lg-4.col-12
+                      .form__block.m-b-30.m-r-30
+                        input(type="text" namw="coupon-value-1" id="coupon-value-1" require).p-l-10
+                        label(for="coupon-value-1").require Coupon Value
+                        span ₹
+                    .col-lg-4.col-12
+                      .form__block.m-b-30
+                        input(type="text" namw="coupon-value-2" id="coupon-value-2" require).p-l-10
+                        label(for="coupon-value-2").require Coupon Value
+                        span ₹
+
+
+
+
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 Usage Restriction
+                  .row
+                    .col-lg-4.col-12
+                      .form__block.m-b-30.m-r-30
+                        input(type="text" namw="minimum-spend-1" id="minimum-spend-1" require).p-l-10
+                        label(for="minimum-spend-1").require Minimum Spend
+                        span ₹
+                        p.fz-12.m-t-10 Set the minimum subtotal needed to use the coupon.
+                    .col-lg-4.col-12
+                      .form__block.m-b-30
+                        input(type="text" namw="maximum-discount-2" id="maximum-discount-2" require).p-l-10
+                        label(for="maximum-discount-2").require Maximum Discount
+                        span ₹
+                        p.fz-12.m-t-10 Cannot be more than the maximum discount amount
+                    .col-12.m-b-15
+                      .form__block.form__block--select.m-b-30
+                        label.require Exclude Sub Category
+                        select.select-button
+                          option(value="1") Microwave
+                          option(value="2") Television
+                          option(value="3") Search Partner2
+
+
+
+
+                  h5.fz-14.text-black.bold.all-caps.m-b-25 Schedule
+                  .form__row.m-b-50
+                    .form__radio.m-r-20
+                      input(type="radio" name="send" id="send-1" checked)
+                      label(for="send-1") Send Now
+                    .form__radio
+                      input(type="radio" name="send" id="send-2")
+                      label(for="send-2") Send On
+
+            
+                  
+
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 User Segment
+                  .row
+                    .col-12.m-b-15
+                      .form__filters
+                        div.m-r-40.m-b-20
+                          input(type="radio" name="filters" id="filters-1")
+                          label(for="filters-1").m-r-5 All
+                          input(type="radio" name="filters" id="filters-2" checked)
+                          label(for="filters-2") Consumers
+                        div.m-b-20
+                          p.m-r-10 From
+                          input(type="radio" name="filters-2" id="filters-3")
+                          label(for="filters-3").m-r-5 All
+                          input(type="radio" name="filters-2" id="filters-4" checked)
+                          label(for="filters-4").m-r-10 ANY
+                          p.m-t-5.m-b-5 of the following filters
+                    .col-lg-4.col-12.m-b-25
+                      select.select
+                        option(value="1") Name
+                        option(value="2") Name1
+                        option(value="3") Name2
+                    .col-lg-4.col-12.m-b-25
+                      select.select
+                        option(value="1") Contain
+                        option(value="2") Contain1
+                        option(value="3") Contain2
+                    .col-lg-4.col-12
+                      .form__row.m-b-30.flex-row.align-items-center
+                        .form__block
+                          input(type="text" namw="enter-name" id="enter-name" require)
+                          label(for="enter-name").require Enter Name
+                        a(href="#").btn.btn-primary.btn-plus.m-l-20 +
+                        a(href="#").btn.btn-secondary.m-l-5.btn-minus -
+                    .col-lg-4.col-12.m-b-20
+                      .form__block
+                        input(type="text" id="data" data-position="top right" require).datepicker-data
+                        label(for="data").require Expiry Date
+                        img(src="img/calendar.png", alt="")
+                .form__btn
+                  a(href="#").btn.btn-secondary Back
+                  button(type="submit").btn.btn-primary.m-l-10 Submit
+          #step-2.tab-pane.fade
+            .row
+              .col-12.m-b-30
+                .block-white.padding-50.h-auto
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 General
+          #step-3.tab-pane.fade
+            .row
+              .col-12.m-b-30
+                .block-white.padding-50.h-auto
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 General
+          #step-4.tab-pane.fade
+            .row
+              .col-12.m-b-30
+                .block-white.padding-50.h-auto
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 General
+          #step-5.tab-pane.fade
+            .row
+              .col-12.m-b-30
+                .block-white.padding-50.h-auto
+                  h5.fz-14.text-black.bold.all-caps.m-b-30 General

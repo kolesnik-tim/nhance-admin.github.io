@@ -1,0 +1,100 @@
+.dataTables_length, .dataTables_filter
+  display: none
+
+.table
+  border-radius: 5px
+  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.1)
+  background-color: $white
+  overflow: auto
+  td
+    font-size: 14px
+    color: #212121
+  td, th
+    padding: 23px 20px
+  table
+    min-width: 1000px
+  thead
+    box-shadow: 0px 0.5px 3px 0 rgba(0, 0, 0, 0.1)
+    th
+      outline: none !important
+      border-bottom: none
+      border-top: none
+      i
+        margin-right: 10px
+      input
+        background: none
+        font-family: 'Eina03'
+        font-size: 12px
+        font-weight: bold
+        color: #131c2e
+        width: calc(100% - 25px)
+        +placeholder
+          color: #131c2e
+          text-transform: uppercase
+      &:first-child
+        width: 70px !important
+        i
+          margin-right: 0
+          margin-left: 5px
+      &:last-child
+        width: 200px !important
+  tbody
+    td
+      border-bottom: 1px solid #bdbdbd
+      border-top: none
+      a
+        float: right
+        width: 22px
+        height: 17px
+        display: flex
+        align-items: center
+        position: relative
+        span
+          background: $brown-grey
+          width: 6px
+          height: 6px
+          border-radius: 50%
+          display: block
+          &:before, &:after
+            content: ''
+            background: $brown-grey
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            display: block
+            position: absolute
+          &:before
+            left: 8px
+          &:after
+            right: 0
+  .dataTables_info
+    float: left
+    padding: 30px 25px
+    +r(767)
+      float: none
+      +center
+      padding: 20px 10px
+  .dataTables_paginate
+    float: right
+    padding: 30px 20px
+    +r(767)
+      float: none
+      +center
+      padding: 0px 10px
+    a
+      padding: 25px 15px
+      cursor: pointer
+      color: rgba(#212121, 0.4)
+      &.current, &.next, &.previous
+        color: #212121
+        font-weight: 500
+        i
+          font-weight: 900
+      &.disabled
+        color: rgba(#212121, 0.4)
+        cursor: default
+
+
+.table__no-button
+  .dataTables_info, .dataTables_paginate
+    display: none
