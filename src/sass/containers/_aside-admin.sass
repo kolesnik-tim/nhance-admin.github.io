@@ -56,18 +56,20 @@
     justify-content: space-between
     position: relative
     cursor: pointer
-    svg
+    i.icon-arrow-left
+      font-size: 10px
+      color: $white
+      +tr
       width: 10px
       height: 10px
-      fill: $white
-      +tr
+      display: block
     img
       position: absolute
       right: -45px
       top: -4px
     &.active
-      svg
-        transform: rotate(90deg)
+      i.icon-arrow-left
+        transform: rotate(-90deg)
   a
     font-size: 14px
     font-weight: normal

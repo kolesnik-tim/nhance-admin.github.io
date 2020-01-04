@@ -10,12 +10,15 @@
   padding: 13px 30px
   border-radius: 20px
   font-size: 14px
-  svg
-    fill: #dd312c
-    margin-right: 7px
-    margin-left: -10px
-    width: 15px
-    height: 15px
+  display: inline-flex
+  align-items: center
+  i
+    color: #dd312c
+    position: relative
+    left: -10px
+    display: inline-block
+    font-size: 18px
+    line-height: 1
   &-primary
     color: $white
     background: $dark
@@ -29,7 +32,7 @@
 
   &-secondary
     border: solid 1px #181c29
-    background-color: none
+    background: none !important
     color: #181c29
     &:hover, &.hover
       background-color: $dark !important

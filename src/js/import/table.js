@@ -19,8 +19,8 @@ $(document).ready(function() {
     'language': { 
       'info': '<p style="color: #212121;">Showing <strong>_START_</strong> to <strong>_END_</strong> of <strong>_TOTAL_</strong> entries</p>',
       'paginate': {
-        'next': '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-        'previous': '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+        'next': '<i class="icon-arrow-right"></i>',
+        'previous': '<i class="icon-arrow-left"></i>'
       },
     }
   });
@@ -57,8 +57,8 @@ $(document).ready(function() {
     'language': { 
       'info': '<p style="color: #212121;">Showing <strong>_START_</strong> to <strong>_END_</strong> of <strong>_TOTAL_</strong> entries</p>',
       'paginate': {
-        'next': '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-        'previous': '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+        'next': '<i class="icon-arrow-right"></i>',
+        'previous': '<i class="icon-arrow-left"></i>'
       },
     }
   });

@@ -82,10 +82,9 @@
       position: relative
       width: 20px
       height: 20px
-      svg
-        fill: $dark
-        width: 22px
-        height: 22px
+      i
+        color: $dark
+        font-size: 22px
         position: relative
         +tr
       &:before
@@ -101,27 +100,27 @@
     width: 20px
     height: 20px
     margin-right: 20px
-    svg
-      width: 20px
-      height: 20px
-      fill: $dark
+    i
+      font-size: 20px
+      color: $dark
   &__user
     cursor: pointer
     position: relative
     &:hover
       span
         color: $pink-red
-        svg
-          fill: $pink-red
+        i
+          color: $pink-red
     span
       font-size: 12px
       font-weight: 600
       color: $dark
       +tr
-      svg
-        width: 12px
-        height: 8px
-        margin-left: 5px
+      i
+        font-size: 10px
+        margin-left: 9px
+        transform: rotate(90deg)
+        display: inline-block
         +tr
         margin-bottom: 3px
     ul
@@ -146,16 +145,16 @@
         display: flex
         align-items: center
         padding: 14px 25px
-        svg
-          fill: $brownish-grey
+        i .path2:before
+          color: $brownish-grey
           +tr
+          margin-left: 0
+          font-size: 20px
         &:hover
           color: $black
           background: none
-          svg
-            fill: $black
-        svg
-          margin-right: 10px
+          i
+            color: $black
       li:last-child
         background: #f8f8f8
         border-bottom-right-radius: 10px

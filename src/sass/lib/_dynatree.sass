@@ -66,10 +66,10 @@ span
     display: inline-block
 
     // Required to make a span sizeable
-    vertical-align: top
+    // vertical-align: top
     background-repeat: no-repeat
     background-position: left
-    background-image: url("../img/icons.gif")
+    // background-image: url("../img/icons.gif")
     background-position: 0 0
 
 #dynatree-drop-marker
@@ -84,7 +84,7 @@ span
   vertical-align: top
   background-repeat: no-repeat
   background-position: left
-  background-image: url("../img/icons.gif")
+  // background-image: url("../img/icons.gif")
   background-position: 0 0
 
 //* Used by 'icon' node option:
@@ -106,7 +106,16 @@ span
   &.dynatree-expander
     background-position: 0px -80px
     cursor: pointer
-
+    &:before
+      content: "\e90c"
+      font-family: 'icomoon'
+      color: #cbcbcb
+      font-size: 9px
+      position: relative
+      left: 4px
+      top: -3px
+      display: block
+      +tr
 //******************************************************************************
 //  * Expander icon
 //  * Note: IE6 doesn't correctly evaluate multiples class names,
@@ -125,12 +134,24 @@ span
 
 .dynatree-exp-cdl span.dynatree-expander
   background-position: -64px -96px
+  &:before
+    transform: rotate(90deg)
+    left: -3px
+    top: 3px
 
 .dynatree-exp-e span.dynatree-expander, .dynatree-exp-ed span.dynatree-expander
   background-position: -32px -80px
+  &:before
+    transform: rotate(90deg)
+    left: -3px
+    top: 3px
 
 .dynatree-exp-el span.dynatree-expander, .dynatree-exp-edl span.dynatree-expander
   background-position: -32px -96px
+  &:before
+    transform: rotate(90deg)
+    left: -3px
+    top: 3px
 
 .dynatree-loading span.dynatree-expander
   background-position: 0 0
@@ -138,10 +159,24 @@ span
 
 // //******************************************************************************
 //  * Checkbox icon
-
+span.dynatree-icon:before
+  content: "\e96b"
+  font-family: 'icomoon'
+  color: #9e9e9e
+  font-size: 14px
 span.dynatree-checkbox
   margin-left: 3px
-  background-position: 0px -32px
+  // background-position: 0px -32px
+  background: none
+  &:before
+    border: 1px solid #cbcbcb
+    width: 10px
+    height: 10px
+    content: ''
+    display: block
+    border-radius: 2px
+    position: relative
+    top: 4px
 
   &:hover
     background-position: -16px -32px
@@ -154,7 +189,9 @@ span.dynatree-checkbox
 
 .dynatree-selected span.dynatree-checkbox
   background-position: -32px -32px
-
+  &:before
+    background: #ff0057
+    border-color: #ff0057
   &:hover
     background-position: -48px -32px
 
@@ -166,7 +203,6 @@ span.dynatree-checkbox
 span.dynatree-radio
   margin-left: 3px
   background-position: 0px -48px
-
   &:hover
     background-position: -16px -48px
 
@@ -195,11 +231,21 @@ span.dynatree-icon
   margin-left: 3px
   background-position: 0px 0px
 
-.dynatree-ico-cf span.dynatree-icon
-  background-position: 0px -16px
+.dynatree-ico-cf span.dynatree-icon:before
+  font-family: 'icomoon'
+  content: "\e934"
+  color: #ff0057
+  position: relative
+  top: -1px
 
 .dynatree-ico-ef span.dynatree-icon
-  background-position: -64px -16px
+  // background-position: -64px -16px
+  &:before
+    font-family: 'icomoon'
+    content: "\e934"
+    color: #ff0057
+    position: relative
+    top: -1px
 
 // Status node icons
 
