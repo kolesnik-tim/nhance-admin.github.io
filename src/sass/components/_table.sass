@@ -5,12 +5,14 @@
   border-radius: 5px
   box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.1)
   background-color: $white
-  overflow: auto
+  +r(1350)
+    overflow: auto
   td
     font-size: 14px
     color: #212121
   td, th
     padding: 23px 20px
+    position: relative
   table
     min-width: 1000px
   thead
@@ -67,6 +69,73 @@
             left: 8px
           &:after
             right: 0
+      ul
+        display: none
+        position: absolute
+        right: -30px
+        top: 70%
+        width: 105px
+        border-radius: 7px
+        box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.24)
+        background-color: $white
+        z-index: 10
+        +r(1350)
+          right: 0
+        &:before
+          content: ''
+          position: absolute
+          left: calc(43% - 1px)
+          transform: translate(-50%) rotate(45deg)
+          background: $white
+          width: 10px
+          height: 10px
+          top: -5px
+          box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.24)
+          z-index: 3
+          +r(1350)
+            left: 70%
+        li
+          position: relative
+          z-index: 5
+          background: $white
+          border-radius: 10px
+          &:first-child
+            padding-top: 5px
+            i
+              background: none
+              font-size: 14px
+              color: $pink-red
+          &:last-child
+            padding-bottom: 5px
+        a
+          padding: 2px 13px
+          display: flex
+          float: none
+          width: auto
+          height: auto
+          align-items: center
+          font-size: 12px
+          font-weight: 600
+          font-style: normal
+          font-stretch: normal
+          line-height: 2.08
+          letter-spacing: normal
+          text-align: left
+          color: #212121
+          cursor: pointer
+          &:hover
+            background: #eee
+          i
+            +center
+            width: 14px
+            height: 14px
+            color: $white
+            border-radius: 100%
+            border: 1px solid $pink-red
+            font-size: 6px
+            margin-right: 8px
+            +tr
+            background: $pink-red
   .dataTables_info
     float: left
     padding: 30px 25px

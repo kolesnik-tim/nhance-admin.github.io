@@ -73,3 +73,22 @@ $(document).ready(function() {
     } );
   } );
 });
+
+
+
+
+
+//table
+$('.table__more').on('click', function(event) {
+  event.preventDefault();
+  $(this).next('ul').fadeToggle();
+});
+
+
+$(document).mouseup(function(e) {
+  var div = $('.table__dropdown');
+  if (!div.is(e.target)
+      && div.has(e.target).length === 0) {
+    div.fadeOut();
+  }
+});
