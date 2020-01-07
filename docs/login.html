@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>All pages</title>
+    <title>Login</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -15,25 +15,23 @@
       <!--BEGIN header-->
       <header class="header"></header>
       <!--END header-->
-      <div class="pages">
-        <h1>All pages</h1>
-        <ul>
-          <li><a href="typography.html">Typography</a></li>
-          <li><a href="404.html">404</a></li>
-          <li><a href="colors.html">Colors</a></li>
-          <li><a href="button.html">Button</a></li>
-          <li><a href="natifications.html">Natifications</a></li>
-          <li><a href="linear-progress.html">Linear Progress</a></li>
-          <li><a href="modals.html">Modals</a></li>
-          <li><a href="tabs-accordian.html">Tabs accordian</a></li>
-          <li><a href="tree-view.html">Tree View</a></li>
-          <li><a href="form-elements.html">Form Elements</a></li>
-          <li><a href="form-layout.html">Form Layouts</a></li>
-          <li><a href="form-wizard.html">Form Wizard</a></li>
-          <li><a href="basic-tables.html">Basic Tables</a></li>
-          <li><a href="icons.html">Icons</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
+      <div class="login">
+        <div class="container">
+          <div class="login__row">
+            <form class="login__form m-r-50 padding-40"><i class="icon-nn-pink-nhance-icon_1 m-b-30 text-center"></i>
+              <h4 class="h4 m-b-45 text-center">Sign into your account</h4>
+              <div class="form__block m-b-35"><input type="email" name="email" id="email" require><label class="require" for="email">Email ID</label></div>
+              <div class="form__block m-b-10"><input type="password" name="password" id="password" require><label class="require" for="password">Password</label></div><a class="forgot-password m-b-35" href="#">Forgot Password?</a><a class="btn btn-primary all-caps" href="#">sign in</a>
+            </form>
+            <div class="login__info">
+              <h5 class="all-caps bold p-b-15 m-b-15">What’s new</h5>
+              <div class="login__info__row"><strong class="fz-14 fw-semi-bold m-b-20"><img class="m-r-10" src="https://via.placeholder.com/29x26.png" alt="">In-App Notification</strong>
+                <p class="m-b-25">Deliver rich contextual messages for better conversion.</p><strong class="fz-14 fw-semi-bold m-b-20"><img class="m-r-10" src="https://via.placeholder.com/29x26.png" alt="">Geofence Notification</strong>
+                <p>Location & periphery based smart alerts</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--BEGIN pop-up-->
       <div class="modal fade slide-up" id="slide-up">

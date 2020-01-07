@@ -73,16 +73,20 @@
 
 
 
+//icon fonts
 
 
-//icon font
+
+
+
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ek3fs1');
-  src:  url('../fonts/icomoon.eot?ek3fs1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ek3fs1') format('truetype'),
-    url('../fonts/icomoon.woff?ek3fs1') format('woff'),
-    url('../fonts/icomoon.svg?ek3fs1#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?wayhvb');
+  src:  url('../fonts/icomoon.eot?wayhvb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wayhvb') format('truetype'),
+    url('../fonts/icomoon.woff?wayhvb') format('woff'),
+    url('../fonts/icomoon.svg?wayhvb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -102,594 +106,838 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-add-filled:before {
+.icon-nn-white-thin-arrow-down:before {
+  content: "\e9ac";
+  color: #fff;
+}
+.icon-nn-white-thin-arrow-right:before {
+  content: "\e9ad";
+  color: #fff;
+}
+.icon-nn-dark-search:before {
+  content: "\e9a9";
+}
+.icon-nn-dark-sort:before {
+  content: "\e9aa";
+}
+.icon-nn-pink-nhance-icon_1:before {
+  content: "\e9ab";
+  color: #ff0053;
+}
+.icon-nn-add-filled:before {
   content: "\e900";
 }
-.icon-add:before {
+.icon-nn-add-outline:before {
   content: "\e901";
 }
-.icon-api .path1:before {
+.icon-nn-calendar-clock .path1:before {
   content: "\e902";
-  color: rgb(39, 47, 72);
+  color: rgb(19, 28, 47);
 }
-.icon-api .path2:before {
+.icon-nn-calendar-clock .path2:before {
   content: "\e903";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(234, 19, 92);
 }
-.icon-api .path3:before {
+.icon-nn-calendar-clock .path3:before {
   content: "\e904";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-api .path4:before {
+.icon-nn-calendar-clock .path4:before {
   content: "\e905";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-app-store .path1:before {
+.icon-nn-calendar-clock .path5:before {
   content: "\e906";
-  color: rgb(39, 47, 72);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-app-store .path2:before {
+.icon-nn-calendar-clock .path6:before {
   content: "\e907";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-app-store .path3:before {
+.icon-nn-calendar-clock .path7:before {
   content: "\e908";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-app-store .path4:before {
+.icon-nn-calendar-clock .path8:before {
   content: "\e909";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-app-store .path5:before {
+.icon-nn-calendar-clock .path9:before {
   content: "\e90a";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-arrow-filled-bottom:before {
+.icon-nn-calendar-clock .path10:before {
   content: "\e90b";
-  color: #cbcbcb;
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-arrow-filled-right:before {
+.icon-nn-calendar-clock .path11:before {
   content: "\e90c";
-  color: #cbcbcb;
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-arrow-left:before {
+.icon-nn-calendar-clock .path12:before {
   content: "\e90d";
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-arrow-right:before {
+.icon-nn-calendar-clock .path13:before {
   content: "\e90e";
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-billing .path1:before {
+.icon-nn-calendar-clock .path14:before {
   content: "\e90f";
-  color: rgb(255, 0, 87);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-billing .path2:before {
+.icon-nn-calendar-clock .path15:before {
   content: "\e910";
-  // margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path1:before {
+.icon-nn-calendar-clock .path16:before {
   content: "\e911";
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path2:before {
+.icon-nn-calendar-clock .path17:before {
   content: "\e912";
-  // margin-left: -1em;
-  color: rgb(255, 0, 87);
+  margin-left: -1.005859375em;
+  color: rgb(244, 0, 88);
 }
-.icon-calendar .path3:before {
+.icon-nn-calendar-clock .path18:before {
   content: "\e913";
-  // margin-left: -1em;
-  color: rgb(255, 0, 87);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path4:before {
+.icon-nn-calendar-clock .path19:before {
   content: "\e914";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path5:before {
+.icon-nn-calendar-clock .path20:before {
   content: "\e915";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path6:before {
+.icon-nn-calendar-clock .path21:before {
   content: "\e916";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path7:before {
+.icon-nn-calendar-clock .path22:before {
   content: "\e917";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path8:before {
+.icon-nn-calendar-clock .path23:before {
   content: "\e918";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path9:before {
+.icon-nn-calendar-clock .path24:before {
   content: "\e919";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
+  margin-left: -1.005859375em;
+  color: rgb(19, 28, 47);
 }
-.icon-calendar .path10:before {
+.icon-nn-calendar{
+  position: relative;
+}
+.icon-nn-calendar .path1:before {
   content: "\e91a";
-  // margin-left: -1em;
   color: rgb(18, 27, 46);
 }
-.icon-calendar .path11:before {
+.icon-nn-calendar .path2:before {
   content: "\e91b";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
-}
-.icon-calendar .path12:before {
-  content: "\e91c";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
-}
-.icon-calendar .path13:before {
-  content: "\e91d";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
-}
-.icon-calendar .path14:before {
-  content: "\e91e";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
-}
-.icon-calendar .path15:before {
-  content: "\e91f";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
-}
-.icon-calendar .path16:before {
-  content: "\e920";
-  // margin-left: -1em;
-  color: rgb(18, 27, 46);
-}
-.icon-campaign .path1:before {
-  content: "\e921";
-  color: rgb(39, 47, 72);
-}
-.icon-campaign .path2:before {
-  content: "\e922";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-channel .path1:before {
-  content: "\e923";
-  color: rgb(39, 47, 72);
-}
-.icon-channel .path2:before {
-  content: "\e924";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-channel .path3:before {
-  content: "\e925";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-channel .path4:before {
-  content: "\e926";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-channel .path5:before {
-  content: "\e927";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-channel .path6:before {
-  content: "\e928";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-channel .path7:before {
-  content: "\e929";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-}
-.icon-close-filled:before {
-  content: "\e92a";
-  color: #cbcbcb;
-}
-.icon-close-thin:before {
-  content: "\e92b";
-}
-.icon-configure .path1:before {
-  content: "\e92c";
+  position: absolute;
+  top: 1px;
+  left: 1px;
   color: rgb(255, 0, 87);
 }
-.icon-configure .path2:before {
+.icon-nn-calendar .path3:before {
+  content: "\e91c";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(255, 0, 87);
+}
+.icon-nn-calendar .path4:before {
+  content: "\e91d";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path5:before {
+  content: "\e91e";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path6:before {
+  content: "\e91f";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path7:before {
+  content: "\e920";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path8:before {
+  content: "\e921";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path9:before {
+  content: "\e922";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path10:before {
+  content: "\e923";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path11:before {
+  content: "\e924";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path12:before {
+  content: "\e925";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path13:before {
+  content: "\e926";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path14:before {
+  content: "\e927";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path15:before {
+  content: "\e928";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-calendar .path16:before {
+  content: "\e929";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-dark-left-panel-api .path1:before {
+  content: "\e92a";
+  color: rgb(39, 47, 72);
+}
+.icon-nn-dark-left-panel-api .path2:before {
+  content: "\e92b";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-dark-left-panel-api .path3:before {
+  content: "\e92c";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-dark-left-panel-api .path4:before {
   content: "\e92d";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-dashboard .path1:before {
+.icon-nn-dark-left-panel-app-store .path1:before {
   content: "\e92e";
-  color: rgb(255, 0, 87);
+  color: rgb(39, 47, 72);
 }
-.icon-dashboard .path2:before {
+.icon-nn-dark-left-panel-app-store .path2:before {
   content: "\e92f";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-delete:before {
+.icon-nn-dark-left-panel-app-store .path3:before {
   content: "\e930";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-dx-card .path1:before {
+.icon-nn-dark-left-panel-app-store .path4:before {
   content: "\e931";
-  color: rgb(39, 47, 72);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-dx-card .path2:before {
+.icon-nn-dark-left-panel-app-store .path5:before {
   content: "\e932";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-edit:before {
+.icon-nn-dark-left-panel-campaign .path1:before {
   content: "\e933";
+  color: rgb(39, 47, 72);
 }
-.icon-folder:before {
+.icon-nn-dark-left-panel-campaign .path2:before {
   content: "\e934";
-  color: #ff0057;
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-help .path1:before {
+.icon-nn-dark-left-panel-channel .path1:before {
   content: "\e935";
   color: rgb(39, 47, 72);
 }
-.icon-help .path2:before {
+.icon-nn-dark-left-panel-channel .path2:before {
   content: "\e936";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-help .path3:before {
+.icon-nn-dark-left-panel-channel .path3:before {
   content: "\e937";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-integrations .path1:before {
+.icon-nn-dark-left-panel-channel .path4:before {
   content: "\e938";
-  color: rgb(255, 0, 87);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-integrations .path2:before {
+.icon-nn-dark-left-panel-channel .path5:before {
   content: "\e939";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-integrations .path3:before {
+.icon-nn-dark-left-panel-channel .path6:before {
   content: "\e93a";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-integrations .path4:before {
+.icon-nn-dark-left-panel-channel .path7:before {
   content: "\e93b";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-manage .path1:before {
+.icon-nn-dark-left-panel-dx-card .path1:before {
   content: "\e93c";
-  color: rgb(255, 0, 87);
+  color: rgb(39, 47, 72);
 }
-.icon-manage .path2:before {
+.icon-nn-dark-left-panel-dx-card .path2:before {
   content: "\e93d";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-manage .path3:before {
+.icon-nn-dark-left-panel-help .path1:before {
   content: "\e93e";
+  color: rgb(39, 47, 72);
+}
+.icon-nn-dark-left-panel-help .path2:before {
+  content: "\e93f";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-notification-filled .path1:before {
-  content: "\e93f";
-  color: rgb(19, 28, 47);
-}
-.icon-notification-filled .path2:before {
+.icon-nn-dark-left-panel-help .path3:before {
   content: "\e940";
-  margin-left: -0.91015625em;
-  color: rgb(255, 0, 87);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-notification:before {
+.icon-nn-dark-left-panel-nhance-icon .path1:before {
   content: "\e941";
-}
-.icon-product-approval .path1:before {
-  content: "\e942";
   color: rgb(39, 47, 72);
 }
-.icon-product-approval .path2:before {
+.icon-nn-dark-left-panel-nhance-icon .path2:before {
+  content: "\e942";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-dark-left-panel-nhance-icon .path3:before {
   content: "\e943";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-product-recommendation .path1:before {
+.icon-nn-dark-left-panel-nhance-icon .path4:before {
   content: "\e944";
-  color: rgb(39, 47, 72);
-}
-.icon-product-recommendation .path2:before {
-  content: "\e945";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
-  opacity: 0.5;
 }
-.icon-product-recommendation .path3:before {
+.icon-nn-dark-left-panel-partner .path1:before {
+  content: "\e945";
+  color: rgb(39, 47, 72);
+}
+.icon-nn-dark-left-panel-partner .path2:before {
   content: "\e946";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
-  opacity: 0.5;
 }
-.icon-product-recommendation .path4:before {
+.icon-nn-dark-left-panel-partner .path3:before {
   content: "\e947";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
-  opacity: 0.5;
 }
-.icon-product-recommendation .path5:before {
+.icon-nn-dark-left-panel-partner .path4:before {
   content: "\e948";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
-  opacity: 0.5;
 }
-.icon-product-recommendation .path6:before {
+.icon-nn-dark-left-panel-product-approval .path1:before {
   content: "\e949";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
-  opacity: 0.5;
+  color: rgb(39, 47, 72);
 }
-.icon-product-recommendation .path7:before {
+.icon-nn-dark-left-panel-product-approval .path2:before {
   content: "\e94a";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-product .path1:before {
+.icon-nn-dark-left-panel-product .path1:before {
   content: "\e94b";
   color: rgb(39, 47, 72);
 }
-.icon-product .path2:before {
+.icon-nn-dark-left-panel-product .path2:before {
   content: "\e94c";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-product .path3:before {
+.icon-nn-dark-left-panel-product .path3:before {
   content: "\e94d";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-product .path4:before {
+.icon-nn-dark-left-panel-product .path4:before {
   content: "\e94e";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-product .path5:before {
+.icon-nn-dark-left-panel-product .path5:before {
   content: "\e94f";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-purchase .path1:before {
+.icon-nn-dark-left-panel-purchase .path1:before {
   content: "\e950";
   color: rgb(39, 47, 72);
 }
-.icon-purchase .path2:before {
+.icon-nn-dark-left-panel-purchase .path2:before {
   content: "\e951";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-purchase .path3:before {
+.icon-nn-dark-left-panel-purchase .path3:before {
   content: "\e952";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-purchase .path4:before {
+.icon-nn-dark-left-panel-purchase .path4:before {
   content: "\e953";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-remove-filled:before {
+.icon-nn-dark-left-panel-recommendation .path1:before {
   content: "\e954";
+  color: rgb(39, 47, 72);
 }
-.icon-remove:before {
+.icon-nn-dark-left-panel-recommendation .path2:before {
   content: "\e955";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
-.icon-reports .path1:before {
+.icon-nn-dark-left-panel-recommendation .path3:before {
   content: "\e956";
-  color: rgb(255, 0, 87);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
-.icon-reports .path2:before {
+.icon-nn-dark-left-panel-recommendation .path4:before {
   content: "\e957";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
-.icon-reports .path3:before {
+.icon-nn-dark-left-panel-recommendation .path5:before {
   content: "\e958";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
-.icon-service-offering .path1:before {
+.icon-nn-dark-left-panel-recommendation .path6:before {
   content: "\e959";
-  color: rgb(39, 47, 72);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
 }
-.icon-service-offering .path2:before {
+.icon-nn-dark-left-panel-recommendation .path7:before {
   content: "\e95a";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-service-offering .path3:before {
+.icon-nn-dark-left-panel-service-request .path1:before {
   content: "\e95b";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: rgb(39, 47, 72);
 }
-.icon-service-offering .path4:before {
+.icon-nn-dark-left-panel-service-request .path2:before {
   content: "\e95c";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-service-request .path1:before {
+.icon-nn-dark-left-panel-service-request .path3:before {
   content: "\e95d";
-  color: rgb(39, 47, 72);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-service-request .path2:before {
+.icon-nn-dark-left-panel-service-request .path4:before {
   content: "\e95e";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-service-request .path3:before {
+.icon-nn-dark-left-panel-service-request .path5:before {
   content: "\e95f";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-service-request .path4:before {
+.icon-nn-dark-left-panel-tally .path1:before {
   content: "\e960";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: rgb(39, 47, 72);
 }
-.icon-service-request .path5:before {
+.icon-nn-dark-left-panel-tally .path2:before {
   content: "\e961";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-settings .path1:before {
+.icon-nn-dark-left-panel-tally .path3:before {
   content: "\e962";
-  color: rgb(255, 0, 87);
-}
-.icon-settings .path2:before {
-  content: "\e963";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-settings .path3:before {
+.icon-nn-dark-left-panel-unique .path1:before {
+  content: "\e963";
+  color: rgb(39, 47, 72);
+}
+.icon-nn-dark-left-panel-unique .path2:before {
   content: "\e964";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-settings .path4:before {
+.icon-nn-dark-left-panel-unique .path3:before {
   content: "\e965";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-tally .path1:before {
+.icon-nn-dark-left-panel-unique .path4:before {
   content: "\e966";
-  color: rgb(39, 47, 72);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-tally .path2:before {
+.icon-nn-dark-left-panel-unique .path5:before {
   content: "\e967";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-tally .path3:before {
+.icon-nn-dark-left-panel-unique .path6:before {
   content: "\e968";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-tick-filled:before {
+.icon-nn-dark-left-panel-unique .path7:before {
   content: "\e969";
-  color: #00f7b3;
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-tick:before {
+.icon-nn-dark-left-panel-unique .path8:before {
   content: "\e96a";
-  color: #00f7b3;
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-tree-document:before {
+.icon-nn-dark-left-panel-unique .path9:before {
   content: "\e96b";
-  color: #9e9e9e;
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path1:before {
+.icon-nn-dark-left-panel-unique .path10:before {
   content: "\e96c";
-  color: rgb(39, 47, 72);
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path2:before {
+.icon-nn-dark-left-panel-unique .path11:before {
   content: "\e96d";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path3:before {
+.icon-nn-dark-left-panel-unique .path12:before {
   content: "\e96e";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path4:before {
+.icon-nn-dark-left-panel-unique .path13:before {
   content: "\e96f";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path5:before {
+.icon-nn-dark-left-panel-unique .path14:before {
   content: "\e970";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path6:before {
+.icon-nn-dark-left-panel-unique .path15:before {
   content: "\e971";
   margin-left: -1.1943359375em;
   color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path7:before {
+.icon-nn-document:before {
   content: "\e972";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: #9e9e9e;
 }
-.icon-uniquecode .path8:before {
+.icon-nn-filled-arrow-down:before {
   content: "\e973";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: #cbcbcb;
 }
-.icon-uniquecode .path9:before {
+.icon-nn-filled-arrow-right:before {
   content: "\e974";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: #cbcbcb;
 }
-.icon-uniquecode .path10:before {
+.icon-nn-filled-dark-delete:before {
   content: "\e975";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path11:before {
+.icon-nn-filled-dark-help:before {
   content: "\e976";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path12:before {
+.icon-nn-filled-edit:before {
   content: "\e977";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
 }
-.icon-uniquecode .path13:before {
+.icon-nn-filled-green-tick:before {
   content: "\e978";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: #00f7b3;
 }
-.icon-uniquecode .path14:before {
+.icon-nn-filled-grey-close:before {
   content: "\e979";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: #cbcbcb;
 }
-.icon-uniquecode .path15:before {
+.icon-nn-filled-pink-check-in:before {
   content: "\e97a";
-  margin-left: -1.1943359375em;
-  color: rgb(255, 255, 255);
+  color: #ff0053;
 }
-.icon-upload:before {
+.icon-nn-filled-pink-delete:before {
   content: "\e97b";
+  color: #ff0053;
 }
-.icon-warning .path1:before {
+.icon-nn-filled-pink-edit:before {
   content: "\e97c";
+  color: #ff0053;
+}
+.icon-nn-filled-profile-user:before {
+  content: "\e97d";
+  color: #ff0053;
+}
+.icon-nn-filled-red-warning .path1:before {
+  content: "\e97e";
   color: rgb(255, 60, 48);
 }
-.icon-warning .path2:before {
-  content: "\e97d";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-warning .path3:before {
-  content: "\e97e";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-web-help:before {
+.icon-nn-filled-red-warning .path2:before {
   content: "\e97f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-filled-red-warning .path3:before {
+  content: "\e980";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-green-tick:before {
+  content: "\e981";
+  color: #00f7b3;
+}
+.icon-nn-hide-password:before {
+  content: "\e982";
+  color: #bcbcbc;
+}
+.icon-nn-more-menu .path1:before {
+  content: "\e983";
+  color: rgb(255, 0, 83);
+}
+.icon-nn-more-menu .path2:before {
+  content: "\e984";
+  margin-left: -1em;
+  color: rgb(255, 0, 83);
+}
+.icon-nn-more-menu .path3:before {
+  content: "\e985";
+  margin-left: -1em;
+  color: rgb(255, 0, 83);
+}
+.icon-nn-more-menu .path4:before {
+  content: "\e986";
+  margin-left: -1em;
+  color: rgb(18, 27, 46);
+}
+.icon-nn-pink-folder:before {
+  content: "\e987";
+  color: #ff0057;
+}
+.icon-nn-pink-left-panel-billing .path1:before {
+  content: "\e988";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-billing .path2:before {
+  content: "\e989";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-configure .path1:before {
+  content: "\e98a";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-configure .path2:before {
+  content: "\e98b";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-dashboard .path1:before {
+  content: "\e98c";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-dashboard .path2:before {
+  content: "\e98d";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-integrations .path1:before {
+  content: "\e98e";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-integrations .path2:before {
+  content: "\e98f";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-integrations .path3:before {
+  content: "\e990";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-integrations .path4:before {
+  content: "\e991";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-manage .path1:before {
+  content: "\e992";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-manage .path2:before {
+  content: "\e993";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-manage .path3:before {
+  content: "\e994";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-report .path1:before {
+  content: "\e995";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-report .path2:before {
+  content: "\e996";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-report .path3:before {
+  content: "\e997";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-settings .path1:before {
+  content: "\e998";
+  color: rgb(255, 0, 87);
+}
+.icon-nn-pink-left-panel-settings .path2:before {
+  content: "\e999";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-settings .path3:before {
+  content: "\e99a";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-left-panel-settings .path4:before {
+  content: "\e99b";
+  margin-left: -1.1943359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-pink-nhance-icon:before {
+  content: "\e99c";
+  color: #ff0053;
+}
+.icon-nn-remove-filled:before {
+  content: "\e99d";
+}
+.icon-nn-remove-outline:before {
+  content: "\e99e";
+}
+.icon-nn-show-password .path1:before {
+  content: "\e99f";
+  color: rgb(19, 28, 47);
+}
+.icon-nn-show-password .path2:before {
+  content: "\e9a0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-nn-thin-arrow-left:before {
+  content: "\e9a1";
+}
+.icon-nn-thin-arrow-right:before {
+  content: "\e9a2";
+}
+.icon-nn-thin-close:before {
+  content: "\e9a3";
+}
+.icon-nn-thin-upload:before {
+  content: "\e9a4";
+}
+.icon-nn-thin-with-notification .path1:before {
+  content: "\e9a5";
+  color: rgb(19, 28, 47);
+}
+.icon-nn-thin-with-notification .path2:before {
+  content: "\e9a6";
+  margin-left: -0.91015625em;
+  color: rgb(255, 0, 87);
+}
+.icon-nn-thin-without-notification:before {
+  content: "\e9a7";
+}
+.icon-nn-unccheck-in:before {
+  content: "\e9a8";
+  color: #888;
 }

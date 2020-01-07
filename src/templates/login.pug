@@ -1,0 +1,30 @@
+---
+title: Login
+---
+extends layouts/_layout
+block content
+  .login
+    .container
+      .login__row
+        form.login__form.m-r-50.padding-40
+          i.icon-nn-pink-nhance-icon_1.m-b-30.text-center
+          h4.h4.m-b-45.text-center Sign into your account
+          .form__block.m-b-35
+            input(type="email" name="email" id="email" require)
+            label(for="email").require Email ID
+          .form__block.m-b-10
+            input(type="password" name="password" id="password" require)
+            label(for="password").require Password
+          a(href="#").forgot-password.m-b-35 Forgot Password?
+          a(href="#").btn.btn-primary.all-caps sign in
+        .login__info
+          h5.all-caps.bold.p-b-15.m-b-15 What’s new
+          .login__info__row
+            strong.fz-14.fw-semi-bold.m-b-20
+              img(src="https://via.placeholder.com/29x26.png", alt="").m-r-10
+              | In-App Notification
+            p.m-b-25 Deliver rich contextual messages for better conversion.
+            strong.fz-14.fw-semi-bold.m-b-20
+              img(src="https://via.placeholder.com/29x26.png", alt="").m-r-10
+              | Geofence Notification
+            p Location & periphery based smart alerts

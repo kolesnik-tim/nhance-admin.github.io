@@ -2,11 +2,11 @@
 //aside-admin
 $('.aside-admin b').click(function() {
   if($(this).hasClass('active')) {
-    $(this).toggleClass('active').next().slideToggle();
+    $(this).toggleClass('active').next('ul').slideToggle();
   } else{
     $(this).siblings('b').removeClass('active');
     $(this).siblings('ul').slideUp();
-    $(this).toggleClass('active').next().slideToggle();
+    $(this).toggleClass('active').next('ul').slideToggle();
   }
 });
 

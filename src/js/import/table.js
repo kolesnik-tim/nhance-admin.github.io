@@ -6,9 +6,9 @@ $(document).ready(function() {
   $('#table-primary thead th').each( function() {
     var title = $('#table-primary thead th').eq($(this).index()).text();
     if($(this).index() === 0) {
-      $(this).html( '#<i class="fa fa-sort" aria-hidden="true"></i>' );
+      $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
     } else{
-      $(this).html( '<i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="'+title+'" />' );
+      $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+title+'" />' );
     }
   } );
 
@@ -19,8 +19,8 @@ $(document).ready(function() {
     'language': { 
       'info': '<p style="color: #212121;">Showing <strong>_START_</strong> to <strong>_END_</strong> of <strong>_TOTAL_</strong> entries</p>',
       'paginate': {
-        'next': '<i class="icon-arrow-right"></i>',
-        'previous': '<i class="icon-arrow-left"></i>'
+        'next': '<i class="icon-nn-thin-arrow-right"></i>',
+        'previous': '<i class="icon-nn-thin-arrow-left"></i>'
       },
     }
   });
@@ -44,9 +44,9 @@ $(document).ready(function() {
   $('#table-secondary thead th').each( function() {
     var titleSecondary = $('#table-secondary thead th').eq($(this).index()).text();
     if($(this).index() === 0) {
-      $(this).html( '#<i class="fa fa-sort" aria-hidden="true"></i>' );
+      $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
     } else{
-      $(this).html( '<i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="'+titleSecondary+'" />' );
+      $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+titleSecondary+'" />' );
     }
   } );
 
@@ -57,8 +57,8 @@ $(document).ready(function() {
     'language': { 
       'info': '<p style="color: #212121;">Showing <strong>_START_</strong> to <strong>_END_</strong> of <strong>_TOTAL_</strong> entries</p>',
       'paginate': {
-        'next': '<i class="icon-arrow-right"></i>',
-        'previous': '<i class="icon-arrow-left"></i>'
+        'next': '<i class="icon-nn-thin-arrow-right"></i>',
+        'previous': '<i class="icon-nn-thin-arrow-left"></i>'
       },
     }
   });

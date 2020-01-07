@@ -1,35 +1,36 @@
 .aside-admin
-  width: 250px
+  width: 275px
   height: 100vh
   position: fixed
-  left: -200px
+  left: -215px
   top: 0
-  padding: 15px 60px 15px 40px
+  padding: 15px 0px 15px 40px
   overflow: auto
   z-index: 2
   transition: all 600ms ease
   +r(1040)
-    left: -250px
+    left: -300px
   &.active
     left: 0
   &.hover
     left: 0px
     .aside-admin__logo
-      svg
+      i
         left: 0px
       span
         opacity: 1
   &__logo
     display: flex
     padding-bottom: 40px
-    svg
+    i
       width: 26px
       height: 28px
-      fill: $pink-red
+      font-size: 28px
+      display: block
       margin-right: 10px
       position: relative
       transition: all 600ms ease
-      left: 172px
+      left: 188px
       +r(1040)
         left: 0
     span
@@ -42,11 +43,19 @@
       +r(1040)
         opacity: 1
   ul
-    padding-bottom: 45px
+    padding-bottom: 25px
     padding-left: 0
     li
+      position: relative
+      padding-right: 60px
+      padding-top: 4px
       &:before
         display: none
+      i
+        position: absolute
+        right: 20px
+        top: 2px
+        font-size: 20px
   b
     font-size: 14px
     font-weight: bold
@@ -56,19 +65,22 @@
     justify-content: space-between
     position: relative
     cursor: pointer
-    i.icon-arrow-left
+    i
+      position: absolute
+      right: 20px
+      top: -4px
+      font-size: 20px
+    i.icon-nn-thin-arrow-right
       font-size: 10px
       color: $white
       +tr
+      right: 80px
+      top: 2px
       width: 10px
       height: 10px
       display: block
-    img
-      position: absolute
-      right: -45px
-      top: -4px
     &.active
-      i.icon-arrow-left
+      i.icon-nn-thin-arrow-right
         transform: rotate(-90deg)
   a
     font-size: 14px
