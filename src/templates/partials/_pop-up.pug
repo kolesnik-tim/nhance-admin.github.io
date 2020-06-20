@@ -44,4 +44,52 @@
         .modal-footer
           a(href="#" data-dismiss='modal').btn.btn-primary Close
           a(href="#").btn.btn-complete Save changes
+
+
+
+
+.modal#slide-right-vh.fade.slide-right.slide-right-vh
+  .modal-dialog 
+    .modal-content-wrapper
+      .modal-content
+        .modal-header
+          h2.h2#exampleModalLiveLabel.modal-title.m-b-50
+            +icon('return')
+            | Advance Settings
+          a(href="#" data-dismiss='modal', aria-label='Close').close
+            span(aria-hidden='true') ×
+        form.modal-body.form.form-pop-up
+          .form__row
+            div.flex.m-r-20.m-b-35
+              select.select-search
+                option(value="") Entity/Field Name
+                option(value="1") Entity/Field Name
+                option(value="2") Entity/Field Name
+                option(value="3") Entity/Field Name
+              a(href="#")
+                +icon('information')
+            div.flex.m-b-35
+              select.select-search
+                option(value="") Entity/Field Value
+                option(value="1") Entity/Field Value
+                option(value="2") Entity/Field Value
+                option(value="3") Entity/Field Value
+              a(href="#")
+                +icon('information')
+          .form__checkbox.m-b-40
+            p Is Required?
+              a(href="#")
+                +icon('information')
+            input(type="checkbox" id="checkbox-1" checked)
+            label(for="checkbox-1")  
+          .form__block.m-b-30.flex
+            input(type="text" name="last-name" id="last-name")
+            label(for="last-name") Last Name
+            a(href="#")
+              +icon('information')
+          .form__block.m-b-30.flex
+            input(type="text" name="last-name" id="last-name")
+            label(for="last-name") Last Name
+            a(href="#")
+              +icon('information')
 //END pop-up
