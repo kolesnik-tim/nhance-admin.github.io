@@ -22,6 +22,14 @@
       .modal-content-wrapper
         display: table-cell
         vertical-align: middle
+  .modal-dialog
+    display: table
+    height: 100%
+    margin: 0 auto
+    max-width: 500px
+    width: 100%
+  &.show .modal-dialog
+    transform: translate3d(0, 0, 0)
   &.slide-right
     .modal-dialog
       transform: translate3d(0, 0, 0)
@@ -65,7 +73,7 @@
       .modal-dialog
         max-width: 670px
         .modal-content
-          height: 100vh
+          height: 100%
           border: none
           border-radius: 0
       .modal-body
@@ -98,11 +106,67 @@
               fill: rgba(#616161, 0.3)
               margin-top: -2px
               margin-left: 15px
-  .modal-dialog
-    display: table
-    height: 100%
-    margin: 0 auto
-    max-width: 500px
-    width: 100%
-  &.show .modal-dialog
-    transform: translate3d(0, 0, 0)
+    &-dialog
+      +r(550)
+        .m-l-30, .m-l-35
+          margin-left: 0
+          margin-bottom: 10px
+      .form__row
+        align-items: flex-end
+        +r(550)
+          align-items: flex-start
+      .modal-body
+        padding: 0
+      .form__question
+        border: solid 1px #1983f0
+        margin: 0 10px
+        margin-bottom: 80px
+        +r(550)
+          padding: 25px 10px !important
+        label
+          font-weight: 400
+        .flex-wrap
+          a
+            text-decoration: underline !important
+            color: #212121
+        .form__checkbox__btn
+          display: flex
+          a
+            svg
+              font-size: 15px
+              fill: #ababab
+            &:first-child 
+              svg
+                font-size: 19px
+
+
+      .form-pop-up
+        padding: 0 50px
+        +r(767)
+          padding: 0 15px
+      .modal-footer
+        background: #fafafa
+        .btn-secondary
+          color: rgba(24, 28, 41, 0.5)
+          border-color: rgba(24, 28, 41, 0.5)
+          padding: 12px 30px
+          &:hover
+            color: #fff
+      .tab-content
+        padding: 50px
+        +r(550)
+          padding: 40px 15px
+      .form-tabs
+        background: #f7f7f8
+        border-top: 1px solid #d6d6d6
+        border-bottom: 1px solid #d6d6d6
+        position: relative
+        li a
+          padding: 18px 30px
+        .more
+          position: absolute
+          right: 20px
+          top: 15px
+          svg
+            fill: $brown-grey
+            font-size: 24px

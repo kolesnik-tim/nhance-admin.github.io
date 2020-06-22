@@ -33,6 +33,8 @@ $('[data-toggle="tooltip"]').tooltip();
 
 
 ////forms
+
+$('.select-secondary').selectize();
 //select
 $('.select-button').selectize({
   plugins: ['remove_button'],

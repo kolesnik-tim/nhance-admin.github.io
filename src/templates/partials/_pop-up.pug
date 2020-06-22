@@ -58,7 +58,7 @@
             | Advance Settings
           a(href="#" data-dismiss='modal', aria-label='Close').close
             span(aria-hidden='true') ×
-        form.modal-body.form.form-pop-up
+        form.modal-body.form-pop-up
           .form__row
             div.flex.m-r-20.m-b-35
               select.select-search
@@ -92,4 +92,304 @@
             label(for="last-name") Last Name
             a(href="#")
               +icon('information')
+
+
+
+
+
+
+
+#slide-right-dialog.modal.fade.slide-right.slide-right-vh.slide-right-dialog
+  .modal-dialog 
+    .modal-content-wrapper
+      .modal-content
+        .modal-header
+          h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Create New Dialog
+          a(href="#" data-dismiss='modal', aria-label='Close').close
+            span(aria-hidden='true') ×
+        form.modal-body
+          .form-pop-up
+            .form__block.m-b-35
+              input(type="text" name="name" id="name" require)
+              label(for="name").require Name
+            .form__block.m-b-35
+              input(type="text" name="description" id="description" require)
+              label(for="description").require Description
+            .form__block.m-b-50
+              input(type="text" name="category" id="category" require)
+              label(for="category").require Product Category
+            strong.fz-14.bold.all-caps.text-black.flex bot Message and response type configuration
+            .form__row.m-b-45
+              div.width-100
+                b.fz-14.bold.all-caps.m-b-35.m-t-40.flex Bot
+                .form__block
+                  input(type="text" name="free" id="free" require)
+                  label(for="free").require Free Text (Start Typing)
+              
+              div.width-100.m-l-30
+                b.fz-14.bold.all-caps.m-b-35.flex.m-t-40 User Response
+                .form__block.form__block--select.flex
+                  label.require Free Text
+                  select.select
+                    option(value="1") Free Text
+                    option(value="2") Free Text1
+                    option(value="3") Free Text2
+              .form__block__btn.m-l-30
+                a(href="#")
+                  +icon('gear')
+                a(href="#")
+                  i.icon-nn-filled-pink-delete.h4.m-b-0
+
+          .form__question.padding-35
+            .space-between
+              strong.fz-14.bold.text-black.flex.m-b-20 Type a question
+              .form__block__btn
+                a(href="#")
+                  +icon('gear')
+                a(href="#").m-r-5
+                  i.icon-nn-filled-pink-delete.h4.m-b-0
+            .form__checkbox.m-b-10.flex
+              input(type="checkbox" id="option-1")
+              label(for="option-1").m-b-0 Type option 1
+              .form__checkbox__btn.m-l-20
+                a(href="#").m-r-10
+                  +icon('burger')
+                a(href="#")
+                  +icon('close')
+            .form__checkbox.m-b-10.flex
+              input(type="checkbox" id="option-2")
+              label(for="option-2").m-b-0 Type option 2
+            .form__checkbox.m-b-10.disabled.flex
+              input(type="checkbox" id="checkbox-3" disabled)
+              label(for="checkbox-3").m-b-0 Type an option
+            .flex-wrap.m-t-25
+              a(href="#").fz-14 Add Option
+              a(href="#").fz-14.m-l-15 Add ‘Other’ Option
+          .form-tabs
+            a(href="#").more
+              +icon('more')
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#item-1').active branch 1
+              li
+                a(data-toggle='tab', href='#item-2') branch 2
+              li
+                a(data-toggle='tab', href='#item-3') branch 3
+              li
+                a(data-toggle='tab', href='#item-4') branch 4
+              li
+                a(data-toggle='tab', href='#item-5') branch 5
+            .tab-content
+              #item-1.tab-pane.fade.show.in.active
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free2" id="free2" require)
+                    label(for="free2").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free3" id="free3" require)
+                    label(for="free3").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__block
+                  select.select-secondary
+                    option(value="1") add step
+                    option(value="2") add step1
+                    option(value="3") add step2
+              #item-2.tab-pane.fade.show
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free2" id="free2" require)
+                    label(for="free2").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free3" id="free3" require)
+                    label(for="free3").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__block
+                  select.select-secondary
+                    option(value="1") add step
+                    option(value="2") add step1
+                    option(value="3") add step2
+              #item-3.tab-pane.fade.show
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free2" id="free2" require)
+                    label(for="free2").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free3" id="free3" require)
+                    label(for="free3").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__block
+                  select.select-secondary
+                    option(value="1") add step
+                    option(value="2") add step1
+                    option(value="3") add step2
+              #item-4.tab-pane.fade.show
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free2" id="free2" require)
+                    label(for="free2").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free3" id="free3" require)
+                    label(for="free3").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__block
+                  select.select-secondary
+                    option(value="1") add step
+                    option(value="2") add step1
+                    option(value="3") add step2
+              #item-5.tab-pane.fade.show
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free2" id="free2" require)
+                    label(for="free2").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__row
+                  .form__block.m-b-45
+                    input(type="text" name="free3" id="free3" require)
+                    label(for="free3").require Free Text (Start Typing)
+                  .form__block.form__block--select.m-b-45.flex.m-l-35
+                    label.require Free Text
+                    select.select
+                      option(value="1") Free Text
+                      option(value="2") Free Text1
+                      option(value="3") Free Text2
+                  .form__block__btn.m-l-30.m-b-45
+                    a(href="#")
+                      +icon('gear')
+                    a(href="#")
+                      i.icon-nn-filled-pink-delete.h4.m-b-0
+                .form__block
+                  select.select-secondary
+                    option(value="1") add step
+                    option(value="2") add step1
+                    option(value="3") add step2
+          
+          .form-pop-up.p-t-35.p-b-50
+            .flex-wrap.m-b-40
+              select.select-secondary.m-r-10
+                option(value="1") add step
+                option(value="2") add step1
+                option(value="3") add step2
+              select.select-secondary
+                option(value="1") add branch
+                option(value="2") add branch1
+                option(value="3") add branch2
+            strong.fz-14.bold.all-caps.text-black.m-b-30.flex trigger point
+            p.m-b-25 Do you want to make this the initial component
+            .flex.m-b-45
+              .form__radio.m-r-25
+                input(type="radio" name="radio" id="radio-1" checked)
+                label(for="radio-1") Yes
+              .form__radio
+                input(type="radio" name="radio" id="radio-2")
+                label(for="radio-2") No
+            p.m-b-35 Choose Trigger Point
+            .row
+              .col-lg-6
+                .form__block.form__block--select.m-b-45.flex
+                  label.require Service Request
+                  select.select
+                    option(value="1") Service Request
+                    option(value="2") Service Request1
+                    option(value="3") Service Request2
+        .modal-footer
+          a(href="#").btn.btn-secondary.m-r-15 Cancel
+          a(href="#" data-dismiss='modal').btn.btn-primary Create
 //END pop-up

@@ -12,7 +12,6 @@
 }
 .selectize-input,
 .selectize-control.single .selectize-input.input-active {
-  background: #ffffff;
   cursor: text;
   display: inline-block;
 }
@@ -37,7 +36,7 @@
   padding: 6px 8px 3px;
 }
 .selectize-input.full {
-  background-color: #ffffff;
+  background: none;
 }
 .selectize-input.disabled,
 .selectize-input.disabled * {

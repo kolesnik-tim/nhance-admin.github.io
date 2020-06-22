@@ -196,7 +196,7 @@
                     <use xlink:href="img/sprite.svg#icon-return"></use>
                   </svg>Advance Settings</h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
               </div>
-              <form class="modal-body form form-pop-up">
+              <form class="modal-body form-pop-up">
                 <div class="form__row">
                   <div class="flex m-r-20 m-b-35"><select class="select-search">
                       <option value="">Entity/Field Name</option>
@@ -227,6 +227,241 @@
                       <use xlink:href="img/sprite.svg#icon-information"></use>
                     </svg></a></div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-dialog" id="slide-right-dialog">
+        <div class="modal-dialog">
+          <div class="modal-content-wrapper">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Create New Dialog</h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+              </div>
+              <form class="modal-body">
+                <div class="form-pop-up">
+                  <div class="form__block m-b-35"><input type="text" name="name" id="name" require><label class="require" for="name">Name</label></div>
+                  <div class="form__block m-b-35"><input type="text" name="description" id="description" require><label class="require" for="description">Description</label></div>
+                  <div class="form__block m-b-50"><input type="text" name="category" id="category" require><label class="require" for="category">Product Category</label></div><strong class="fz-14 bold all-caps text-black flex">bot Message and response type configuration</strong>
+                  <div class="form__row m-b-45">
+                    <div class="width-100"><b class="fz-14 bold all-caps m-b-35 m-t-40 flex">Bot</b>
+                      <div class="form__block"><input type="text" name="free" id="free" require><label class="require" for="free">Free Text (Start Typing)</label></div>
+                    </div>
+                    <div class="width-100 m-l-30"><b class="fz-14 bold all-caps m-b-35 flex m-t-40">User Response</b>
+                      <div class="form__block form__block--select flex"><label class="require">Free Text</label><select class="select">
+                          <option value="1">Free Text</option>
+                          <option value="2">Free Text1</option>
+                          <option value="3">Free Text2</option>
+                        </select></div>
+                    </div>
+                    <div class="form__block__btn m-l-30"><a href="#"><svg class="icon icon-gear ">
+                          <use xlink:href="img/sprite.svg#icon-gear"></use>
+                        </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                  </div>
+                </div>
+                <div class="form__question padding-35">
+                  <div class="space-between"><strong class="fz-14 bold text-black flex m-b-20">Type a question</strong>
+                    <div class="form__block__btn"><a href="#"><svg class="icon icon-gear ">
+                          <use xlink:href="img/sprite.svg#icon-gear"></use>
+                        </svg></a><a class="m-r-5" href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                  </div>
+                  <div class="form__checkbox m-b-10 flex"><input type="checkbox" id="option-1"><label class="m-b-0" for="option-1">Type option 1</label>
+                    <div class="form__checkbox__btn m-l-20"><a class="m-r-10" href="#"><svg class="icon icon-burger ">
+                          <use xlink:href="img/sprite.svg#icon-burger"></use>
+                        </svg></a><a href="#"><svg class="icon icon-close ">
+                          <use xlink:href="img/sprite.svg#icon-close"></use>
+                        </svg></a></div>
+                  </div>
+                  <div class="form__checkbox m-b-10 flex"><input type="checkbox" id="option-2"><label class="m-b-0" for="option-2">Type option 2</label></div>
+                  <div class="form__checkbox m-b-10 disabled flex"><input type="checkbox" id="checkbox-3" disabled><label class="m-b-0" for="checkbox-3">Type an option</label></div>
+                  <div class="flex-wrap m-t-25"><a class="fz-14" href="#">Add Option</a><a class="fz-14 m-l-15" href="#">Add ‘Other’ Option</a></div>
+                </div>
+                <div class="form-tabs"><a class="more" href="#"><svg class="icon icon-more ">
+                      <use xlink:href="img/sprite.svg#icon-more"></use>
+                    </svg></a>
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="active" data-toggle="tab" href="#item-1">branch 1</a></li>
+                    <li><a data-toggle="tab" href="#item-2">branch 2</a></li>
+                    <li><a data-toggle="tab" href="#item-3">branch 3</a></li>
+                    <li><a data-toggle="tab" href="#item-4">branch 4</a></li>
+                    <li><a data-toggle="tab" href="#item-5">branch 5</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="item-1">
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free2" id="free2" require><label class="require" for="free2">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free3" id="free3" require><label class="require" for="free3">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__block"><select class="select-secondary">
+                          <option value="1">add step</option>
+                          <option value="2">add step1</option>
+                          <option value="3">add step2</option>
+                        </select></div>
+                    </div>
+                    <div class="tab-pane fade show" id="item-2">
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free2" id="free2" require><label class="require" for="free2">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free3" id="free3" require><label class="require" for="free3">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__block"><select class="select-secondary">
+                          <option value="1">add step</option>
+                          <option value="2">add step1</option>
+                          <option value="3">add step2</option>
+                        </select></div>
+                    </div>
+                    <div class="tab-pane fade show" id="item-3">
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free2" id="free2" require><label class="require" for="free2">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free3" id="free3" require><label class="require" for="free3">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__block"><select class="select-secondary">
+                          <option value="1">add step</option>
+                          <option value="2">add step1</option>
+                          <option value="3">add step2</option>
+                        </select></div>
+                    </div>
+                    <div class="tab-pane fade show" id="item-4">
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free2" id="free2" require><label class="require" for="free2">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free3" id="free3" require><label class="require" for="free3">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__block"><select class="select-secondary">
+                          <option value="1">add step</option>
+                          <option value="2">add step1</option>
+                          <option value="3">add step2</option>
+                        </select></div>
+                    </div>
+                    <div class="tab-pane fade show" id="item-5">
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free2" id="free2" require><label class="require" for="free2">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__row">
+                        <div class="form__block m-b-45"><input type="text" name="free3" id="free3" require><label class="require" for="free3">Free Text (Start Typing)</label></div>
+                        <div class="form__block form__block--select m-b-45 flex m-l-35"><label class="require">Free Text</label><select class="select">
+                            <option value="1">Free Text</option>
+                            <option value="2">Free Text1</option>
+                            <option value="3">Free Text2</option>
+                          </select></div>
+                        <div class="form__block__btn m-l-30 m-b-45"><a href="#"><svg class="icon icon-gear ">
+                              <use xlink:href="img/sprite.svg#icon-gear"></use>
+                            </svg></a><a href="#"><i class="icon-nn-filled-pink-delete h4 m-b-0"></i></a></div>
+                      </div>
+                      <div class="form__block"><select class="select-secondary">
+                          <option value="1">add step</option>
+                          <option value="2">add step1</option>
+                          <option value="3">add step2</option>
+                        </select></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-pop-up p-t-35 p-b-50">
+                  <div class="flex-wrap m-b-40"><select class="select-secondary m-r-10">
+                      <option value="1">add step</option>
+                      <option value="2">add step1</option>
+                      <option value="3">add step2</option>
+                    </select><select class="select-secondary">
+                      <option value="1">add branch</option>
+                      <option value="2">add branch1</option>
+                      <option value="3">add branch2</option>
+                    </select></div><strong class="fz-14 bold all-caps text-black m-b-30 flex">trigger point</strong>
+                  <p class="m-b-25">Do you want to make this the initial component</p>
+                  <div class="flex m-b-45">
+                    <div class="form__radio m-r-25"><input type="radio" name="radio" id="radio-1" checked><label for="radio-1">Yes</label></div>
+                    <div class="form__radio"><input type="radio" name="radio" id="radio-2"><label for="radio-2">No</label></div>
+                  </div>
+                  <p class="m-b-35">Choose Trigger Point</p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form__block form__block--select m-b-45 flex"><label class="require">Service Request</label><select class="select">
+                          <option value="1">Service Request</option>
+                          <option value="2">Service Request1</option>
+                          <option value="3">Service Request2</option>
+                        </select></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#">Cancel</a><a class="btn btn-primary" href="#" data-dismiss="modal">Create</a></div>
             </div>
           </div>
         </div>

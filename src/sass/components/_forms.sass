@@ -18,6 +18,15 @@
     position: relative
     width: 100%
     flex: 1
+    &__btn
+      display: flex
+      +r(550)
+        margin-bottom: 40px !important
+      svg
+        font-size: 23px
+        position: relative
+        bottom: -1px
+        margin-right: 6px
     &.disabled
       input
         font-weight: bold
@@ -123,11 +132,17 @@
         position: relative
         top: -2px
         +tr
-    &.disabled
+    &.disabled.checked
+      label
+        color: rgba(33, 33, 33, 0.6)
       label:before
         background-color: #bcbcbc !important
         border-color: #bcbcbc !important
         background-image: url('../img/check.svg')
+        
+    &.disabled
+      label
+        color: rgba(33, 33, 33, 0.6)
   &__radio
     input
       display: none
@@ -234,3 +249,33 @@
   color: #000
   font-weight: bold
   font-size: 12px
+
+
+
+
+.select-secondary
+  width: auto
+  height: 25px
+  min-height: 25px
+  .selectize-input
+    width: auto
+    border-radius: 12px !important
+    height: 25px
+    min-height: 25px
+    border: solid 1px #131c2e
+    padding-right: 30px !important
+    padding-left: 10px !important
+    font-size: 10px
+    text-transform: uppercase
+    color: #131c2e
+    font-weight: bold
+    &:after
+      right: 12px !important
+    input
+      display: none !important
+.selectize-dropdown
+  min-height: auto
+  height: auto
+  top: 26px !important
+  border-radius: 5px
+  overflow: auto
