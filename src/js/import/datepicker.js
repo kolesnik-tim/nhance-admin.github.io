@@ -26,5 +26,10 @@ $('.datepicker-data').datepicker({
   language: 'en',
   navTitles: {
     days: 'MM yyyy',
+  },
+  keyboardNav: false,
+  // autoClose: true,
+  onSelect: function(formattedDate, date, inst) {
+    console.log(inst.$el.val());
   }
 });

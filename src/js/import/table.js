@@ -7,6 +7,9 @@ $(document).ready(function() {
     var title = $('#table-primary thead th').eq($(this).index()).text();
     if($(this).index() === 0) {
       $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
+    } else if($(this).index() === 2) {
+
+    } else if($(this).index() === 3) {
     } else{
       $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+title+'" />' );
     }
