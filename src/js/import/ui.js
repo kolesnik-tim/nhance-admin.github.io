@@ -100,3 +100,16 @@ $(document).mouseup(function(e) {
     result.removeClass('active');
   }
 });
+
+
+
+
+
+
+//pop-up btn continue
+$('#slide-right-dx .continue').on('click', function() {
+  if($('#slide-right-dx .tab-content .tab-pane.active').index() !== 3) {
+    $('#slide-right-dx .nav-step li a.active').removeClass('active').parent().next().find('a').addClass('active');
+    $('#slide-right-dx .tab-content .tab-pane.active').removeClass('active show').next().addClass('active show');
+  }
+});
