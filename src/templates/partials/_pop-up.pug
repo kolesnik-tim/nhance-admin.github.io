@@ -434,66 +434,66 @@
               .row.form__row
                 .col-sm-6
                   div.flex.m-r-20.m-b-35
-                    select.select-search
-                      option(value="") Issue DX Card
+                    select.select-search.select-search-req
+                      option(value="0") Issue DX Card
                       option(value="1") Issue DX Card 1
                       option(value="2") Issue DX Card 2
                       option(value="3") Issue DX Card 3
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   div.flex.m-b-35
-                    select.select-search
-                      option(value="") Product Category
+                    select.select-search.select-search-req
+                      option(value="0") Product Category
                       option(value="1") Product Category 1
                       option(value="2") Product Category 2
                       option(value="3") Product Category 3
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   div.flex.m-r-20.m-b-35
-                    select.select-search
-                      option(value="") Product Subcategory
+                    select.select-search.select-search-req
+                      option(value="0") Product Subcategory
                       option(value="1") Product Subcategory 1
                       option(value="2") Product Subcategory 2
                       option(value="3") Product Subcategory 3
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   div.flex.m-b-35
-                    select.select-search
-                      option(value="") Product Subcategory
-                      option(value="1") Product Subcategory 1
-                      option(value="2") Product Subcategory 2
-                      option(value="3") Product Subcategory 3
-                    a(href="#")
+                    select.select-search.select-search-req
+                      option(value="0") Product Manufacturer
+                      option(value="1") Product Manufacturer 1
+                      option(value="2") Product Manufacturer 2
+                      option(value="3") Product Manufacturer 3
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   .form__block.m-b-35.flex
-                    input(type="text" id="last-name")
-                    label(for="last-name") Warranty Period (In Months)
-                    a(href="#")
+                    input(type="text" id="months" require)
+                    label(for="months").require Warranty Period (In Months)
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   .form__block.m-b-35.flex
                     input(type="text" id="last-name")
                     label(for="last-name") Serial Number
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   div.flex.m-r-20.m-b-35
                     select.select-search
-                      option(value="") Purchased Date
+                      option(value="0") Purchased Date
                       option(value="1") Purchased Date 1
                       option(value="2") Purchased Date 2
                       option(value="3") Purchased Date 3
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
                   .form__block.m-b-35.flex
                     input(type="text" id="last-name")
                     label(for="last-name") Product Value (NIR)
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
             #step-2.tab-pane.fade
               h5.h5.fw-semi-bold.m-b-50 Product Details
@@ -525,13 +525,13 @@
                     .form__block
                       input(type="text" id="phone")
                       label(for="phone") Mobile Number
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-md-6
                   .form__block.m-b-35.flex
                     input(type="text" id="name")
                     label(for="name") Consumer Name
-                    a(href="#")
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
             #step-3.tab-pane.fade
               p 3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
@@ -540,7 +540,7 @@
           
   .modal-footer
     a(href="#").btn.btn-secondary.m-r-15 Cancel
-    a(href="#" data-dismiss='modal').btn.btn-primary Create
+    a(href="#" data-dismiss='modal').btn.btn-primary Continue
 
 
 //END pop-up
