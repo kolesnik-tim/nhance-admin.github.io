@@ -227,3 +227,78 @@
     border-bottom: 1px solid #cecece
   &.modal.fade.slide-right-vh .modal-header
     padding: 40px 50px 10px 55px
+
+
+
+
+  .tab-pane
+    .block-white
+      border-radius: 5px
+      border: solid 1px #cecece
+      background-color: $white
+      padding: 30px 25px
+      position: relative
+    .file
+      div
+        width: 100%
+        border-bottom: 1px solid #cecece
+    input[type="file"]
+      cursor: pointer
+      opacity: 0
+      padding: 6px 0
+    .icon-clip 
+      font-size: 18px
+      fill: #181c29
+      position: absolute
+      right: 40px
+    .btn-danger
+      border: 1px solid #fd3e39
+      background: none
+      color: #fd3e39
+      text-transform: uppercase
+      &:hover
+        background: rgba(#fd3e39, 0.1) !important
+    .add-btn
+      border-radius: 12px
+      border: solid 1px #131c2e
+      background-color: $white
+      padding: 2px 15px 3px
+      padding-right: 30px
+      display: inline-block
+      height: 26px
+      overflow: hidden
+      position: absolute
+      top: calc(100% - 40px)
+      +tr
+      z-index: 3
+      span
+        position: absolute
+        right: 4px
+        top: 2px
+        cursor: pointer
+        padding: 6px
+        +center
+        &::before
+          content: ''
+          border: 5px solid transparent
+          border-top: 5px solid #616161
+          +tr
+          position: relative
+          top: 2px
+      &.active
+        height: 70px
+        span:before
+          transform: rotate(180deg)
+          top: -4px
+      a, b
+        font-size: 10px
+        font-weight: bold
+        color: #131c2e
+        padding: 5px 0
+        text-transform: uppercase
+  #step-3
+    width: calc(100% + 60px)
+    margin-left: -30px
+    +r(552)
+      width: 100%
+      margin-left: 0

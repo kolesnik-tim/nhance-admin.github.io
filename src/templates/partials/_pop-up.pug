@@ -534,12 +534,155 @@
                     a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
             #step-3.tab-pane.fade
-              p 3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+              h5.h5.fw-semi-bold.m-b-20 Documents
+              .block-white.m-b-15
+                h5.fz-14.bold.all-caps.text-black.m-b-25.title-invoice Invoice 01
+                .form__block.m-b-35.flex
+                  input(type="text" id="name-4")
+                  label(for="name-4") Name
+                  a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                    +icon('information')
+                .flex-wrap.m-b-25.radio-block
+                  strong.text-black.m-b-10.m-r-20 File Details
+                  .form__radio.m-r-20
+                    input(type="radio" name="radio-01" id="radio-01" checked)
+                    label(for="radio-01" data-radio="file").text-black.fz-14 Upload File
+                  .form__radio.m-r-20
+                    input(type="radio" name="radio-01" id="radio-02")
+                    label(for="radio-02" data-radio="url").text-black.fz-14 URL
+                  .form__radio
+                    input(type="radio" name="radio-01" id="radio-03")
+                    label(for="radio-03" data-radio="invoice").text-black.fz-14 Generate Invoice
+                .input-block
+                  .form__block.m-b-35.flex.file
+                    div
+                      input(type="file" id="file" placeholder="Upload File")
+                    label(for="file") Upload File
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                    +icon('clip')
+                  .form__block.m-b-35.flex.url(style="display:none")
+                    input(type="url" id="url")
+                    label(for="url") URL
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                a(href="#").btn.btn-danger.btn-sm delete
+              .block-white.m-b-15
+                h5.fz-14.bold.all-caps.text-black.m-b-25.title-invoice Invoice 02
+                .form__block.m-b-35.flex
+                  input(type="text" id="name-4")
+                  label(for="name-4") Name
+                  a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                    +icon('information')
+                .flex-wrap.m-b-25.radio-block
+                  strong.text-black.m-b-10.m-r-20 File Details	
+                  .form__radio.m-r-20
+                    input(type="radio" name="radio-02" id="radio-04")
+                    label(for="radio-04" data-radio="file").text-black.fz-14 Upload File
+                  .form__radio.m-r-20
+                    input(type="radio" name="radio-02" id="radio-05" checked)
+                    label(for="radio-05" data-radio="url").text-black.fz-14 URL
+                  .form__radio
+                    input(type="radio" name="radio-02" id="radio-06")
+                    label(for="radio-06" data-radio="invoice").text-black.fz-14 Generate Invoice
+                .input-block
+                  .form__block.m-b-35.flex.file(style="display:none")
+                    div
+                      input(type="file" id="file" placeholder="Upload File")
+                    label(for="file") Upload File
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                    +icon('clip')
+                  .form__block.m-b-35.flex.url
+                    input(type="url" id="url")
+                    label(for="url") URL
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                a(href="#").btn.btn-danger.btn-sm delete
+              .block-white.m-b-15
+                h5.fz-14.bold.all-caps.text-black.m-b-25 Other
+                .form__block.m-b-35.flex
+                  input(type="text" id="name-4")
+                  label(for="name-4") Name
+                  a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                    +icon('information')
+                .flex-wrap.m-b-25.radio-block
+                  strong.text-black.m-b-10.m-r-20 File Details
+                  .form__radio.m-r-20
+                    input(type="radio" name="radio-03" id="radio-07" checked)
+                    label(for="radio-07" data-radio="file").text-black.fz-14 Upload File
+                  .form__radio.m-r-20
+                    input(type="radio" name="radio-03" id="radio-08")
+                    label(for="radio-08" data-radio="url").text-black.fz-14 URL
+                .input-block
+                  .form__block.m-b-35.flex.file
+                    div
+                      input(type="file" id="file" placeholder="Upload File")
+                    label(for="file") Upload File
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                    +icon('clip')
+                  .form__block.m-b-35.flex.url(style="display:none")
+                    input(type="url" id="url")
+                    label(for="url") URL
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                ul.add-btn
+                  li
+                    span
+                  li
+                    b add new
+                  li
+                    a(href="#").invoice invoice
+                  li
+                    a(href="#").other other
+            
             #step-4.tab-pane.fade
-              p 3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
+              h5.h5.fw-semi-bold.m-b-50 Custom Fields
+              .row.form__row
+                .col-md-6
+                  .form__block.m-b-35.flex
+                    .select-tn
+                      select(value="1")
+                        option(value="1") +91
+                        option(value="2") +92
+                        option(value="3") +93
+                        option(value="4") +94
+                      .select-tn__result
+                        img(src="img/india_flag.png", alt="")
+                        p +91
+                      ul.select-tn__dorpdown
+                        li.active
+                          img(src="img/india_flag.png", alt="")
+                          p +91
+                        li
+                          img(src="img/usa.png", alt="")
+                          p +93
+                        li
+                          img(src="img/uae_flag.png", alt="")
+                          p +94
+                        li
+                          img(src="img/Singapore_flag.png", alt="")
+                          p +92
+                    .form__block
+                      input(type="text" id="phone-2" require)
+                      label(for="phone-2").require Mobile Number
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+                .col-md-6
+                  div.flex.m-r-20.m-b-35
+                    select.select-search.select-search-req
+                      option(value="0") Consumer Name
+                      option(value="1") Consumer Name 1
+                      option(value="2") Consumer Name 2
+                      option(value="3") Consumer Name 3
+                    a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
+                      +icon('information')
+            
           
   .modal-footer
     a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+    a(href="#" style="display:none").btn.btn-secondary.m-r-15.skip Skip
     a(href="#").btn.btn-primary.continue Continue
 
 
