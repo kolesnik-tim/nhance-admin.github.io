@@ -147,6 +147,9 @@
           padding: 0 15px
       .modal-footer
         background: #fafafa
+        position: fixed
+        bottom: 0
+        width: 100%
         .btn-secondary
           color: rgba(24, 28, 41, 0.5)
           border-color: rgba(24, 28, 41, 0.5)
@@ -171,3 +174,29 @@
           svg
             fill: $brown-grey
             font-size: 24px
+#slide-right-dialog, #slide-right-dx
+  .modal-footer
+    max-width: 670px
+    right: -100%
+    transition: all .3s ease-out
+  &.show
+    .modal-footer
+      right: 0
+
+
+
+
+
+.slide-right-dx
+  .modal-body
+    padding: 0 !important
+  .tab-content.block-white
+    background: rgb(243, 244, 244)
+    height: 100% !important
+    border-top: 1px solid #cecece
+  .nav-step li a:after
+    border-top-color: #fff
+  .nav-step__decor.step-03 span
+    width: 23%
+  .select-search.single input
+    width: 100% !important
