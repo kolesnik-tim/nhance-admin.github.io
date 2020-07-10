@@ -64,3 +64,39 @@ $('input').blur(function() {
   }
 });
 
+
+
+
+
+
+
+//select tn
+let result = $('.select-tn__result');
+let dropdownItem = $('.select-tn__dorpdown li');
+
+
+result.on('click', function() {
+  if($(this).hasClass('active')) {
+    $(this).removeClass('active').next('.select-tn__dorpdown').fadeOut();
+  } else{
+    $(this).addClass('active').next('.select-tn__dorpdown').fadeIn();
+  }
+});
+
+dropdownItem.on('click', function() {
+  $(this).siblings().removeClass('active');
+  let htmltegs = $(this).html();
+  let indexItem = $(this).index();
+  $(this).closest('.select-tn__dorpdown').siblings('select').val(++indexItem);
+  $(this).addClass('active').closest('.select-tn__dorpdown').prev('.select-tn__result').html(htmltegs);
+  $(this).closest('.select-tn__dorpdown').fadeOut();
+  $(this).closest('.select-tn__dorpdown').prev('.select-tn__result').removeClass('active');
+});
+
+$(document).mouseup(function(e) {
+  var container = $('.select-tn');
+  if (container.has(e.target).length === 0) {
+    $('.select-tn__dorpdown').fadeOut();
+    result.removeClass('active');
+  }
+});

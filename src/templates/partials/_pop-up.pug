@@ -495,11 +495,47 @@
                     label(for="last-name") Product Value (NIR)
                     a(href="#")
                       +icon('information')
-            #step-2.p-t-25.p-b-25.p-r-40.p-l-40.tab-pane.fade
-              p 2 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
-            #step-3.p-t-25.p-b-25.p-r-40.p-l-40.tab-pane.fade
+            #step-2.tab-pane.fade
+              h5.h5.fw-semi-bold.m-b-50 Product Details
+              .row.form__row
+                .col-md-6
+                  .form__block.m-b-35.flex
+                    .select-tn
+                      select(value="1")
+                        option(value="1") +91
+                        option(value="2") +92
+                        option(value="3") +93
+                        option(value="4") +94
+                      .select-tn__result
+                        img(src="img/india_flag.png", alt="")
+                        p +91
+                      ul.select-tn__dorpdown
+                        li.active
+                          img(src="img/india_flag.png", alt="")
+                          p +91
+                        li
+                          img(src="img/usa.png", alt="")
+                          p +93
+                        li
+                          img(src="img/uae_flag.png", alt="")
+                          p +94
+                        li
+                          img(src="img/Singapore_flag.png", alt="")
+                          p +92
+                    .form__block
+                      input(type="text" id="phone")
+                      label(for="phone") Mobile Number
+                    a(href="#")
+                      +icon('information')
+                .col-md-6
+                  .form__block.m-b-35.flex
+                    input(type="text" id="name")
+                    label(for="name") Consumer Name
+                    a(href="#")
+                      +icon('information')
+            #step-3.tab-pane.fade
               p 3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
-            #step-4.p-t-25.p-b-25.p-r-40.p-l-40.tab-pane.fade
+            #step-4.tab-pane.fade
               p 3 Click headers to expand/collapse content that is broken into logical sections, much like tabs. Optionally, toggle sections open/closed on mouseover.
           
   .modal-footer

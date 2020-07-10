@@ -64,3 +64,55 @@ input
       line-height: 2
       &:hover
         text-decoration: underline
+
+
+
+.select-tn
+  position: relative
+  display: inline-block
+  background: none
+  select
+    display: none
+  img
+    width: 20px
+    height: 20px
+  p
+    font-size: 12px
+    font-weight: normal
+    line-height: 1
+    color: #616161
+    padding-left: 10px
+    text-transform: uppercase
+  li
+    padding: 10px
+    display: flex
+    &.active, &:hover
+      background: #eee
+  &__result
+    display: flex
+    align-items: center
+    width: 100px
+    border-bottom: 1px solid #cecece
+    position: relative
+    padding: 7px 0
+    &:before
+      content: ''
+      position: absolute
+      right: 15px
+      top: 14px
+      border: 6px solid transparent
+      border-top: 6px solid #616161
+      +tr
+    &.active
+      &:before
+        transform: rotate(180deg)
+        top: 10px
+  &__dorpdown
+    position: absolute
+    top: 100%
+    z-index: 9
+    width: 100%
+    overflow: hidden
+    display: none
+    background: $white
+    border: 1px solid #bdbdbd
