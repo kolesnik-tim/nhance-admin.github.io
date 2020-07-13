@@ -170,13 +170,21 @@ $('body').on('click', '#slide-right-dx .tab-pane .btn-danger', function(event) {
   $(this).parent().remove();
 });
 
-$('#slide-right-dx .tab-pane .add-btn span, #slide-right-dx .tab-pane .add-btn b').on('click', function() {
+$('body').on('click', '#slide-right-dx .tab-pane .add-btn span', function() {
+  $(this).parents('.add-btn').toggleClass('active');
+});
+$('body').on('click', '#slide-right-dx .tab-pane .add-btn b', function() {
   $(this).parents('.add-btn').toggleClass('active');
 });
 
 
 
-$('#slide-right-dx .add-btn .invoice').on('click', function() {
-  
+$('body').on('click', '#slide-right-dx .add-btn .invoice', function() {
   $('#slide-right-dx #step-3').append('<div class="block-white m-b-15"><h5 class="fz-14 bold all-caps text-black title-invoice m-b-25">Invoice '+ 0 + (+$('.title-invoice').length+1) +'</h5><div class="form__block m-b-35 flex"><input type="text" id="name-4"><label for="name-4">Name</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div><div class="flex-wrap m-b-45 radio-block"><strong class="text-black m-b-10 m-r-20">File Details</strong><div class="form__radio m-r-20"><input type="radio" name="radio-04" id="radio-09" checked=""><label class="text-black fz-14" for="radio-09" data-radio="file">Upload File</label></div><div class="form__radio m-r-20"><input type="radio" name="radio-04" id="radio-10"><label class="text-black fz-14" for="radio-10" data-radio="url">URL</label></div><div class="form__radio"><input type="radio" name="radio-04" id="radio-11"><label class="text-black fz-14" for="radio-11" data-radio="invoice">Generate Invoice</label></div></div><div class="input-block"><div class="form__block m-b-35 flex file"><div><input type="file" id="file" placeholder="Upload File"></div><label for="file">Upload File</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a><svg class="icon icon-clip "><use xlink:href="img/sprite.svg#icon-clip"></use></svg></div><div class="form__block m-b-35 flex url" style="display:none"><input type="url" id="url"><label for="url">URL</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div></div><a class="btn btn-danger btn-sm" href="#">delete</a></div>');
+});
+
+
+
+$('body').on('click', '#slide-right-dx .add-btn .other', function() {
+  $('#slide-right-dx #step-3').append('<div class="block-white m-b-15"><h5 class="fz-14 bold all-caps text-black m-b-25">Other</h5><div class="form__block m-b-35 flex"><input type="text" id="name-4"><label for="name-4">Name</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div><div class="flex-wrap m-b-25 radio-block"><strong class="text-black m-b-10 m-r-20">File Details</strong><div class="form__radio m-r-20"><input type="radio" name="radio-09" id="radio-19" checked=""><label class="text-black fz-14" for="radio-19" data-radio="file">Upload File</label></div><div class="form__radio m-r-20"><input type="radio" name="radio-09" id="radio-20"><label class="text-black fz-14" for="radio-20" data-radio="url">URL</label></div></div><div class="input-block"><div class="form__block m-b-35 flex file"><div><input type="file" id="file" placeholder="Upload File"></div><label for="file">Upload File</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a><svg class="icon icon-clip "><use xlink:href="img/sprite.svg#icon-clip"></use></svg></div><div class="form__block m-b-35 flex url" style="display:none"><input type="url" id="url"><label for="url">URL</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div></div><ul class="add-btn"><li><span></span></li><li><b>add new</b></li><li><a class="invoice" href="#">invoice</a></li><li><a class="other" href="#">other</a></li></ul></div>');
 });
