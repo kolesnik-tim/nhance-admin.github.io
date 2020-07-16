@@ -1,8 +1,9 @@
 // import '../lib/maskedinput.js';
 import selectize from '../lib/selectize';
-import dynatree from '../lib/jquery.dynatree.min';
 import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
 import botstrap from 'bootstrap/js/dist/modal';
+
+
 
 
 ////header

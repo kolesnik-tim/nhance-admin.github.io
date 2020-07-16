@@ -3,17 +3,19 @@ import datatable from 'datatables.net';
 ///tabel
 $(document).ready(function() {
   ////table primary
-  $('#table-primary thead th').each( function() {
-    var title = $('#table-primary thead th').eq($(this).index()).text();
-    if($(this).index() === 0) {
-      $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
-    } else if($(this).index() === 2) {
-
-    } else if($(this).index() === 3) {
-    } else{
-      $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+title+'" />' );
-    }
-  } );
+  if($('div').hasClass('table-basic')) {
+    $('#table-primary thead th').each( function() {
+      var title = $('#table-primary thead th').eq($(this).index()).text();
+      if($(this).index() === 0) {
+        $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
+      } else if($(this).index() === 2) {
+  
+      } else if($(this).index() === 3) {
+      } else{
+        $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+title+'" />' );
+      }
+    } );
+  }
 
   // DataTable
   var table = $('#table-primary').DataTable({ 
@@ -27,31 +29,33 @@ $(document).ready(function() {
       },
     }
   });
-
+  if($('table').length) {
   // Apply the search
-  table.columns().eq( 0 ).each( function( colIdx ) {
-    $( 'input', table.column( colIdx ).header() ).on( 'keyup change', function() {
-      table
-        .column( colIdx )
-        .search( this.value )
-        .draw();
+    table.columns().eq( 0 ).each( function( colIdx ) {
+      $( 'input', table.column( colIdx ).header() ).on( 'keyup change', function() {
+        table
+          .column( colIdx )
+          .search( this.value )
+          .draw();
+      } );
     } );
-  } );
 
-
+  }
 
 
 
 
   //table secondary
-  $('#table-secondary thead th').each( function() {
-    var titleSecondary = $('#table-secondary thead th').eq($(this).index()).text();
-    if($(this).index() === 0) {
-      $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
-    } else{
-      $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+titleSecondary+'" />' );
-    }
-  } );
+  if($('#table-secondary').length) {
+    $('#table-secondary thead th').each( function() {
+      var titleSecondary = $('#table-secondary thead th').eq($(this).index()).text();
+      if($(this).index() === 0) {
+        $(this).html( '#<i class="icon-nn-dark-sort"></i>' );
+      } else{
+        $(this).html( '<i class="icon-nn-dark-search"></i><input type="text" placeholder="'+titleSecondary+'" />' );
+      }
+    } );
+  }
 
   // DataTable
   var tableSecondary = $('#table-secondary').DataTable({ 
@@ -66,17 +70,18 @@ $(document).ready(function() {
     }
   });
 
+  if($('table').length) {
   // Apply the search
-  tableSecondary.columns().eq( 0 ).each( function( colIdxS ) {
-    $( 'input', tableSecondary.column( colIdxS ).header() ).on( 'keyup change', function() {
-      tableSecondary
-        .column( colIdxS )
-        .search( this.value )
-        .draw();
+    tableSecondary.columns().eq( 0 ).each( function( colIdxS ) {
+      $( 'input', tableSecondary.column( colIdxS ).header() ).on( 'keyup change', function() {
+        tableSecondary
+          .column( colIdxS )
+          .search( this.value )
+          .draw();
+      } );
     } );
-  } );
+  }
 });
-
 
 
 

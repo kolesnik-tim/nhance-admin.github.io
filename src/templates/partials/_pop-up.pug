@@ -469,9 +469,9 @@
                     a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
-                  .form__block.m-b-35.flex
-                    input(type="text" id="months" require)
-                    label(for="months").require Warranty Period (In Months)
+                  .form__block.m-b-35.flex.autocomplete
+                    input(type="text" id="myInput" require)
+                    label(for="myInput").require Warranty Period (In Months)
                     a(href="#" data-toggle="tooltip", data-placement='top', title='Up here!')
                       +icon('information')
                 .col-sm-6
@@ -635,8 +635,7 @@
                   li
                     a(href="#").invoice invoice
                   li
-                    a(href="#").other other
-            
+                    a(href="#").other other          
             #step-4.tab-pane.fade
               h5.h5.fw-semi-bold.m-b-50 Custom Fields
               .row.form__row

@@ -76,6 +76,8 @@
     "bootstrap": "^4.4.1",
     "datatables.net": "^1.10.20",
     "datatables.net-dt": "^1.10.20",
+    "materialize-css": "^1.0.0-rc.2",
+    "materialize-js": "^1.0.0",
     "microplugin": "0.0.3"
   }
 }
