@@ -110,11 +110,141 @@ function autocomplete(inp, arr) {
 
 
 
-
-
+//autocomplete
 var countries = ['Afghanistan','Albania','Algeria','Andorra','Angola','Anguilla','Antigua &amp; Barbuda','Argentina','Armenia','Aruba','Australia','Austria','Azerbaijan','Bahamas','Bahrain','Bangladesh','Barbados','Belarus','Belgium','Belize','Benin','Bermuda','Bhutan','Bolivia','Bosnia &amp; Herzegovina','Botswana','Brazil','British Virgin Islands','Brunei','Bulgaria','Burkina Faso','Burundi','Cambodia','Cameroon','Canada','Cape Verde','Cayman Islands','Central Arfrican Republic','Chad','Chile','China','Colombia','Congo','Cook Islands','Costa Rica','Cote D Ivoire','Croatia','Cuba','Curacao','Cyprus','Czech Republic','Denmark','Djibouti','Dominica','Dominican Republic','Ecuador','Egypt','El Salvador','Equatorial Guinea','Eritrea','Estonia','Ethiopia','Falkland Islands','Faroe Islands','Fiji','Finland','France','French Polynesia','French West Indies','Gabon','Gambia','Georgia','Germany','Ghana','Gibraltar','Greece','Greenland','Grenada','Guam','Guatemala','Guernsey','Guinea','Guinea Bissau','Guyana','Haiti','Honduras','Hong Kong','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland','Isle of Man','Israel','Italy','Jamaica','Japan','Jersey','Jordan','Kazakhstan','Kenya','Kiribati','Kosovo','Kuwait','Kyrgyzstan','Laos','Latvia','Lebanon','Lesotho','Liberia','Libya','Liechtenstein','Lithuania','Luxembourg','Macau','Macedonia','Madagascar','Malawi','Malaysia','Maldives','Mali','Malta','Marshall Islands','Mauritania','Mauritius','Mexico','Micronesia','Moldova','Monaco','Mongolia','Montenegro','Montserrat','Morocco','Mozambique','Myanmar','Namibia','Nauro','Nepal','Netherlands','Netherlands Antilles','New Caledonia','New Zealand','Nicaragua','Niger','Nigeria','North Korea','Norway','Oman','Pakistan','Palau','Palestine','Panama','Papua New Guinea','Paraguay','Peru','Philippines','Poland','Portugal','Puerto Rico','Qatar','Reunion','Romania','Russia','Rwanda','Saint Pierre &amp; Miquelon','Samoa','San Marino','Sao Tome and Principe','Saudi Arabia','Senegal','Serbia','Seychelles','Sierra Leone','Singapore','Slovakia','Slovenia','Solomon Islands','Somalia','South Africa','South Korea','South Sudan','Spain','Sri Lanka','St Kitts &amp; Nevis','St Lucia','St Vincent','Sudan','Suriname','Swaziland','Sweden','Switzerland','Syria','Taiwan','Tajikistan','Tanzania','Thailand',"Timor L'Este",'Togo','Tonga','Trinidad &amp; Tobago','Tunisia','Turkey','Turkmenistan','Turks &amp; Caicos','Tuvalu','Uganda','Ukraine','United Arab Emirates','United Kingdom','United States of America','Uruguay','Uzbekistan','Vanuatu','Vatican City','Venezuela','Vietnam','Virgin Islands (US)','Yemen','Zambia','Zimbabwe'];
 var mark = ['Apple', 'Google'];
 
 
-autocomplete(document.getElementById('myInput'), mark);
+autocomplete(document.getElementById('myInput'), countries);
 
+
+
+
+
+$('#slide-right-dx input').focus(function() {
+  $(this).addClass('focus');
+  $('#slide-right-dx').addClass('focus');
+});
+$('#slide-right-dx select').change(function() {
+  if($(this).val() >= 1) {
+    $(this).addClass('focus');
+  }
+  $('#slide-right-dx').addClass('focus');
+});
+
+//pop-up btn continue
+$('#slide-right-dx .continue, #slide-right-dx .skip').on('click', function() {
+  if($('#slide-right-dx .tab-content .tab-pane.active').index() !== 3) {
+    $('#slide-right-dx .nav-step li a.active').removeClass('active').parent().next().find('a').addClass('active');
+    $('#slide-right-dx .tab-content .tab-pane.active').removeClass('active show').next().addClass('active show');
+    $('#slide-right-dx .skip').fadeOut();
+  }
+  if($('#slide-right-dx .tab-content .tab-pane.active').index() === 2) {
+    $('#slide-right-dx .skip').fadeIn();
+  }
+  if($('#slide-right-dx .tab-content .tab-pane.active').index() === 3) {
+    $('#slide-right-dx .continue').text('Issue Now');
+    $('#slide-right-dx .skip').fadeOut();
+  }
+});
+$('#slide-right-dx .nav-step li a').click(function() {
+  setTimeout(function() {
+    if($('#slide-right-dx .tab-content .tab-pane.active').index() === 3) {
+      $('#slide-right-dx .continue').text('Issue Now');
+      $('#slide-right-dx .skip').fadeOut();
+    } else{
+      $('#slide-right-dx .continue').text('Continue');
+      $('#slide-right-dx .skip').fadeOut();
+    }
+    if($('#slide-right-dx .tab-content .tab-pane.active').index() === 2) {
+      $('#slide-right-dx .skip').fadeIn();
+    }
+  }, 300);
+});
+
+
+
+//input file
+$(document).ready( function() {
+  $('body').on('change', '#slide-right-dx .tab-pane .file input', function() {
+    var filename = $(this).val().replace(/.*\\/, '');
+    $(this).parent().next().text(filename);
+  });
+});
+
+
+//Issue DX Card step 3
+$('body').on('click', '#slide-right-dx .tab-pane label', function() {
+  let label = $(this);
+  if(label.attr('data-radio') === 'file') {
+    label.parents('.radio-block').next('.input-block').find('.url').fadeOut(300);
+    setTimeout(function() {
+      label.parents('.radio-block').next('.input-block').find('.file').fadeIn();
+    }, 300);
+    
+  } else if(label.attr('data-radio') === 'url') {
+    label.parents('.radio-block').next('.input-block').find('.file').fadeOut(300);
+    setTimeout(function() {
+      label.parents('.radio-block').next('.input-block').find('.url').fadeIn();
+    }, 300);
+    
+  }
+});
+
+//Issue DX Card delet step 3
+$('body').on('click', '#slide-right-dx .tab-pane .btn-danger', function(event) {
+  event.preventDefault();
+  $(this).parent().remove();
+  $('.invoice-block').each(function(index, el) {
+    $(el).find('h5').text('Invoice ' + ++index);
+  });
+  $('.other-block').each(function(index, el) {
+    $(el).find('h5').text('Other ' + ++index);
+  });
+});
+
+
+
+
+//Issue DX Card add step 3
+$('body').on('click', '#slide-right-dx .tab-pane .add-btn span', function() {
+  $(this).parents('.add-btn').toggleClass('active');
+});
+$('body').on('click', '#slide-right-dx .tab-pane .add-btn b', function() {
+  $(this).parents('.add-btn').toggleClass('active');
+});
+
+$('body').on('click', '#slide-right-dx .add-btn .invoice', function() {
+  $('#slide-right-dx #step-3').append('<div class="block-white m-b-15 invoice-block"><h5 class="fz-14 bold all-caps text-black title-invoice m-b-25">Invoice 01</h5><div class="form__block m-b-35 flex"><input type="text" id="name-4"><label for="name-4">Name</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div><div class="flex-wrap m-b-45 radio-block"><strong class="text-black m-b-10 m-r-20">File Details</strong><div class="form__radio m-r-20"><input type="radio" name="radio-04" id="radio-09" checked=""><label class="text-black fz-14" for="radio-09" data-radio="file">Upload File</label></div><div class="form__radio m-r-20"><input type="radio" name="radio-04" id="radio-10"><label class="text-black fz-14" for="radio-10" data-radio="url">URL</label></div><div class="form__radio"><input type="radio" name="radio-04" id="radio-11"><label class="text-black fz-14" for="radio-11" data-radio="invoice">Generate Invoice</label></div></div><div class="input-block"><div class="form__block m-b-35 flex file"><div><input type="file" id="file" placeholder="Upload File"></div><label for="file">Upload File</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a><svg class="icon icon-clip "><use xlink:href="img/sprite.svg#icon-clip"></use></svg></div><div class="form__block m-b-35 flex url" style="display:none"><input type="url" id="url"><label for="url">URL</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div></div><a class="btn btn-danger btn-sm invoice-hide" href="#">delete</a><ul class="add-btn"><li><span></span></li><li><b>add new</b></li><li><a class="invoice" href="#">invoice</a></li><li><a class="other" href="#">other</a></li></ul></div>');
+  $('.invoice-block').each(function(index, el) {
+    $(el).find('h5').text('Invoice ' + ++index);
+  });
+  $(this).parents('.add-btn').hide().prev().fadeIn();
+});
+
+
+
+$('body').on('click', '#slide-right-dx .add-btn .other', function() {
+  $('#slide-right-dx #step-3').append('<div class="block-white m-b-15 other-block"><h5 class="fz-14 bold all-caps text-black m-b-25">Other</h5><div class="form__block m-b-35 flex"><input type="text" id="name-4"><label for="name-4">Name</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div><div class="flex-wrap m-b-25 radio-block"><strong class="text-black m-b-10 m-r-20">File Details</strong><div class="form__radio m-r-20"><input type="radio" name="radio-09" id="radio-19" checked=""><label class="text-black fz-14" for="radio-19" data-radio="file">Upload File</label></div><div class="form__radio m-r-20"><input type="radio" name="radio-09" id="radio-20"><label class="text-black fz-14" for="radio-20" data-radio="url">URL</label></div></div><div class="input-block"><div class="form__block m-b-35 flex file"><div><input type="file" id="file" placeholder="Upload File"></div><label for="file">Upload File</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a><svg class="icon icon-clip "><use xlink:href="img/sprite.svg#icon-clip"></use></svg></div><div class="form__block m-b-35 flex url" style="display:none"><input type="url" id="url"><label for="url">URL</label><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Up here!"><svg class="icon icon-information "><use xlink:href="img/sprite.svg#icon-information"></use></svg></a></div></div><a class="btn btn-danger btn-sm invoice-hide" href="#">delete</a><ul class="add-btn"><li><span></span></li><li><b>add new</b></li><li><a class="invoice" href="#">invoice</a></li><li><a class="other" href="#">other</a></li></ul></div>');
+  $('.other-block').each(function(index, el) {
+    $(el).find('h5').text('Other ' + ++index);
+  });
+  $(this).parents('.add-btn').hide().prev().fadeIn();
+});
+
+
+
+// //hide modal
+// // $('#slide-right-dx').modal({
+// //   backdrop: true,
+// //   keyboard: true
+// // });
+// $('#slide-right-dx').on('hide.bs.modal', function(e) {
+//   if($('#slide-right-dx input').val() === '') {
+//     return e.preventDefault();
+//     console.log('ds'); 
+//   } else{
+//     console.log('ds12'); 
+//   }
+//   console.log('12'); 
+// });
