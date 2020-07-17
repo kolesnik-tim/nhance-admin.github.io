@@ -121,30 +121,83 @@ autocomplete(document.getElementById('myInput'), countries);
 
 
 
-$('#slide-right-dx input').focus(function() {
-  $(this).addClass('focus');
-  $('#slide-right-dx').addClass('focus');
+$('#slide-right-dx input').change(function() {
+  if($(this).val() !== '') {
+    $(this).addClass('change');
+    $('#slide-right-dx').addClass('change');
+  } else{
+    $(this).removeClass('change');
+  }
 });
 $('#slide-right-dx select').change(function() {
   if($(this).val() >= 1) {
-    $(this).addClass('focus');
+    $(this).addClass('change');
+  } else{
+    $(this).removeClass('change');
   }
-  $('#slide-right-dx').addClass('focus');
+  $('#slide-right-dx').addClass('change');
 });
 
 //pop-up btn continue
-$('#slide-right-dx .continue, #slide-right-dx .skip').on('click', function() {
+$('#slide-right-dx .continue, #slide-right-dx .skip').on('click', function(event) {
   if($('#slide-right-dx .tab-content .tab-pane.active').index() !== 3) {
-    $('#slide-right-dx .nav-step li a.active').removeClass('active').parent().next().find('a').addClass('active');
-    $('#slide-right-dx .tab-content .tab-pane.active').removeClass('active show').next().addClass('active show');
-    $('#slide-right-dx .skip').fadeOut();
+    event.preventDefault();
+    let require = 0;
+    $('#step-1 input').each(function(index, el) {
+      if($(el).is('[require]')) {
+        if($(el).hasClass('change')) {
+          ++require;
+          $(el).css({'border-color': '#cecece'});
+        } else{
+          $(el).css({'border-color': '#ff0057'});
+        }
+      }
+    });
+    $('#step-1 .select-search-req').each(function(index, el) {
+      if($(el).val() >= 1) {
+        ++require;
+        $(el).next('.selectize-control').find('.selectize-input').css({'border-color': '#cecece'});
+      } else{
+        $(el).next('.selectize-control').find('.selectize-input').css({'border-color': '#ff0057'});
+      }
+    });
+    let sum = $('#step-1 input[require]').length + $('#step-1 select.select-search-req').length;
+    if(require === sum) {
+      $('#slide-right-dx .nav-step li a.active').removeClass('active').parent().next().find('a').addClass('active');
+      $('#slide-right-dx .tab-content .tab-pane.active').removeClass('active show').next().addClass('active show');
+      $('#slide-right-dx .skip').fadeOut(); 
+    }
   }
   if($('#slide-right-dx .tab-content .tab-pane.active').index() === 2) {
     $('#slide-right-dx .skip').fadeIn();
+    event.preventDefault();
   }
   if($('#slide-right-dx .tab-content .tab-pane.active').index() === 3) {
     $('#slide-right-dx .continue').text('Issue Now');
     $('#slide-right-dx .skip').fadeOut();
+    let require = 0;
+    $('#step-4 input').each(function(index, el) {
+      if($(el).is('[require]')) {
+        if($(el).hasClass('change')) {
+          ++require;
+          $(el).css({'border-color': '#cecece'});
+        } else{
+          $(el).css({'border-color': '#ff0057'});
+        }
+      }
+    });
+    $('#step-4 .select-search-req').each(function(index, el) {
+      if($(el).val() >= 1) {
+        ++require;
+        $(el).next('.selectize-control').find('.selectize-input').css({'border-color': '#cecece'});
+      } else{
+        $(el).next('.selectize-control').find('.selectize-input').css({'border-color': '#ff0057'});
+      }
+    });
+    let sum = $('#step-4 input[require]').length + $('#step-4 select.select-search-req').length;
+    if(require !== sum) {
+      event.preventDefault();
+    }
   }
 });
 $('#slide-right-dx .nav-step li a').click(function() {
@@ -231,20 +284,3 @@ $('body').on('click', '#slide-right-dx .add-btn .other', function() {
   });
   $(this).parents('.add-btn').hide().prev().fadeIn();
 });
-
-
-
-// //hide modal
-// // $('#slide-right-dx').modal({
-// //   backdrop: true,
-// //   keyboard: true
-// // });
-// $('#slide-right-dx').on('hide.bs.modal', function(e) {
-//   if($('#slide-right-dx input').val() === '') {
-//     return e.preventDefault();
-//     console.log('ds'); 
-//   } else{
-//     console.log('ds12'); 
-//   }
-//   console.log('12'); 
-// });

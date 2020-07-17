@@ -4,21 +4,17 @@ import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
 import botstrap from 'bootstrap/js/dist/modal';
 
 //hide modal
-// $('#slide-right-dx').modal({
-//   backdrop: true,
-//   keyboard: true
-// });
 $('#slide-right-dx').on('hide.bs.modal', function(e) {
   console.log($('#slide-right-dx input').val());
-  if($('#slide-right-dx').hasClass('focus')) {
+  if($('#slide-right-dx').hasClass('change')) {
     e.preventDefault();
     $('#slide-up').modal('show');
-    $('#slide-up').css({'z-index': 999999999999999999});
+    $('#slide-up').css({'z-index': 9999999});
   }
 });
 
 $('#slide-up .btn.btn-complete').on('click', function() {
-  $('#slide-right-dx').removeClass('focus');
+  $('#slide-right-dx').removeClass('change');
   $('#slide-up').modal('hide');
   $('#slide-right-dx').modal('hide');
 });
