@@ -732,6 +732,57 @@
           <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><a class="btn btn-secondary m-r-15 skip" href="#" style="display:none">Skip</a><button class="btn btn-primary continue" type="submit">Continue</button></div>
         </form>
       </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-dialog" id="slide-right-create">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Issue DX Card<span>Single Choice</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="active" data-toggle="tab" href="#form-1">form</a></li>
+                    <li><a data-toggle="tab" href="#advanced-2">Advanced Settings</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="form-1">
+                      <p>1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                    </div>
+                    <div class="tab-pane fade" id="advanced-2">
+                      <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="filed-value-1" require><label class="require" for="filed-value-1">Field Value</label></div>
+                      <div class="m-t-50 m-b-30">
+                        <p class="text-black fz-14 fw-semi-bold m-b-20">Define a Condition to Validate<svg class="icon icon-information text-blue m-l-10">
+                            <use xlink:href="img/sprite.svg#icon-information"></use>
+                          </svg></p>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30 disabled"><input type="number" id="filterKey" disabled><label for="filterKey">filterKey</label></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><select class="select">
+                                <option value="1">Select</option>
+                                <option value="2">Select1</option>
+                                <option value="3">Select2</option>
+                              </select></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><input type="text" id="value"><label for="value">Value1</label></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__block m-b-30"><input type="text" id="success-message"><label for="success-message">Success Message</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="failure-message"><label for="failure-message">Failure Message</label></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
+        </form>
+      </div>
       <!--END pop-up-->
     </div>
     <!--END out-->

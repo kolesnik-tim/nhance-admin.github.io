@@ -45,6 +45,32 @@ input
 
 
 
+.block-tegs
+  span, a
+    font-size: 12px
+    font-weight: 600
+    color: $dark
+    display: inline-flex
+    align-items: center
+    &:before
+      content: ''
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      display: block
+      margin-right: 7px
+    &.red::before
+      background: #fc1159
+    &.green::before
+      background: #00ae61
+    &.blue::before
+      background: #00a2d4
+    &.bright-magenta::before
+      background: #ff00f6
+    &.tangerine::before
+      background: #ff9a09
+      
+
 
 
 

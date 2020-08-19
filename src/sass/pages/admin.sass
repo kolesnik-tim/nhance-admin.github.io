@@ -21,6 +21,8 @@
     +r(767)
       padding: 50px 0
       min-height: calc(100vh - 40px)
+    &--table
+      padding-bottom: 0
     &-404
       +center-column
       +rh(370)
@@ -37,9 +39,87 @@
       position: absolute
       right: 0
       top: 0
+      +r(992)
+        position: relative
+        margin-top: 20px
+    &__btn
+      display: flex
+      .btn
+        position: relative
+        margin-top: 0
   .block-white
     border: solid 1px #d7d5d5 !important
     background-color: $white
     height: 100%
     +r(767)
       padding: 15px !important
+  &__table
+    display: flex
+    width: calc(100% + 60px)
+    position: relative
+    left: -30px
+    min-height: calc(100vh - 370px)
+    +r(992)
+      min-height: auto
+      flex-direction: column
+    &__header
+      height: 50px
+      border-top: 1px solid rgba($brownish-grey, 0.2)
+      border-bottom: 1px solid rgba($brownish-grey, 0.7)
+      position: relative
+      background-image: linear-gradient(to top, #d8d8d8, #ececec), linear-gradient(to bottom, #dfdfdf, #dfdfdf)
+      p svg
+        fill: #2196f3
+      .btn
+        font-size: 18px
+        font-weight: 600
+        display: flex
+        padding: 12px 15px
+        padding-right: 5px
+        border-radius: 14px
+        margin-top: -3px
+        i
+          font-size: 6px
+          margin-left: 15px
+      .block-tegs
+        position: absolute
+        top: 35px
+        padding: 10px 0
+        right: -80px
+        width: 150px
+        border-radius: 5px
+        box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.18)
+        border: solid 0.5px #dddddd
+        background-color: $dark
+        z-index: 5
+        display: none
+        +r(992)
+          right: 10px
+          top: auto
+          bottom: 49px
+        &::before
+          content: ''
+          border: 8px solid transparent
+          border-bottom: 8px solid #131725
+          position: absolute
+          top: -15px
+          left: 10px
+          +r(992)
+            left: auto
+            right: 33px
+            top: auto
+            bottom: -15px
+            border-bottom: 8px solid transparent
+            border-top: 8px solid #131725
+        a
+          width: 100%
+          &:hover
+            background: #292e3d
+    aside
+      width: 250px
+      background: #f4f2ed
+      border-right: 1px solid rgba($brownish-grey, 0.4)
+      +r(992)
+        width: 100%
+    &__content
+      flex: 1

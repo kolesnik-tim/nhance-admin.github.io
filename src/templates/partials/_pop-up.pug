@@ -687,4 +687,68 @@
       button(type="submit").btn.btn-primary.continue Continue
 
 
+
+
+
+
+
+
+
+
+#slide-right-create.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Issue DX Card
+              span Single Choice
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#form-1').active form
+              li
+                a(data-toggle='tab', href='#advanced-2') Advanced Settings
+            .tab-content
+              #form-1.tab-pane.fade.show.in.active
+                p 1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+              #advanced-2.tab-pane.fade
+                .form__block.m-b-30
+                  input(type="text" id="filed-name-1" require)
+                  label(for="filed-name-1").require Field Name
+                .form__block.m-b-30
+                  input(type="text" id="filed-value-1" require)
+                  label(for="filed-value-1").require Field Value
+
+                .m-t-50.m-b-30
+                  p.text-black.fz-14.fw-semi-bold.m-b-20 Define a Condition to Validate
+                    +icon('information', 'text-blue m-l-10')
+                  .row
+                    .col-sm-4
+                      .form__block.m-b-30.disabled
+                        input(type="number" id="filterKey" disabled)
+                        label(for="filterKey") filterKey
+                    .col-sm-4
+                      .form__block.m-b-30
+                        select.select
+                          option(value="1") Select
+                          option(value="2") Select1
+                          option(value="3") Select2
+                    .col-sm-4
+                      .form__block.m-b-30
+                        input(type="text" id="value" )
+                        label(for="value") Value1
+
+                .form__block.m-b-30
+                  input(type="text" id="success-message" )
+                  label(for="success-message") Success Message
+                .form__block.m-b-30
+                  input(type="text" id="failure-message")
+                  label(for="failure-message") Failure Message
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Save
 //END pop-up

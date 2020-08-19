@@ -79,6 +79,17 @@ $('input').blur(function() {
   }
 });
 
+//form checkbox + text
+$('.form__checkbox-ios label').on('click', function() {
+  if($(this).prev().is(':checked')) {
+    $(this).next('span').find('span:last-child').show();
+    $(this).next('span').find('span:first-child').hide();
+  } else{
+    $(this).next('span').find('span:last-child').hide();
+    $(this).next('span').find('span:first-child').show();
+  }
+});
+
 
 
 
@@ -124,3 +135,14 @@ $(document).mouseup(function(e) {
 
 
 
+
+
+
+
+
+//admin table
+
+$('.open-tegs').on('click', function(event) {
+  event.preventDefault();
+  $(this).next('.block-tegs').fadeToggle();
+});

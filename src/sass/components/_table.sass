@@ -180,6 +180,28 @@
         cursor: default
 
 
+
+  &-secondary
+    position: relative
+    overflow-x: scroll
+    thead th
+      width: 11% !important
+      &:nth-child(5)
+        width: 14% !important
+    thead th, td
+      padding: 23px 10px
+    thead th:nth-child(1), td:nth-child(1)
+      padding: 23px 20px
+    thead th:last-child
+      width: 160px !important
+    thead th .icon-nn-calendar
+      top: -3px
+    table
+      min-width: 1300px
+
 .table__no-button
   .dataTables_info, .dataTables_paginate
     display: none
+
+
+

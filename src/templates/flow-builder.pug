@@ -1,0 +1,65 @@
+---
+title: Flow Builder 
+---
+extends layouts/_layout
+block content
+  .admin.table-basic
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content.admin__content--table.p-l-30.p-r-30
+      .admin__title.m-b-50.flex-wrap.space-between
+        h1.h1 Create New Flow
+        .admin__title__btn.flex-wrap
+          a(href="#" data-toggle="modal" data-target="#slide-right-create").btn.btn-secondary.m-r-10.m-b-10 Cancel
+          a(href="#").btn.btn-secondary.m-r-10.m-b-10 Setup Trigger Point
+          a(href="#").btn.btn-secondary.m-r-10.m-b-10 Publish
+          a(href="#").btn.btn-primary.m-r-10.m-b-10 Save
+      form
+        .row
+          .col-lg-3.col-12
+            .form__block.m-b-30
+              input(type="text" name="portner" id="portner-1" require)
+              label(for="portner-1").require Name
+          .col-lg-3.col-12
+            .form__block.form__block--select.m-b-30.m-r-30
+              label.require Product Category
+              select.select
+                option(value="1") Product Category
+                option(value="2") Product Category1
+                option(value="3") Product Category2
+          .col-lg-6.col-12
+            .form__block.m-b-30
+              input(type="text" name="portner" id="portner-2" require)
+              label(for="portner-2").require Description
+      h3.h5.fw-semi-bold.m-b-15 Message and Response Type Configuration
+      .row
+        .col-lg-7
+          p.fz-14.fw-semi-bold.text-danger
+            +icon('information', 'text-danger m-r-10')
+            | Once a flow is triggered by a user, the existing steps and branches of the flow cannot be edited
+        .col-lg-5
+          .block-tegs.flex-wrap.justify-content-end.m-t-10
+            span.m-r-15.red Single Choice
+            span.m-r-15.green Multiple choice
+            span.m-r-15.blue Formula
+            span.m-r-15.bright-magenta Location
+            span.tangerine API
+      .admin__table.m-t-40
+        aside
+          .admin__table__header.space-between.p-l-30.p-r-30.p-t-15.p-b-15
+            p.fz-14.bold.text-black Create Step
+              +icon('information', 'm-l-10')
+            a(href="#").open-tegs.btn.btn-primary.btn-xs.h5 +
+              i.icon-nn-filled-arrow-down
+            .block-tegs.center-column.m-t-10
+              a(href="#").text-white.padding-10.red Single Choice
+              a(href="#").text-white.padding-10.green Multiple choice
+              a(href="#").text-white.padding-10.blue Formula
+              a(href="#").text-white.padding-10.bright-magenta Location
+              a(href="#").text-white.padding-10.tangerine API
+          ul
+            li.padding-25 Please click on 
+              span.text-danger + 
+              | to start with your flow
+        .admin__table__content
+          .admin__table__header

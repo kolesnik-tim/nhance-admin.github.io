@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Modals</title>
+    <title>Flow Builder</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -16,7 +16,7 @@
       <!--BEGIN header-->
       <header class="header"></header>
       <!--END header-->
-      <div class="admin">
+      <div class="admin table-basic">
         <aside class="aside-admin bg-dark">
           <div class="aside-admin__logo"><i class="icon-nn-pink-nhance-icon_1"></i><span>Design <br>Guidelines</span></div><b>Dashboard<i class="icon-nn-pink-left-panel-dashboard"><span class="path1"></span><span class="path2"></span></i></b><b>Manage<i class="icon-nn-thin-arrow-right"></i><i class="icon-nn-pink-left-panel-manage"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i></b>
           <ul style="display:none">
@@ -61,37 +61,53 @@
             </div>
           </div>
         </div>
-        <div class="admin__content">
-          <div class="container">
-            <div class="admin__title p-b-40">
-              <h1 class="h1 m-b-35">Modals</h1>
-              <p>These modals are customized with new animations and style, now pages modals support up to 3 different versions and each version have small, medium and large modals. This helps you to make your app look even better</p>
-            </div>
+        <div class="admin__content admin__content--table p-l-30 p-r-30">
+          <div class="admin__title m-b-50 flex-wrap space-between">
+            <h1 class="h1">Create New Flow</h1>
+            <div class="admin__title__btn flex-wrap"><a class="btn btn-secondary m-r-10 m-b-10" href="#" data-toggle="modal" data-target="#slide-right-create">Cancel</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Setup Trigger Point</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Publish</a><a class="btn btn-primary m-r-10 m-b-10" href="#">Save</a></div>
+          </div>
+          <form>
             <div class="row">
-              <div class="col-lg-6 col-12 m-b-20">
-                <div class="block-white padding-35">
-                  <h5 class="h5 bold">Slide Up</h5>
-                  <p class="m-b-10 m-b-30">This modal slides in from the bottom and rests on the middle of the screen, to add this simply add the class <code>slide-up </code>to the <code>modal </code>div</p>
-                  <div class="modal-demo modal-demo-center"><img src="img/modal/modal-center.png" alt=""></div>
-                  <div class="center-column"><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#slide-up">Demo</a></div>
-                </div>
+              <div class="col-lg-3 col-12">
+                <div class="form__block m-b-30"><input type="text" name="portner" id="portner-1" require><label class="require" for="portner-1">Name</label></div>
               </div>
-              <div class="col-lg-6 col-12 m-b-20">
-                <div class="block-white padding-35">
-                  <h5 class="h5 bold">Stick Up</h5>
-                  <p class="m-b-10 m-b-30">This modal slides in from the bottom and rests on the middle of the screen, to add this simply add the class <code>slide-up </code>to the <code>modal </code>div</p>
-                  <div class="modal-demo modal-demo-top"><img src="img/modal/modal-top.png" alt=""></div>
-                  <div class="center-column"><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#stick-up">Demo</a></div>
-                </div>
+              <div class="col-lg-3 col-12">
+                <div class="form__block form__block--select m-b-30 m-r-30"><label class="require">Product Category</label><select class="select">
+                    <option value="1">Product Category</option>
+                    <option value="2">Product Category1</option>
+                    <option value="3">Product Category2</option>
+                  </select></div>
               </div>
-              <div class="col-lg-6 col-12 m-b-20">
-                <div class="block-white padding-35">
-                  <h5 class="h5 bold">Slide Up</h5>
-                  <p class="m-b-10 m-b-30">This modal slides in from the bottom and rests on the middle of the screen, to add this simply add the class <code>slide-up </code>to the <code>modal </code>div</p>
-                  <div class="modal-demo modal-demo-right"><img src="img/modal/modal-right-bottom.png" alt=""></div>
-                  <div class="center-column"><a class="btn btn-primary" href="#" data-toggle="modal" data-target="#slide-right">Demo</a></div>
-                </div>
+              <div class="col-lg-6 col-12">
+                <div class="form__block m-b-30"><input type="text" name="portner" id="portner-2" require><label class="require" for="portner-2">Description</label></div>
               </div>
+            </div>
+          </form>
+          <h3 class="h5 fw-semi-bold m-b-15">Message and Response Type Configuration</h3>
+          <div class="row">
+            <div class="col-lg-7">
+              <p class="fz-14 fw-semi-bold text-danger"><svg class="icon icon-information text-danger m-r-10">
+                  <use xlink:href="img/sprite.svg#icon-information"></use>
+                </svg>Once a flow is triggered by a user, the existing steps and branches of the flow cannot be edited</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="block-tegs flex-wrap justify-content-end m-t-10"><span class="m-r-15 red">Single Choice</span><span class="m-r-15 green">Multiple choice</span><span class="m-r-15 blue">Formula</span><span class="m-r-15 bright-magenta">Location</span><span class="tangerine">API</span></div>
+            </div>
+          </div>
+          <div class="admin__table m-t-40">
+            <aside>
+              <div class="admin__table__header space-between p-l-30 p-r-30 p-t-15 p-b-15">
+                <p class="fz-14 bold text-black">Create Step<svg class="icon icon-information m-l-10">
+                    <use xlink:href="img/sprite.svg#icon-information"></use>
+                  </svg></p><a class="open-tegs btn btn-primary btn-xs h5" href="#">+<i class="icon-nn-filled-arrow-down"></i></a>
+                <div class="block-tegs center-column m-t-10"><a class="text-white padding-10 red" href="#">Single Choice</a><a class="text-white padding-10 green" href="#">Multiple choice</a><a class="text-white padding-10 blue" href="#">Formula</a><a class="text-white padding-10 bright-magenta" href="#">Location</a><a class="text-white padding-10 tangerine" href="#">API</a></div>
+              </div>
+              <ul>
+                <li class="padding-25">Please click on <span class="text-danger">+ </span>to start with your flow</li>
+              </ul>
+            </aside>
+            <div class="admin__table__content">
+              <div class="admin__table__header"></div>
             </div>
           </div>
         </div>

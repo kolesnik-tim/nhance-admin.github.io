@@ -175,7 +175,7 @@
           svg
             fill: $brown-grey
             font-size: 24px
-#slide-right-dialog, #slide-right-dx
+#slide-right-dialog, #slide-right-dx, #slide-right-create
   .modal-footer
     max-width: 670px
     right: -100%
@@ -304,3 +304,46 @@
       margin-left: 0
     .invoice-hide
       display: none
+
+
+
+
+
+
+
+
+
+
+.slide-right-create
+  .modal-header h2 span
+    font-size: 14px
+    font-weight: 600
+    position: relative
+    top: -5px
+    margin-left: 20px
+    &::before
+      content: ''
+      width: 10px
+      height: 10px
+      background-color: #fc1159
+      border-radius: 50%
+      margin-right: 10px
+      display: inline-block
+  .modal-body
+    padding: 0 !important
+  &.modal.fade.slide-right-dialog .tab-content
+    height: 72vh !important
+    overflow: auto
+    +rh(560)
+      height: 57vh !important
+  .nav-tabs li a
+    padding: 20px 60px
+  .tab-content
+    background: rgb(243, 244, 244)
+    padding-bottom: 100px !important
+  .form__block.disabled
+    label
+      top: 10px
+      font-size: 14px
+  button.btn
+    padding: 14px 30px
