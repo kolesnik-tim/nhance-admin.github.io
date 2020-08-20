@@ -23,6 +23,8 @@
       min-height: calc(100vh - 40px)
     &--table
       padding-bottom: 0
+    &--responses
+      padding: 40px 0px 0px 0px
     &-404
       +center-column
       +rh(370)
@@ -123,3 +125,93 @@
         width: 100%
     &__content
       flex: 1
+
+
+
+
+
+
+.responses
+  .admin__title
+    +r(767)
+      margin-left: 10px
+  &__aside
+    width: 370px
+    border-right: 1px solid rgba($brownish-grey, 0.4)
+    background: #fff
+    min-height: calc(100vh - 230px)
+    +r(992)
+      width: 100%
+      min-height: auto
+      padding-bottom: 30px
+    li.active
+      background-image: linear-gradient(to top, #c7c7c7, #d8dce0)
+
+  &__content
+    +r(992)
+      flex-direction: column
+  &__header
+    background-image: linear-gradient(to top, #d8d8d8, #ececec), linear-gradient(to bottom, #dfdfdf, #dfdfdf)
+    border-bottom: 1px solid rgba($brownish-grey, 0.7)
+    border-top: 1px solid rgba($brownish-grey, 0.2)
+    padding: 20px 25px
+
+
+  &__user
+    padding: 20px 25px
+    border-bottom: 1px solid #b2b2b2
+    &__img
+      width: 35px
+      height: 35px
+      background: #000
+      border-radius: 50%
+      font-size: 11px
+      text-transform: uppercase
+      +center
+    &__text
+      flex: 1
+      span
+        color: rgba(19, 23, 37, 0.8)
+        line-height: 1
+
+  &__chat
+    flex: 1
+    &__body
+      padding: 50px 70px
+      +r(767)
+        padding: 25px 15px
+    &__user
+      width: 32px
+      height: 32px
+      border-radius: 50%
+      +center
+      overflow: hidden
+      margin-right: 5px
+      margin-bottom: 15px
+    &__text
+      border-radius: 20px
+      box-shadow: 0px 1.5px 0 0 rgba(0, 0, 0, 0.2)
+      background-color: $white
+      padding: 23px
+      max-width: 455px
+      +r(630)
+        max-width: 100%
+        flex: 1
+      p
+        margin-bottom: 10px
+        color: #202631
+
+      span
+        font-size: 11px
+        color: rgba(32, 38, 49, 0.6)
+    &__block
+      display: flex
+      align-items: flex-end
+      margin-bottom: 15px
+      &--right
+        flex-direction: row-reverse
+        .responses__chat__user
+          margin-right: 0
+          margin-left: 5px
+        .responses__chat__text
+          background: $greenish-turquoise

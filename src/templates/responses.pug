@@ -1,0 +1,89 @@
+---
+title: View Responses
+---
+extends layouts/_layout
+block content
+  .admin.responses
+    include ./partials/_aside
+    include ./partials/_header-admin
+    .admin__content.admin__content--responses
+      .admin__title.m-b-50.flex.m-l-45
+        a(href="#").m-t-20
+          +icon('return', 'h2 default m-r-20')
+        div
+          span.h5 Honda Customer
+          h1.h1 View Responses
+      .responses__content.space-between
+        .responses__aside
+          .responses__header
+            p.fz-14.bold Users
+              +icon('information', 'text-blue m-l-10')
+          ul
+            li.active
+              a(href="#")
+                .responses__user.flex
+                  .responses__user__img.bold.text-white(style="background: #fe63b9") V
+                  .responses__user__text.m-l-10
+                    p.bold.default Vaishakh Pilatholi
+                    span.fz-12 1st A Cross, Chocolate Factory Rd, Tavarekere, Cashier Layout, 1st Stage, BTM...
+            li
+              a(href="#")
+                .responses__user.flex
+                  .responses__user__img.bold.text-white(style="background: #b15df4") S
+                  .responses__user__text.m-l-10
+                    p.bold.default Suraj Rao
+                    span.fz-12 5543 0988 7733
+            li
+              a(href="#")
+                .responses__user.flex
+                  .responses__user__img.bold.text-white(style="background: #b15df4") S
+                  .responses__user__text.m-l-10
+                    p.bold.default Suraj Rao
+                    span.fz-12 5543 0988 7733
+            li
+              a(href="#")
+                .responses__user.flex
+                  .responses__user__img.bold.text-white(style="background: #b15df4") S
+                  .responses__user__text.m-l-10
+                    p.bold.default Suraj Rao
+                    span.fz-12 5543 0988 7733
+                    
+        .responses__chat
+          .responses__header.flex
+            p.bold Conversation with Vaishakh Pilatholi
+            span.m-l-15.fz-12 Thursday, 20 August 2020
+          .responses__chat__body
+            .responses__chat__block.responses__chat__block--left
+              .responses__chat__user
+                img(src="https://via.placeholder.com/32x32.png", alt="")
+              .responses__chat__text
+                p What is your full name?
+                span 05:09 PM
+
+            .responses__chat__block.responses__chat__block--right
+              .responses__chat__user
+                img(src="https://via.placeholder.com/32x32.png", alt="")
+              .responses__chat__text
+                p Vaishakh Pilatholi
+                span 05:  0 PM
+            .responses__chat__block.responses__chat__block--left
+              .responses__chat__user
+                img(src="https://via.placeholder.com/32x32.png", alt="")
+              .responses__chat__text
+                p What is your residential address?
+                span 05:09 PM
+
+            .responses__chat__block.responses__chat__block--right
+              .responses__chat__user
+                img(src="https://via.placeholder.com/32x32.png", alt="")
+              .responses__chat__text
+                p 1st A Cross, Chocolate Factory Rd, Tavarekere, Cashier Layout, 1st Stage, BTM Layout 1, Bengaluru, Karnataka 560029
+                span 05:  0 PM
+
+            .responses__chat__block.responses__chat__block--left
+              .responses__chat__user
+                img(src="https://via.placeholder.com/32x32.png", alt="")
+              .responses__chat__text
+                p Thank you
+                span 05:09 PM
+
