@@ -2,6 +2,8 @@
 import selectize from '../lib/selectize';
 import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
 import botstrap from 'bootstrap/js/dist/modal';
+import Quill from 'quill';
+
 
 //hide modal
 $('#slide-right-dx').on('hide.bs.modal', function(e) {
@@ -145,4 +147,22 @@ $(document).mouseup(function(e) {
 $('.open-tegs').on('click', function(event) {
   event.preventDefault();
   $(this).next('.block-tegs').fadeToggle();
+});
+
+$(document).mouseup(function(e) { // событие клика по веб-документу
+  var div = $('#tegs-block'); // тут указываем ID элемента
+  if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    div.fadeOut(); // скрываем его
+  }
+});
+
+
+//texteditor
+var editor = new Quill('#editor', {
+  modules: { 
+    toolbar: ['bold', 'italic', 'strike', 'link', 'image']
+  },
+  placeholder: 'What is your full name?',
+  theme: 'snow'
 });

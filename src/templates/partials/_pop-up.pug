@@ -701,7 +701,7 @@
       .modal-content-wrapper
         .modal-content
           .modal-header
-            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Issue DX Card
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Create New Step
               span Single Choice
             a(href="#" data-dismiss='modal', aria-label='Close').close
               span(aria-hidden='true') ×
@@ -713,7 +713,35 @@
                 a(data-toggle='tab', href='#advanced-2') Advanced Settings
             .tab-content
               #form-1.tab-pane.fade.show.in.active
-                p 1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                p.text-black.fz-12.all-caps.fw-semi-bold.m-b-30 BOT Message
+                  +icon('information', 'text-blue m-l-10')
+                // Create the editor container
+                #editor.m-b-45
+                  p.fz-14
+
+                .form__checkbox.flex.m-b-50
+                  input(type="checkbox" id="message" checked)
+                  label(for="message").m-b-0 Include footer message
+                  +icon('information', 'text-blue m-l-10')
+                .row
+                  .col-lg-6
+                    .form__block.form__block--select.m-b-30
+                      label.require Response Type
+                      select.select
+                        option(value="1") Response Type
+                        option(value="2") Response Type1
+                        option(value="3") Response Type2
+                  .col-lg-6
+                    .form__block.m-b-30
+                      input(type="text" id="delay" )
+                      label(for="delay") Delay (Duration in Seconds)
+                  
+              
+              
+              
+              
+              
+              
               #advanced-2.tab-pane.fade
                 .form__block.m-b-30
                   input(type="text" id="filed-name-1" require)

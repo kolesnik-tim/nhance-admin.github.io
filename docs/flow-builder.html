@@ -64,7 +64,7 @@
         <div class="admin__content admin__content--table p-l-30 p-r-30">
           <div class="admin__title m-b-50 flex-wrap space-between">
             <h1 class="h1">Create New Flow</h1>
-            <div class="admin__title__btn flex-wrap"><a class="btn btn-secondary m-r-10 m-b-10" href="#" data-toggle="modal" data-target="#slide-right-create">Cancel</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Setup Trigger Point</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Publish</a><a class="btn btn-primary m-r-10 m-b-10" href="#">Save</a></div>
+            <div class="admin__title__btn flex-wrap"><a class="btn btn-secondary m-r-10 m-b-10" href="#">Cancel</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Setup Trigger Point</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Publish</a><a class="btn btn-primary m-r-10 m-b-10" href="#">Save</a></div>
           </div>
           <form>
             <div class="row">
@@ -100,7 +100,7 @@
                 <p class="fz-14 bold text-black">Create Step<svg class="icon icon-information m-l-10">
                     <use xlink:href="img/sprite.svg#icon-information"></use>
                   </svg></p><a class="open-tegs btn btn-primary btn-xs h5" href="#">+<i class="icon-nn-filled-arrow-down"></i></a>
-                <div class="block-tegs center-column m-t-10"><a class="text-white padding-10 red" href="#">Single Choice</a><a class="text-white padding-10 green" href="#">Multiple choice</a><a class="text-white padding-10 blue" href="#">Formula</a><a class="text-white padding-10 bright-magenta" href="#">Location</a><a class="text-white padding-10 tangerine" href="#">API</a></div>
+                <div class="block-tegs center-column m-t-10" id="tegs-block"><a class="text-white padding-10 red" href="#" data-toggle="modal" data-target="#slide-right-create">Single Choice</a><a class="text-white padding-10 green" href="#">Multiple choice</a><a class="text-white padding-10 blue" href="#">Formula</a><a class="text-white padding-10 bright-magenta" href="#">Location</a><a class="text-white padding-10 tangerine" href="#">API</a></div>
               </div>
               <ul>
                 <li class="padding-25">Please click on <span class="text-danger">+ </span>to start with your flow</li>
@@ -702,7 +702,7 @@
             <div class="modal-content-wrapper">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Issue DX Card<span>Single Choice</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Create New Step<span>Single Choice</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
                 </div>
                 <div class="modal-body form-pop-up">
                   <ul class="nav nav-tabs">
@@ -711,7 +711,27 @@
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane fade show in active" id="form-1">
-                      <p>1 Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                      <p class="text-black fz-12 all-caps fw-semi-bold m-b-30">BOT Message<svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></p><!-- Create the editor container-->
+                      <div class="m-b-45" id="editor">
+                        <p class="fz-14"></p>
+                      </div>
+                      <div class="form__checkbox flex m-b-50"><input type="checkbox" id="message" checked><label class="m-b-0" for="message">Include footer message</label><svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form__block form__block--select m-b-30"><label class="require">Response Type</label><select class="select">
+                              <option value="1">Response Type</option>
+                              <option value="2">Response Type1</option>
+                              <option value="3">Response Type2</option>
+                            </select></div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form__block m-b-30"><input type="text" id="delay"><label for="delay">Delay (Duration in Seconds)</label></div>
+                        </div>
+                      </div>
                     </div>
                     <div class="tab-pane fade" id="advanced-2">
                       <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>

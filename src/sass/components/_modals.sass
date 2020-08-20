@@ -98,10 +98,10 @@
             margin-bottom: -3px
           a
             margin-left: 15px
-        .form__checkbox
-          label
-            &::before
-              margin-top: 12px
+        // .form__checkbox
+        //   label
+        //     &::before
+        //       margin-top: 12px
           p
             svg
               font-size: 17px
@@ -315,6 +315,15 @@
 
 
 .slide-right-create
+  h2
+    +r(767)
+      span
+        display: block
+        margin-top: 20px
+        margin-left: 0 !important
+  .modal-header
+    +r(767)
+      padding: 65px 20px 15px 50px !important
   .modal-header h2 span
     font-size: 14px
     font-weight: 600
@@ -334,8 +343,8 @@
   &.modal.fade.slide-right-dialog .tab-content
     height: 72vh !important
     overflow: auto
-    +rh(560)
-      height: 57vh !important
+    +r(767)
+      height: 55vh !important
   .nav-tabs li a
     padding: 20px 60px
   .tab-content
