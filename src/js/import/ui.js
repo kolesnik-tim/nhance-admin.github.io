@@ -3,6 +3,7 @@ import selectize from '../lib/selectize';
 import botstrapBunble from 'bootstrap/dist/js/bootstrap.bundle';
 import botstrap from 'bootstrap/js/dist/modal';
 import Quill from 'quill';
+import fancyapps from '@fancyapps/fancybox';
 
 
 //hide modal

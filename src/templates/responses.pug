@@ -16,7 +16,7 @@ block content
       .responses__content.space-between
         .responses__aside
           .responses__header
-            p.fz-14.bold Users
+            p.fz-14.bold.text-black Users
               +icon('information', 'text-blue m-l-10')
           ul
             li.active
@@ -24,33 +24,33 @@ block content
                 .responses__user.flex
                   .responses__user__img.bold.text-white(style="background: #fe63b9") V
                   .responses__user__text.m-l-10
-                    p.bold.default Vaishakh Pilatholi
+                    p.bold.text-black Vaishakh Pilatholi
                     span.fz-12 1st A Cross, Chocolate Factory Rd, Tavarekere, Cashier Layout, 1st Stage, BTM...
             li
               a(href="#")
                 .responses__user.flex
                   .responses__user__img.bold.text-white(style="background: #b15df4") S
                   .responses__user__text.m-l-10
-                    p.bold.default Suraj Rao
+                    p.fw-semi-bold.text-black Suraj Rao
                     span.fz-12 5543 0988 7733
             li
               a(href="#")
                 .responses__user.flex
                   .responses__user__img.bold.text-white(style="background: #b15df4") S
                   .responses__user__text.m-l-10
-                    p.bold.default Suraj Rao
+                    p.fw-semi-bold.text-black Suraj Rao
                     span.fz-12 5543 0988 7733
             li
               a(href="#")
                 .responses__user.flex
                   .responses__user__img.bold.text-white(style="background: #b15df4") S
                   .responses__user__text.m-l-10
-                    p.bold.default Suraj Rao
+                    p.fw-semi-bold.text-black Suraj Rao
                     span.fz-12 5543 0988 7733
                     
         .responses__chat
           .responses__header.flex
-            p.bold Conversation with Vaishakh Pilatholi
+            p.bold.text-black Conversation with Vaishakh Pilatholi
             span.m-l-15.fz-12 Thursday, 20 August 2020
           .responses__chat__body
             strong.fz-14.fw-normal.text-black.m-b-15.m-t-15 Yesterday
@@ -94,14 +94,19 @@ block content
               .responses__chat__user
                 img(src="img/user-img.png", alt="")
               .responses__chat__text
-                .responses__chat__text__img
+                a(data-fancybox="gallery" href="https://via.placeholder.com/135x157.png").responses__chat__text__img
                   img(src="https://via.placeholder.com/135x157.png", alt="")
                 span 05:10 PM
+
+
             .responses__chat__block.responses__chat__block--right
               .responses__chat__user
                 img(src="img/user-img.png", alt="")
               .responses__chat__text
                 .responses__chat__text__img
+                  a(data-fancybox href="#myVideo")
+                    +icon('video')
                   img(src="https://via.placeholder.com/135x157.png", alt="")
+                  video(src="img/video.mp4" style="display:none")#myVideo
                 span 05:10 PM
 
