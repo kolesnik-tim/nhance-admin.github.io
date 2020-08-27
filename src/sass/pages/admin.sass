@@ -198,6 +198,9 @@
     flex: 1
     background-image: url('../img/chat-bg.png')
     background-size: 40px 40px
+    display: none
+    &.active
+      display: block
     &__body
       padding: 0px 70px 50px
       +r(767)
@@ -262,7 +265,7 @@
           svg
             font-size: 42px
             fill: #fff
-            
+
 
     &__block
       display: flex

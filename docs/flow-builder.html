@@ -107,7 +107,7 @@
               <ul>
                 <li class="space-between flex">
                   <p class="fz-12 bold text-black">What is your full name?</p>
-                  <div class="flex"><a class="p-r-5 h5 m-b-0" href="#"><i class="icon-nn-filled-pink-delete"></i></a><a class="h5 m-b-0" href="#"><i class="icon-nn-filled-pink-edit"></i></a></div>
+                  <div class="flex"><a class="p-r-5 h5 m-b-0" href="#" data-toggle="modal" data-target="#stick-delete"><i class="icon-nn-filled-pink-delete"></i></a><a class="h5 m-b-0" href="#"><i class="icon-nn-filled-pink-edit"></i></a></div>
                 </li>
               </ul>
             </aside>
@@ -119,7 +119,7 @@
 | to start with your flow-->
               <ul>
                 <li class="space-between flex"><b class="fz-12 fw-semi-bold text-black"><span class="flex text-danger fz-10 all-caps bold">Branch 01</span>This is Branch One</b>
-                  <div class="flex"><a class="p-r-5 h5 m-b-0" href="#"><i class="icon-nn-filled-pink-delete"></i></a><a class="h5 m-b-0" href="#"><i class="icon-nn-filled-pink-edit"></i></a></div>
+                  <div class="flex"><a class="p-r-5 h5 m-b-0" href="#" data-toggle="modal" data-target="#stick-delete"><i class="icon-nn-filled-pink-delete"></i></a><a class="h5 m-b-0" href="#"><i class="icon-nn-filled-pink-edit"></i></a></div>
                 </li>
               </ul>
             </aside>
@@ -166,6 +166,18 @@
                 <p>Woohoo, you're reading this text in a modal!</p>
               </div>
               <div class="modal-footer"><a class="btn btn-primary" href="#" data-dismiss="modal">Close</a><a class="btn btn-complete" href="#">Save changes</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade stick-up" id="stick-delete">
+        <div class="modal-dialog">
+          <div class="modal-content-wrapper">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLiveLabel">Really delete?</h5><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+              </div>
+              <div class="modal-footer"><a class="btn btn-primary" href="#" data-dismiss="modal">Close</a><a class="btn btn-complete" href="#">Delete</a></div>
             </div>
           </div>
         </div>

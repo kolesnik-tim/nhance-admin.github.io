@@ -31,6 +31,22 @@
 
 
 
+
+.modal#stick-delete.fade.stick-up
+  .modal-dialog 
+    .modal-content-wrapper
+      .modal-content
+        .modal-header
+          h5#exampleModalLiveLabel.modal-title Really delete?
+          a(href="#" data-dismiss='modal', aria-label='Close').close
+            span(aria-hidden='true') ×
+        .modal-footer
+          a(href="#" data-dismiss='modal').btn.btn-primary Close
+          a(href="#").btn.btn-complete Delete
+
+
+
+
 .modal#slide-right.fade.slide-right
   .modal-dialog 
     .modal-content-wrapper
@@ -737,11 +753,7 @@
                       label(for="delay") Delay (Duration in Seconds)
                   
               
-              
-              
-              
-              
-              
+          
               #advanced-2.tab-pane.fade
                 .form__block.m-b-30
                   input(type="text" id="filed-name-1" require)
