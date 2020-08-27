@@ -779,4 +779,94 @@
     .modal-footer
       a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
       button(type="submit").btn.btn-primary.continue Save
+
+
+
+
+
+
+
+#slide-right-branch.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-create--branch.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content.p-b-50
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Add Branch
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            .form__block.form__block--select.m-b-30
+              label.require Branch Name
+              select.select
+                option(value="1") This is Branch One
+                option(value="2") This is Branch One1
+                option(value="3") This is Branch One2
+            strong.m-b-45.fz-14.fw-semi-bold.text-black.flex Define a condition when the branch should run:
+            .row
+              .col-md-4
+                div.flex.m-b-25
+                  select.select-search.select-search-req
+                    option(value="0") Select
+                    option(value="1") Select 1
+                    option(value="2") Select 2
+                    option(value="3") Select 3
+              .col-md-4
+                div.flex.m-b-25
+                  select.select-search.select-search-req
+                    option(value="0") Select
+                    option(value="1") Select 1
+                    option(value="2") Select 2
+                    option(value="3") Select 3
+              .col-md-4
+                .form__block.m-b-20
+                  input(type="text" id="query" )
+                  label(for="query") Query
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Create
+
+
+
+
+
+
+
+#slide-right-trigger.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-create--branch.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content.p-b-50
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Trigger Point
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            .row
+              .col-md-6
+                div.flex.m-b-25
+                  select.select-search.select-search-req
+                    option(value="0") Choose Trigger Point
+                    option(value="1") Choose Trigger Point 1
+                    option(value="2") Choose Trigger Point 2
+                    option(value="3") Choose Trigger Point 3
+              .col-md-6.m-b-45
+                select.select-search
+                  option(value="") Fields to be Displayed
+                  option(value="1") Fields to be Displayed1
+                  option(value="2") Fields to be Displayed2
+                  option(value="3") Fields to be Displayed3
+            strong.m-b-30.fz-14.fw-semi-bold.text-black.flex Repeat
+            .flex
+              .form__radio.m-r-15
+                input(type="radio" name="time-1" id="one-time" checked)
+                label(for="one-time") One-Time
+              .form__radio
+                input(type="radio" name="time-1" id="every-time")
+                label(for="every-time") Every-Time
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Create
 //END pop-up

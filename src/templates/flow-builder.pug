@@ -11,7 +11,7 @@ block content
         h1.h1 Create New Flow
         .admin__title__btn.flex-wrap
           a(href="#").btn.btn-secondary.m-r-10.m-b-10 Cancel
-          a(href="#").btn.btn-secondary.m-r-10.m-b-10 Setup Trigger Point
+          a(href="#" data-toggle="modal" data-target="#slide-right-trigger").btn.btn-secondary.m-r-10.m-b-10 Setup Trigger Point
           a(href="#").btn.btn-secondary.m-r-10.m-b-10 Publish
           a(href="#").btn.btn-primary.m-r-10.m-b-10 Save
       form
@@ -46,20 +46,72 @@ block content
             span.tangerine API
       .admin__table.m-t-40
         aside
-          .admin__table__header.space-between.p-l-30.p-r-30.p-t-15.p-b-15
+          .admin__table__header.space-between.p-l-20.p-r-10.p-t-15.p-b-15
             p.fz-14.bold.text-black Create Step
               +icon('information', 'm-l-10')
             a(href="#").open-tegs.btn.btn-primary.btn-xs.h5 +
               i.icon-nn-filled-arrow-down
-            #tegs-block.block-tegs.center-column.m-t-10
+            .block-tegs.center-column.m-t-10
               a(href="#" data-toggle="modal" data-target="#slide-right-create").text-white.padding-10.red Single Choice
               a(href="#").text-white.padding-10.green Multiple choice
               a(href="#").text-white.padding-10.blue Formula
               a(href="#").text-white.padding-10.bright-magenta Location
               a(href="#").text-white.padding-10.tangerine API
+          //p.padding-25 Please click on 
+            span.text-danger + 
+            | to start with your flow
           ul
-            li.padding-25 Please click on 
-              span.text-danger + 
-              | to start with your flow
+            li.space-between.flex
+              p.fz-12.bold.text-black What is your full name?
+              .flex
+                a(href="#").p-r-5.h5.m-b-0
+                  i.icon-nn-filled-pink-delete
+                a(href="#").h5.m-b-0
+                  i.icon-nn-filled-pink-edit
+
+
+
+
+
+
+
+        aside
+          .admin__table__header.space-between.p-l-20.p-r-10.p-t-15.p-b-15
+            p.fz-14.bold.text-black What is your full na...
+            a(href="#" data-toggle="modal" data-target="#slide-right-branch").btn.btn-primary.btn-xs.h5.btn-plus +
+          //p.padding-25 Please click on 
+            span.text-danger + 
+            | to start with your flow
+          ul
+            li.space-between.flex
+              b.fz-12.fw-semi-bold.text-black
+                span.flex.text-danger.fz-10.all-caps.bold Branch 01
+                | This is Branch One
+              .flex
+                a(href="#").p-r-5.h5.m-b-0
+                  i.icon-nn-filled-pink-delete
+                a(href="#").h5.m-b-0
+                  i.icon-nn-filled-pink-edit
+
+
+
+
+
+        aside
+          .admin__table__header.space-between.p-l-20.p-r-10.p-t-15.p-b-15
+            p.fz-14.bold.text-black This is Branch One
+            a(href="#").open-tegs.btn.btn-primary.btn-xs.h5 +
+              i.icon-nn-filled-arrow-down
+            .block-tegs.center-column.m-t-10
+              a(href="#" data-toggle="modal" data-target="#slide-right-create").text-white.padding-10.red Single Choice
+              a(href="#").text-white.padding-10.green Multiple choice
+              a(href="#").text-white.padding-10.blue Formula
+              a(href="#").text-white.padding-10.bright-magenta Location
+              a(href="#").text-white.padding-10.tangerine API
+          //p.padding-25 Please click on 
+            span.text-danger + 
+            | to start with your flow
+
+            
         .admin__table__content
           .admin__table__header

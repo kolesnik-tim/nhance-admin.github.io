@@ -41,7 +41,7 @@
         display: table-cell
         vertical-align: bottom
       .modal-content
-        min-height: 60vh
+        min-height: 94vh
     &.show .modal-dialog
       transform: translate(-100%, 0)
     &-vh
@@ -175,7 +175,7 @@
           svg
             fill: $brown-grey
             font-size: 24px
-#slide-right-dialog, #slide-right-dx, #slide-right-create
+#slide-right-dialog, #slide-right-dx, #slide-right-create, #slide-right-branch, #slide-right-trigger
   .modal-footer
     max-width: 670px
     right: -100%
@@ -184,7 +184,19 @@
     .modal-footer
       right: 0
 
-
+.select-search-req .selectize-input div
+  position: relative
+  &:before
+    content: ''
+    background: #fd3e39
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    display: block
+    position: absolute
+    right: -12px
+    top: 5px
+    font-size: 6px
 
 
 
@@ -210,19 +222,6 @@
     border-top-color: #fff
   .nav-step__decor.step-03 span
     width: 23%
-  .select-search-req .selectize-input div
-    position: relative
-    &:before
-      content: ''
-      background: #fd3e39
-      width: 5px
-      height: 5px
-      border-radius: 50%
-      display: block
-      position: absolute
-      right: -12px
-      top: 5px
-      font-size: 6px
   .selectize-input, .form__block input
     border-bottom: 1px solid #cecece
   &.modal.fade.slide-right-vh .modal-header
@@ -356,3 +355,8 @@
       font-size: 14px
   button.btn
     padding: 14px 30px
+
+
+  &--branch
+    .form-pop-up
+      padding: 20px 45px 45px !important

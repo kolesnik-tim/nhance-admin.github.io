@@ -64,7 +64,7 @@
         <div class="admin__content admin__content--table p-l-30 p-r-30">
           <div class="admin__title m-b-50 flex-wrap space-between">
             <h1 class="h1">Create New Flow</h1>
-            <div class="admin__title__btn flex-wrap"><a class="btn btn-secondary m-r-10 m-b-10" href="#">Cancel</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Setup Trigger Point</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Publish</a><a class="btn btn-primary m-r-10 m-b-10" href="#">Save</a></div>
+            <div class="admin__title__btn flex-wrap"><a class="btn btn-secondary m-r-10 m-b-10" href="#">Cancel</a><a class="btn btn-secondary m-r-10 m-b-10" href="#" data-toggle="modal" data-target="#slide-right-trigger">Setup Trigger Point</a><a class="btn btn-secondary m-r-10 m-b-10" href="#">Publish</a><a class="btn btn-primary m-r-10 m-b-10" href="#">Save</a></div>
           </div>
           <form>
             <div class="row">
@@ -96,15 +96,42 @@
           </div>
           <div class="admin__table m-t-40">
             <aside>
-              <div class="admin__table__header space-between p-l-30 p-r-30 p-t-15 p-b-15">
+              <div class="admin__table__header space-between p-l-20 p-r-10 p-t-15 p-b-15">
                 <p class="fz-14 bold text-black">Create Step<svg class="icon icon-information m-l-10">
                     <use xlink:href="img/sprite.svg#icon-information"></use>
                   </svg></p><a class="open-tegs btn btn-primary btn-xs h5" href="#">+<i class="icon-nn-filled-arrow-down"></i></a>
-                <div class="block-tegs center-column m-t-10" id="tegs-block"><a class="text-white padding-10 red" href="#" data-toggle="modal" data-target="#slide-right-create">Single Choice</a><a class="text-white padding-10 green" href="#">Multiple choice</a><a class="text-white padding-10 blue" href="#">Formula</a><a class="text-white padding-10 bright-magenta" href="#">Location</a><a class="text-white padding-10 tangerine" href="#">API</a></div>
+                <div class="block-tegs center-column m-t-10"><a class="text-white padding-10 red" href="#" data-toggle="modal" data-target="#slide-right-create">Single Choice</a><a class="text-white padding-10 green" href="#">Multiple choice</a><a class="text-white padding-10 blue" href="#">Formula</a><a class="text-white padding-10 bright-magenta" href="#">Location</a><a class="text-white padding-10 tangerine" href="#">API</a></div>
               </div>
+              <!--p.padding-25 Please click on span.text-danger + 
+| to start with your flow-->
               <ul>
-                <li class="padding-25">Please click on <span class="text-danger">+ </span>to start with your flow</li>
+                <li class="space-between flex">
+                  <p class="fz-12 bold text-black">What is your full name?</p>
+                  <div class="flex"><a class="p-r-5 h5 m-b-0" href="#"><i class="icon-nn-filled-pink-delete"></i></a><a class="h5 m-b-0" href="#"><i class="icon-nn-filled-pink-edit"></i></a></div>
+                </li>
               </ul>
+            </aside>
+            <aside>
+              <div class="admin__table__header space-between p-l-20 p-r-10 p-t-15 p-b-15">
+                <p class="fz-14 bold text-black">What is your full na...</p><a class="btn btn-primary btn-xs h5 btn-plus" href="#" data-toggle="modal" data-target="#slide-right-branch">+</a>
+              </div>
+              <!--p.padding-25 Please click on span.text-danger + 
+| to start with your flow-->
+              <ul>
+                <li class="space-between flex"><b class="fz-12 fw-semi-bold text-black"><span class="flex text-danger fz-10 all-caps bold">Branch 01</span>This is Branch One</b>
+                  <div class="flex"><a class="p-r-5 h5 m-b-0" href="#"><i class="icon-nn-filled-pink-delete"></i></a><a class="h5 m-b-0" href="#"><i class="icon-nn-filled-pink-edit"></i></a></div>
+                </li>
+              </ul>
+            </aside>
+            <aside>
+              <div class="admin__table__header space-between p-l-20 p-r-10 p-t-15 p-b-15">
+                <p class="fz-14 bold text-black">This is Branch One</p><a class="open-tegs btn btn-primary btn-xs h5" href="#">+<i class="icon-nn-filled-arrow-down"></i></a>
+                <div class="block-tegs center-column m-t-10"><a class="text-white padding-10 red" href="#" data-toggle="modal" data-target="#slide-right-create">Single Choice</a><a class="text-white padding-10 green" href="#">Multiple choice</a><a class="text-white padding-10 blue" href="#">Formula</a><a class="text-white padding-10 bright-magenta" href="#">Location</a><a class="text-white padding-10 tangerine" href="#">API</a></div>
+              </div>
+              <!--p.padding-25 Please click on span.text-danger + 
+| to start with your flow
+
+-->
             </aside>
             <div class="admin__table__content">
               <div class="admin__table__header"></div>
@@ -765,6 +792,84 @@
             </div>
           </div>
           <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
+        </form>
+      </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-create--branch slide-right-dialog" id="slide-right-branch">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content p-b-50">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Add Branch</h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <div class="form__block form__block--select m-b-30"><label class="require">Branch Name</label><select class="select">
+                      <option value="1">This is Branch One</option>
+                      <option value="2">This is Branch One1</option>
+                      <option value="3">This is Branch One2</option>
+                    </select></div><strong class="m-b-45 fz-14 fw-semi-bold text-black flex">Define a condition when the branch should run:</strong>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="flex m-b-25"><select class="select-search select-search-req">
+                          <option value="0">Select</option>
+                          <option value="1">Select 1</option>
+                          <option value="2">Select 2</option>
+                          <option value="3">Select 3</option>
+                        </select></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="flex m-b-25"><select class="select-search select-search-req">
+                          <option value="0">Select</option>
+                          <option value="1">Select 1</option>
+                          <option value="2">Select 2</option>
+                          <option value="3">Select 3</option>
+                        </select></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form__block m-b-20"><input type="text" id="query"><label for="query">Query</label></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Create</button></div>
+        </form>
+      </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-create--branch slide-right-dialog" id="slide-right-trigger">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content p-b-50">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Trigger Point</h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="flex m-b-25"><select class="select-search select-search-req">
+                          <option value="0">Choose Trigger Point</option>
+                          <option value="1">Choose Trigger Point 1</option>
+                          <option value="2">Choose Trigger Point 2</option>
+                          <option value="3">Choose Trigger Point 3</option>
+                        </select></div>
+                    </div>
+                    <div class="col-md-6 m-b-45"><select class="select-search">
+                        <option value="">Fields to be Displayed</option>
+                        <option value="1">Fields to be Displayed1</option>
+                        <option value="2">Fields to be Displayed2</option>
+                        <option value="3">Fields to be Displayed3</option>
+                      </select></div>
+                  </div><strong class="m-b-30 fz-14 fw-semi-bold text-black flex">Repeat</strong>
+                  <div class="flex">
+                    <div class="form__radio m-r-15"><input type="radio" name="time-1" id="one-time" checked><label for="one-time">One-Time</label></div>
+                    <div class="form__radio"><input type="radio" name="time-1" id="every-time"><label for="every-time">Every-Time</label></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Create</button></div>
         </form>
       </div>
       <!--END pop-up-->

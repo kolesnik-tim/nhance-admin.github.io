@@ -1,6 +1,6 @@
 .admin
   position: relative
-  padding-left: 50px
+  padding-left: 60px
   transition: all 0.6s
   left: 0
   background-color: rgb(245, 245, 245)
@@ -83,6 +83,8 @@
         i
           font-size: 6px
           margin-left: 15px
+      .btn-plus
+        padding: 12px 15px
       .block-tegs
         position: absolute
         top: 35px
@@ -123,6 +125,24 @@
       border-right: 1px solid rgba($brownish-grey, 0.4)
       +r(992)
         width: 100%
+      li
+        padding: 13px
+        background-image: linear-gradient(to left, #c7c7c7, #d8dce0)
+        // border-bottom: 1px solid rgba($brownish-grey, 0.7)
+        a:hover i:before
+          color: #fc1159
+          
+        i:before
+          color: $dark
+          +tr
+        p:before
+          content: ''
+          display: inline-block
+          width: 10px
+          height: 10px
+          border-radius: 50%
+          background-color: #fc1159
+          margin-right: 6px
     &__content
       flex: 1
 
@@ -176,10 +196,19 @@
 
   &__chat
     flex: 1
+    // background-image: url('../img/chat-bg.png')
+    background-size: 40px 40px
+    background-color: rgb(242, 240, 236)
     &__body
-      padding: 50px 70px
+      padding: 0px 70px 50px
       +r(767)
         padding: 25px 15px
+      strong
+        padding: 5px 25px
+        border-radius: 16px
+        background-color: #d1d1d1
+        +relative-x
+        display: inline-block
     &__user
       width: 32px
       height: 32px
@@ -188,12 +217,22 @@
       overflow: hidden
       margin-right: 5px
       margin-bottom: 15px
+      img
+        width: 100%
     &__text
       border-radius: 20px
       box-shadow: 0px 1.5px 0 0 rgba(0, 0, 0, 0.2)
       background-color: $white
       padding: 23px
       max-width: 455px
+      position: relative
+      &::before
+        content: ''
+        width: 20px
+        height: 40px
+        +cover
+        position: absolute
+        bottom: 2px
       +r(630)
         max-width: 100%
         flex: 1
@@ -204,6 +243,15 @@
       span
         font-size: 11px
         color: rgba(32, 38, 49, 0.6)
+      &__img
+        width: 135px
+        height: 157px
+        overflow: hidden
+        margin-bottom: 20px
+        +center
+        img, iframe, video
+          width: 100%
+
     &__block
       display: flex
       align-items: flex-end
@@ -215,3 +263,15 @@
           margin-left: 5px
         .responses__chat__text
           background: $greenish-turquoise
+          &::before
+            background-image: url('../img/hu-bubble-green.png')
+            right: -15px
+      &--left
+        .responses__chat__user
+          margin-bottom: 23px
+        .responses__chat__text
+          &::before
+            background-image: url(../img/hu-bubble-white.png)
+            left: -21px
+            width: 28px
+            bottom: 4px
