@@ -159,10 +159,13 @@
     width: 370px
     border-right: 1px solid rgba($brownish-grey, 0.4)
     background: #fff
-    min-height: calc(100vh - 230px)
+    height: calc( 100vh - 230px )
+    overflow: auto
+    +rh(520)
+      height: 100vh
     +r(992)
       width: 100%
-      min-height: auto
+      height: 300px
       padding-bottom: 30px
     li.active
       background-image: linear-gradient(to top, #c7c7c7, #d8dce0)
@@ -175,6 +178,9 @@
     border-bottom: 1px solid rgba($brownish-grey, 0.7)
     border-top: 1px solid rgba($brownish-grey, 0.2)
     padding: 20px 25px
+    position: sticky
+    top: 0
+    z-index: 3
 
 
   &__user
@@ -199,6 +205,13 @@
     background-image: url('../img/chat-bg.png')
     background-size: 40px 40px
     display: none
+    height: calc( 100vh - 230px )
+    overflow: auto
+    +rh(520)
+      height: 100vh
+    +r(992)
+      height: 400px
+      flex: auto
     &.active
       display: block
     &__body
