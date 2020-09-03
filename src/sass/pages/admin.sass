@@ -60,6 +60,7 @@
     width: calc(100% + 60px)
     position: relative
     left: -30px
+    overflow-x: auto
     min-height: calc(100vh - 370px)
     +r(992)
       min-height: auto
@@ -69,6 +70,7 @@
       border-top: 1px solid rgba($brownish-grey, 0.2)
       border-bottom: 1px solid rgba($brownish-grey, 0.7)
       position: relative
+      min-width: 250px
       background-image: linear-gradient(to top, #d8d8d8, #ececec), linear-gradient(to bottom, #dfdfdf, #dfdfdf)
       p svg
         fill: #2196f3
@@ -125,24 +127,50 @@
       border-right: 1px solid rgba($brownish-grey, 0.4)
       +r(992)
         width: 100%
+      ul
+        height: calc(100vh - 420px)
+        overflow: auto
+        margin-bottom: 0
+        +r(992) 
+          max-height: 200px
       li
         padding: 13px
         background-image: linear-gradient(to left, #c7c7c7, #d8dce0)
-        // border-bottom: 1px solid rgba($brownish-grey, 0.7)
-        a:hover i:before
-          color: #fc1159
-          
-        i:before
-          color: $dark
-          +tr
-        p:before
-          content: ''
-          display: inline-block
-          width: 10px
-          height: 10px
-          border-radius: 50%
-          background-color: #fc1159
-          margin-right: 6px
+        position: relative
+        .block-more
+          position: absolute
+          top: 35px
+          padding: 5px 0
+          right: 5px
+          width: 100px
+          border-radius: 5px
+          box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.18)
+          border: solid 0.5px #dddddd
+          background-color: $dark
+          z-index: 5
+          display: none
+          &::before
+            content: ''
+            border: 8px solid transparent
+            border-bottom: 8px solid #131725
+            position: absolute
+            top: -15px
+            right: 7px
+          a
+            width: 100%
+            display: block
+            span
+              background: #fc1159
+              border-radius: 50%
+              width: 12px
+              height: 12px
+              display: inline-flex
+              align-items: center
+              justify-content: center
+            svg
+              font-size: 6px
+            &:hover
+              background: #292e3d
     &__content
       flex: 1
 

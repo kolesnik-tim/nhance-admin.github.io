@@ -152,14 +152,18 @@ $(document).mouseup(function(e) {
 
 
 //admin table
+$('.open-block-more').on('click', function(event) {
+  event.preventDefault();
+  $(this).next('.block-more').fadeIn();
+});
 
 $('.open-tegs').on('click', function(event) {
   event.preventDefault();
-  $(this).next('.block-tegs').fadeToggle();
+  $(this).next('.block-tegs').fadeIn();
 });
 
 $(document).mouseup(function(e) { // событие клика по веб-документу
-  var div = $('.block-tegs'); // тут указываем ID элемента
+  var div = $('.admin__table__header .block-tegs, .block-more'); // тут указываем ID элемента
   if (!div.is(e.target) // если клик был не по нашему блоку
       && div.has(e.target).length === 0) { // и не по его дочерним элементам
     div.fadeOut(); // скрываем его
