@@ -46,7 +46,7 @@ input
 
 
 .block-tegs
-  span, a
+  a
     font-size: 12px
     font-weight: 600
     color: $dark
@@ -71,6 +71,29 @@ input
       background-image: url('../img/block-tegs-4.png') 
     &.tangerine::before
       background-image: url('../img/block-tegs-5.png') 
+  span
+    font-size: 12px
+    font-weight: 600
+    color: $dark
+    display: inline-flex
+    align-items: center
+    &:before
+      content: ''
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      display: block
+      margin-right: 7px
+    &.red::before
+      background: #fc1159
+    &.green::before
+      background: #00ae61
+    &.blue::before
+      background: #00a2d4
+    &.bright-magenta::before
+      background: #ff00f6
+    &.tangerine::before
+      background: #ff9a09
       
 
 

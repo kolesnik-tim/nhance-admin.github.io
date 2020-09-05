@@ -798,6 +798,405 @@
 
 
 
+
+
+#slide-right-choice.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Create New Step
+              span.green Multiple choice
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#form-2').active form
+              li
+                a(data-toggle='tab', href='#advanced-3') Advanced Settings
+            .tab-content
+              #form-2.tab-pane.fade.show.in.active
+                p.text-black.fz-12.all-caps.fw-semi-bold.m-b-30 BOT Message
+                  +icon('information', 'text-blue m-l-10')
+                // Create the editor container
+                #editor-1.m-b-45
+                  p.fz-14
+
+                .form__checkbox.flex.m-b-50
+                  input(type="checkbox" id="message-2" checked)
+                  label(for="message-2").m-b-0 Include footer message
+                  +icon('information', 'text-blue m-l-10')
+                .row
+                  .col-lg-6
+                    .form__block.form__block--select.m-b-30
+                      select.select
+                        option(value="1") Response Type
+                        option(value="2") Response Type1
+                        option(value="3") Response Type2
+                  .col-lg-6
+                    .form__block.m-b-30
+                      input(type="text" id="delay" )
+                      label(for="delay") Delay (Duration in Seconds)
+                  .col-12
+                    .form__block.m-b-30.flex
+                      input(type="text" id="choice" )
+                      label(for="choice") Query Choice
+                      a(href="#").flex.h4.padding-15.m-l-0
+                        i.icon-nn-filled-pink-delete.p-t-5
+                  .col-12
+                    a(href="#").btn.btn-secondary.btn-sm.all-caps.m-b-20 add more
+                  
+              
+          
+              #advanced-3.tab-pane.fade
+                .form__block.m-b-30
+                  input(type="text" id="filed-name-1" require)
+                  label(for="filed-name-1").require Field Name
+                .form__block.m-b-30
+                  input(type="text" id="filed-value-1" require)
+                  label(for="filed-value-1").require Field Value
+
+                .m-t-50.m-b-30
+                  p.text-black.fz-14.fw-semi-bold.m-b-20 Define a Condition to Validate
+                    +icon('information', 'text-blue m-l-10')
+                  .row
+                    .col-sm-4
+                      .form__block.m-b-30.disabled
+                        input(type="number" id="filterKey" disabled)
+                        label(for="filterKey") filterKey
+                    .col-sm-4
+                      .form__block.m-b-30
+                        select.select
+                          option(value="1") Select
+                          option(value="2") Select1
+                          option(value="3") Select2
+                    .col-sm-4
+                      .form__block.m-b-30
+                        input(type="text" id="value" )
+                        label(for="value") Value1
+
+                .form__block.m-b-30
+                  input(type="text" id="success-message" )
+                  label(for="success-message") Success Message
+                .form__block.m-b-30
+                  input(type="text" id="failure-message")
+                  label(for="failure-message") Failure Message
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Save
+
+
+
+
+
+
+
+
+
+
+
+
+#slide-right-formula.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Create New Step
+              span.blue Formula
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#form-step-3').active form
+              li
+                a(data-toggle='tab', href='#advanced-5') Advanced Settings
+            .tab-content
+              #form-step-3.tab-pane.fade.show.in.active
+                p.text-black.fz-12.all-caps.fw-semi-bold.m-b-20 BOT Message
+                  +icon('information', 'text-blue m-l-10')
+                .row
+                  .col-md-6
+                    .form__block.m-b-50
+                      input(type="text" id="field-name" )
+                      label(for="field-name") Field Name
+                  .col-md-6
+                    .form__block.m-b-50
+                      input(type="text" id="field-value" )
+                      label(for="field-value") Field Value
+                .form__checkbox-ios.flex.m-b-50
+                  b.all-caps.fz-12.fw-semi-bold.text-black Display result in the bot?
+                  input(type="checkbox" name="bot-3" id="bot-3" checked)
+                  label(for="bot-3").m-b-0.m-l-25
+
+                .flex-wrap.m-b-25.radio-block
+                  .form__radio.m-r-25
+                    input(type="radio" name="formula" id="enter-formula" checked)
+                    label(for="enter-formula" data-radio="file").text-black.fz-14 Enter Formula	
+                  .form__radio
+                    input(type="radio" name="formula" id="generate-formula")
+                    label(for="generate-formula" data-radio="url").text-black.fz-14 Generate Formula
+                .enter-formula
+                  .row
+                    .col-md-6
+                      .form__block.m-b-30.flex
+                        input(type="text" id="enter-formula" )
+                        label(for="enter-formula") Enter Formula
+                        a(href="#").flex
+                          +icon('information', 'text-blue')
+                    .col-md-6
+                      a(href="#").btn.btn-secondary.btn-sm.all-caps.m-b-20 Reset Formula
+
+                .generate-formula(style="display:none")
+                  .flex.flex-select
+                    select.select.m-r-20.m-b-30
+                      option(value="1") Select
+                      option(value="2") Select1
+                      option(value="3") Select2
+                    select.select.m-r-20.m-b-30
+                      option(value="1") Select
+                      option(value="2") Select1
+                      option(value="3") Select2
+                    select.select.m-r-20.m-b-30
+                      option(value="1") Select
+                      option(value="2") Select1
+                      option(value="3") Select2
+                    a(href="#").flex.h4.m-l-0.m-b-30
+                      i.icon-nn-filled-pink-delete.p-t-5
+                      
+                  a(href="#").btn.btn-secondary.btn-sm.all-caps.m-b-20 add more
+                  
+              
+          
+              #advanced-5.tab-pane.fade
+                .form__block.m-b-30
+                  input(type="text" id="filed-name-1" require)
+                  label(for="filed-name-1").require Field Name
+                .form__block.m-b-30
+                  input(type="text" id="filed-value-1" require)
+                  label(for="filed-value-1").require Field Value
+
+                .m-t-50.m-b-30
+                  p.text-black.fz-14.fw-semi-bold.m-b-20 Define a Condition to Validate
+                    +icon('information', 'text-blue m-l-10')
+                  .row
+                    .col-sm-4
+                      .form__block.m-b-30.disabled
+                        input(type="number" id="filterKey" disabled)
+                        label(for="filterKey") filterKey
+                    .col-sm-4
+                      .form__block.m-b-30
+                        select.select
+                          option(value="1") Select
+                          option(value="2") Select1
+                          option(value="3") Select2
+                    .col-sm-4
+                      .form__block.m-b-30
+                        input(type="text" id="value" )
+                        label(for="value") Value1
+
+                .form__block.m-b-30
+                  input(type="text" id="success-message" )
+                  label(for="success-message") Success Message
+                .form__block.m-b-30
+                  input(type="text" id="failure-message")
+                  label(for="failure-message") Failure Message
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Save
+
+
+
+
+
+#slide-right-location.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Create New Step
+              span.bright-magenta Location
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#form-step-4').active form
+              li
+                a(data-toggle='tab', href='#advanced-6') Advanced Settings
+            .tab-content
+              #form-step-4.tab-pane.fade.show.in.active
+                p.text-black.fz-12.all-caps.fw-semi-bold.m-b-20 BOT Message
+                  +icon('information', 'text-blue m-l-10')
+                .row
+                  .col-md-6
+                    .form__block.m-b-30
+                      input(type="text" id="latitude" )
+                      label(for="latitude") Latitude
+                  .col-md-6
+                    .form__block.m-b-30.flex
+                      input(type="text" id="longitude" )
+                      label(for="longitude") Longitude
+                      a(href="#").flex.h4.padding-15.m-l-0
+                        i.icon-nn-filled-pink-delete.p-t-5
+                  .col-12
+                    a(href="#").btn.btn-secondary.btn-sm.all-caps.m-b-20 add more
+                  
+              
+          
+              #advanced-6.tab-pane.fade
+                .form__block.m-b-30
+                  input(type="text" id="filed-name-1" require)
+                  label(for="filed-name-1").require Field Name
+                .form__block.m-b-30
+                  input(type="text" id="filed-value-1" require)
+                  label(for="filed-value-1").require Field Value
+
+                .m-t-50.m-b-30
+                  p.text-black.fz-14.fw-semi-bold.m-b-20 Define a Condition to Validate
+                    +icon('information', 'text-blue m-l-10')
+                  .row
+                    .col-sm-4
+                      .form__block.m-b-30.disabled
+                        input(type="number" id="filterKey" disabled)
+                        label(for="filterKey") filterKey
+                    .col-sm-4
+                      .form__block.m-b-30
+                        select.select
+                          option(value="1") Select
+                          option(value="2") Select1
+                          option(value="3") Select2
+                    .col-sm-4
+                      .form__block.m-b-30
+                        input(type="text" id="value" )
+                        label(for="value") Value1
+
+                .form__block.m-b-30
+                  input(type="text" id="success-message" )
+                  label(for="success-message") Success Message
+                .form__block.m-b-30
+                  input(type="text" id="failure-message")
+                  label(for="failure-message") Failure Message
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Save
+
+
+
+
+
+#slide-right-api.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-dialog
+  form
+    .modal-dialog 
+      .modal-content-wrapper
+        .modal-content
+          .modal-header
+            h2.h2#exampleModalLiveLabel.modal-title.m-b-5 Create New Step
+              span.tangerine Api
+            a(href="#" data-dismiss='modal', aria-label='Close').close
+              span(aria-hidden='true') ×
+          .modal-body.form-pop-up
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#form-step-5').active form
+              li
+                a(data-toggle='tab', href='#advanced-7') Advanced Settings
+            .tab-content
+              #form-step-5.tab-pane.fade.show.in.active
+                p.text-ugly-blue.fz-12.fw-semi-bold.m-b-20.flex-start.m-b-40
+                  +icon('information', 'text-blue fz-12 m-r-10')
+                  span(style="flex: 1") Use this step for connecting various business tools (CRM, CMS, APIs, etc) to the flow builder and vice-versa in order to allow passing data/user response
+                  
+              
+          
+              #advanced-7.tab-pane.fade
+                .form__block.m-b-30
+                  input(type="text" id="filed-name-1" require)
+                  label(for="filed-name-1").require Field Name
+                .form__block.m-b-30
+                  input(type="text" id="filed-value-1" require)
+                  label(for="filed-value-1").require Field Value
+
+                .m-t-50.m-b-30
+                  p.text-black.fz-14.fw-semi-bold.m-b-20 Define a Condition to Validate
+                    +icon('information', 'text-blue m-l-10')
+                  .row
+                    .col-sm-4
+                      .form__block.m-b-30.disabled
+                        input(type="number" id="filterKey" disabled)
+                        label(for="filterKey") filterKey
+                    .col-sm-4
+                      .form__block.m-b-30
+                        select.select
+                          option(value="1") Select
+                          option(value="2") Select1
+                          option(value="3") Select2
+                    .col-sm-4
+                      .form__block.m-b-30
+                        input(type="text" id="value" )
+                        label(for="value") Value1
+
+                .form__block.m-b-30
+                  input(type="text" id="success-message" )
+                  label(for="success-message") Success Message
+                .form__block.m-b-30
+                  input(type="text" id="failure-message")
+                  label(for="failure-message") Failure Message
+            
+    .modal-footer
+      a(href="#" data-dismiss='modal').btn.btn-secondary.m-r-15 Cancel
+      button(type="submit").btn.btn-primary.continue Save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #slide-right-branch.modal.fade.slide-right.slide-right-vh.slide-right-create.slide-right-create--branch.slide-right-dialog
   form
     .modal-dialog 

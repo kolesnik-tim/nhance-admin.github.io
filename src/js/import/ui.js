@@ -179,3 +179,29 @@ var editor = new Quill('#editor', {
   placeholder: 'What is your full name?',
   theme: 'snow'
 });
+
+
+var editor = new Quill('#editor-1', {
+  modules: { 
+    toolbar: ['bold', 'italic', 'strike', 'link', 'image']
+  },
+  placeholder: 'What is your full name?',
+  theme: 'snow'
+});
+
+
+
+
+////Create New Step //Formula
+$('#enter-formula').on('click', function() {
+  if($(this).prop('checked')) {
+    $(this).closest('.radio-block').siblings('.generate-formula').hide();
+    $(this).closest('.radio-block').siblings('.enter-formula').fadeIn();
+  }
+});
+$('#generate-formula').on('click', function() {
+  if($(this).prop('checked')) {
+    $(this).closest('.radio-block').siblings('.enter-formula').hide();
+    $(this).closest('.radio-block').siblings('.generate-formula').fadeIn();
+  }
+});

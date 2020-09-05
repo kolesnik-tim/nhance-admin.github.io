@@ -733,6 +733,287 @@
           <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
         </form>
       </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-dialog" id="slide-right-choice">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Create New Step<span class="green">Multiple choice</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="active" data-toggle="tab" href="#form-2">form</a></li>
+                    <li><a data-toggle="tab" href="#advanced-3">Advanced Settings</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="form-2">
+                      <p class="text-black fz-12 all-caps fw-semi-bold m-b-30">BOT Message<svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></p><!-- Create the editor container-->
+                      <div class="m-b-45" id="editor-1">
+                        <p class="fz-14"></p>
+                      </div>
+                      <div class="form__checkbox flex m-b-50"><input type="checkbox" id="message-2" checked><label class="m-b-0" for="message-2">Include footer message</label><svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form__block form__block--select m-b-30"><select class="select">
+                              <option value="1">Response Type</option>
+                              <option value="2">Response Type1</option>
+                              <option value="3">Response Type2</option>
+                            </select></div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form__block m-b-30"><input type="text" id="delay"><label for="delay">Delay (Duration in Seconds)</label></div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form__block m-b-30 flex"><input type="text" id="choice"><label for="choice">Query Choice</label><a class="flex h4 padding-15 m-l-0" href="#"><i class="icon-nn-filled-pink-delete p-t-5"></i></a></div>
+                        </div>
+                        <div class="col-12"><a class="btn btn-secondary btn-sm all-caps m-b-20" href="#">add more</a></div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="advanced-3">
+                      <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="filed-value-1" require><label class="require" for="filed-value-1">Field Value</label></div>
+                      <div class="m-t-50 m-b-30">
+                        <p class="text-black fz-14 fw-semi-bold m-b-20">Define a Condition to Validate<svg class="icon icon-information text-blue m-l-10">
+                            <use xlink:href="img/sprite.svg#icon-information"></use>
+                          </svg></p>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30 disabled"><input type="number" id="filterKey" disabled><label for="filterKey">filterKey</label></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><select class="select">
+                                <option value="1">Select</option>
+                                <option value="2">Select1</option>
+                                <option value="3">Select2</option>
+                              </select></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><input type="text" id="value"><label for="value">Value1</label></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__block m-b-30"><input type="text" id="success-message"><label for="success-message">Success Message</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="failure-message"><label for="failure-message">Failure Message</label></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
+        </form>
+      </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-dialog" id="slide-right-formula">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Create New Step<span class="blue">Formula</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="active" data-toggle="tab" href="#form-step-3">form</a></li>
+                    <li><a data-toggle="tab" href="#advanced-5">Advanced Settings</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="form-step-3">
+                      <p class="text-black fz-12 all-caps fw-semi-bold m-b-20">BOT Message<svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form__block m-b-50"><input type="text" id="field-name"><label for="field-name">Field Name</label></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-50"><input type="text" id="field-value"><label for="field-value">Field Value</label></div>
+                        </div>
+                      </div>
+                      <div class="form__checkbox-ios flex m-b-50"><b class="all-caps fz-12 fw-semi-bold text-black">Display result in the bot?</b><input type="checkbox" name="bot-3" id="bot-3" checked><label class="m-b-0 m-l-25" for="bot-3"></label></div>
+                      <div class="flex-wrap m-b-25 radio-block">
+                        <div class="form__radio m-r-25"><input type="radio" name="formula" id="enter-formula" checked><label class="text-black fz-14" for="enter-formula" data-radio="file">Enter Formula </label></div>
+                        <div class="form__radio"><input type="radio" name="formula" id="generate-formula"><label class="text-black fz-14" for="generate-formula" data-radio="url">Generate Formula</label></div>
+                      </div>
+                      <div class="enter-formula">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form__block m-b-30 flex"><input type="text" id="enter-formula"><label for="enter-formula">Enter Formula</label><a class="flex" href="#"><svg class="icon icon-information text-blue">
+                                  <use xlink:href="img/sprite.svg#icon-information"></use>
+                                </svg></a></div>
+                          </div>
+                          <div class="col-md-6"><a class="btn btn-secondary btn-sm all-caps m-b-20" href="#">Reset Formula</a></div>
+                        </div>
+                      </div>
+                      <div class="generate-formula" style="display:none">
+                        <div class="flex flex-select"><select class="select m-r-20 m-b-30">
+                            <option value="1">Select</option>
+                            <option value="2">Select1</option>
+                            <option value="3">Select2</option>
+                          </select><select class="select m-r-20 m-b-30">
+                            <option value="1">Select</option>
+                            <option value="2">Select1</option>
+                            <option value="3">Select2</option>
+                          </select><select class="select m-r-20 m-b-30">
+                            <option value="1">Select</option>
+                            <option value="2">Select1</option>
+                            <option value="3">Select2</option>
+                          </select><a class="flex h4 m-l-0 m-b-30" href="#"><i class="icon-nn-filled-pink-delete p-t-5"></i></a></div><a class="btn btn-secondary btn-sm all-caps m-b-20" href="#">add more</a>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="advanced-5">
+                      <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="filed-value-1" require><label class="require" for="filed-value-1">Field Value</label></div>
+                      <div class="m-t-50 m-b-30">
+                        <p class="text-black fz-14 fw-semi-bold m-b-20">Define a Condition to Validate<svg class="icon icon-information text-blue m-l-10">
+                            <use xlink:href="img/sprite.svg#icon-information"></use>
+                          </svg></p>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30 disabled"><input type="number" id="filterKey" disabled><label for="filterKey">filterKey</label></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><select class="select">
+                                <option value="1">Select</option>
+                                <option value="2">Select1</option>
+                                <option value="3">Select2</option>
+                              </select></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><input type="text" id="value"><label for="value">Value1</label></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__block m-b-30"><input type="text" id="success-message"><label for="success-message">Success Message</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="failure-message"><label for="failure-message">Failure Message</label></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
+        </form>
+      </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-dialog" id="slide-right-location">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Create New Step<span class="bright-magenta">Location</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="active" data-toggle="tab" href="#form-step-4">form</a></li>
+                    <li><a data-toggle="tab" href="#advanced-6">Advanced Settings</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="form-step-4">
+                      <p class="text-black fz-12 all-caps fw-semi-bold m-b-20">BOT Message<svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30"><input type="text" id="latitude"><label for="latitude">Latitude</label></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30 flex"><input type="text" id="longitude"><label for="longitude">Longitude</label><a class="flex h4 padding-15 m-l-0" href="#"><i class="icon-nn-filled-pink-delete p-t-5"></i></a></div>
+                        </div>
+                        <div class="col-12"><a class="btn btn-secondary btn-sm all-caps m-b-20" href="#">add more</a></div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="advanced-6">
+                      <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="filed-value-1" require><label class="require" for="filed-value-1">Field Value</label></div>
+                      <div class="m-t-50 m-b-30">
+                        <p class="text-black fz-14 fw-semi-bold m-b-20">Define a Condition to Validate<svg class="icon icon-information text-blue m-l-10">
+                            <use xlink:href="img/sprite.svg#icon-information"></use>
+                          </svg></p>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30 disabled"><input type="number" id="filterKey" disabled><label for="filterKey">filterKey</label></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><select class="select">
+                                <option value="1">Select</option>
+                                <option value="2">Select1</option>
+                                <option value="3">Select2</option>
+                              </select></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><input type="text" id="value"><label for="value">Value1</label></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__block m-b-30"><input type="text" id="success-message"><label for="success-message">Success Message</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="failure-message"><label for="failure-message">Failure Message</label></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
+        </form>
+      </div>
+      <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-dialog" id="slide-right-api">
+        <form>
+          <div class="modal-dialog">
+            <div class="modal-content-wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="h2 modal-title m-b-5" id="exampleModalLiveLabel">Create New Step<span class="tangerine">Api</span></h2><a class="close" href="#" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a>
+                </div>
+                <div class="modal-body form-pop-up">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a class="active" data-toggle="tab" href="#form-step-5">form</a></li>
+                    <li><a data-toggle="tab" href="#advanced-7">Advanced Settings</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="form-step-5">
+                      <p class="text-ugly-blue fz-12 fw-semi-bold m-b-20 flex-start m-b-40"><svg class="icon icon-information text-blue fz-12 m-r-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg><span style="flex: 1">Use this step for connecting various business tools (CRM, CMS, APIs, etc) to the flow builder and vice-versa in order to allow passing data/user response</span></p>
+                    </div>
+                    <div class="tab-pane fade" id="advanced-7">
+                      <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="filed-value-1" require><label class="require" for="filed-value-1">Field Value</label></div>
+                      <div class="m-t-50 m-b-30">
+                        <p class="text-black fz-14 fw-semi-bold m-b-20">Define a Condition to Validate<svg class="icon icon-information text-blue m-l-10">
+                            <use xlink:href="img/sprite.svg#icon-information"></use>
+                          </svg></p>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30 disabled"><input type="number" id="filterKey" disabled><label for="filterKey">filterKey</label></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><select class="select">
+                                <option value="1">Select</option>
+                                <option value="2">Select1</option>
+                                <option value="3">Select2</option>
+                              </select></div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="form__block m-b-30"><input type="text" id="value"><label for="value">Value1</label></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__block m-b-30"><input type="text" id="success-message"><label for="success-message">Success Message</label></div>
+                      <div class="form__block m-b-30"><input type="text" id="failure-message"><label for="failure-message">Failure Message</label></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"><a class="btn btn-secondary m-r-15" href="#" data-dismiss="modal">Cancel</a><button class="btn btn-primary continue" type="submit">Save</button></div>
+        </form>
+      </div>
       <div class="modal fade slide-right slide-right-vh slide-right-create slide-right-create--branch slide-right-dialog" id="slide-right-branch">
         <form>
           <div class="modal-dialog">
