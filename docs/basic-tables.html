@@ -1307,6 +1307,49 @@
                       <p class="text-ugly-blue fz-12 fw-semi-bold m-b-20 flex-start m-b-40"><svg class="icon icon-information text-blue fz-12 m-r-10">
                           <use xlink:href="img/sprite.svg#icon-information"></use>
                         </svg><span style="flex: 1">Use this step for connecting various business tools (CRM, CMS, APIs, etc) to the flow builder and vice-versa in order to allow passing data/user response</span></p>
+                      <div class="form__checkbox flex m-b-45"><input type="checkbox" id="ignore-error" checked><label class="m-b-0" for="ignore-error">Ignore Error</label><svg class="icon icon-information text-blue m-l-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg></div>
+                      <div class="row">
+                        <div class="col-12"><strong class="text-black m-b-10 flex">Destination</strong></div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30"><select class="select">
+                              <option value="1">Type</option>
+                              <option value="2">Type1</option>
+                              <option value="3">Type2</option>
+                            </select></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30"><input type="text" id="url-3"><label for="url-3">URL</label></div>
+                        </div>
+                        <div class="col-12"><strong class="text-black m-b-10 flex">Headers</strong></div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30"><input type="text" id="api-name"><label for="api-name">Name</label></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30 flex"><input type="text" id="api-value"><label for="api-value">Value</label><a class="flex h4 m-l-0 padding-15" href="#"><i class="icon-nn-filled-pink-delete p-t-5"></i></a></div>
+                        </div>
+                        <div class="col-12"><a class="btn btn-secondary btn-sm all-caps m-b-50" href="#">Add header</a></div>
+                      </div>
+                      <div class="form__checkbox flex m-b-45"><input type="checkbox" id="authentication" checked><label class="m-b-0" for="authentication">hmac Authentication </label></div>
+                      <div>
+                        <div class="form__block m-b-30"><input type="text" id="api-header-name"><label for="api-header-name">Header Name </label></div>
+                        <div class="form__block m-b-30"><input type="text" id="api-algorithm"><label for="api-algorithm">Algorithm</label></div>
+                        <div class="form__block m-b-30"><input type="text" id="api-secret"><label for="api-secret">Api Secret </label></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12"> <strong class="text-black m-b-10 flex p-t-35">Query Params</strong></div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30"><input type="text" id="query-params-name"><label for="query-params-name">Name</label></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form__block m-b-30 flex"><input type="text" id="query-params-value"><label for="query-params-value">Value</label><a class="flex h4 m-l-0 padding-15" href="#"><i class="icon-nn-filled-pink-delete p-t-5"></i></a></div>
+                        </div>
+                        <div class="col-12"><a class="btn btn-secondary btn-sm all-caps m-b-50" href="#">Add query param</a></div>
+                      </div><strong class="text-black m-b-10 flex">Response</strong>
+                      <p class="text-ugly-blue fz-12 fw-semi-bold flex-start m-b-40"><svg class="icon icon-information text-blue fz-12 m-r-10">
+                          <use xlink:href="img/sprite.svg#icon-information"></use>
+                        </svg><span style="flex: 1">Do not remove or modify the existing code</span></p><pre class="fz-14 text-black p-b-15 api-code">function parseResponse(payload) { <br> var response = JSON.parse(payload); <br><br><br> return response;<br>}</pre>
                     </div>
                     <div class="tab-pane fade" id="advanced-7">
                       <div class="form__block m-b-30"><input type="text" id="filed-name-1" require><label class="require" for="filed-name-1">Field Name</label></div>

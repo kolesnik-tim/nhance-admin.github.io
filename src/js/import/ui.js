@@ -205,3 +205,9 @@ $('#generate-formula').on('click', function() {
     $(this).closest('.radio-block').siblings('.generate-formula').fadeIn();
   }
 });
+
+
+////Create New Step //Api
+$('#authentication').on('click', function() {
+  $(this).closest('.form__checkbox').next().fadeToggle();
+});
