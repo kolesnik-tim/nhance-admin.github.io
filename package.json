@@ -75,7 +75,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "air-datepicker": "^2.2.3",
     "bootstrap": "^4.4.1",
-    "datatables.net": "^1.10.20",
+    "datatables.net": "^1.10.22",
     "datatables.net-dt": "^1.10.20",
     "materialize-css": "^1.0.0-rc.2",
     "materialize-js": "^1.0.0",
